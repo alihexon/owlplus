@@ -1,11 +1,11 @@
 local pickupMarkers = {}
 local markerPositions = {
-    {2781, -2463, 13 -1},
-    {2782, -2448, 13 -1},
-    {2784, -2449, 13 -1},
-    {2785, -2463, 13 -1},
-    {2790, -2462, 13 -1},
-    {2790, -2448, 13 -1}
+    {936, -1117, 24 - 1},
+    {938, -1120, 24 - 1},
+    {940, -1122, 24 - 1},
+    {942, -1125, 24 - 1},
+    {944, -1127, 24 - 1},
+    {946, -1130, 24 - 1}
 }
 
 local secondMarker = nil
@@ -15,7 +15,6 @@ local dutyMarker = nil
 local onDuty = false
 local hasBox = false
 
--- Track whether the player has seen the notification for each marker type
 local hasSeenPickupNotification = false
 local hasSeenDropoffNotification = false
 
@@ -31,13 +30,13 @@ function createPickupMarkers()
 end
 
 function createDropoffMarker()
-    secondMarker = createMarker(2800, -2456, 13 -1, "cylinder", 1.5, 255, 0, 0, 80)
+    secondMarker = createMarker(934, -1105, 23, "cylinder", 1.5, 255, 0, 0, 150)
     setElementData(secondMarker, "isDropoff", true)
     destroyElement(secondMarker)
 end
 
 function createDutyMarker()
-    dutyMarker = createMarker(2750, -2450, 12, "cylinder", 1.5, 0, 0, 255, 80)
+    dutyMarker = createMarker(950.5419921875, -1099.7421875, 23, "cylinder", 1.5, 0, 0, 255, 80)
     setElementData(dutyMarker, "isDutyMarker", true)
 end
 
@@ -69,11 +68,9 @@ function onMarkerHit(hitElement)
         if markerType == "duty" then
             triggerServerEvent("playerEnteredMarker", localPlayer, markerType, onDuty)
         else
-            -- Only send the notification if the player hasn't seen it before
             if (markerType == "pickup" and not hasSeenPickupNotification) or
                (markerType == "dropoff" and not hasSeenDropoffNotification) then
                 triggerServerEvent("playerEnteredMarker", localPlayer, markerType)
-                -- Mark the notification as seen permanently
                 if markerType == "pickup" then
                     hasSeenPickupNotification = true
                 elseif markerType == "dropoff" then
@@ -131,7 +128,7 @@ function onKeyPress(button, press)
                     if isElement(secondMarker) then
                         destroyElement(secondMarker)
                     end
-                    secondMarker = createMarker(2800, -2456, 13, "cylinder", 1.5, 255, 0, 0, 80)
+                    secondMarker = createMarker(934, -1105, 23, "cylinder", 1.5, 255, 0, 0, 150)
                     setElementData(secondMarker, "isDropoff", true)
                     setElementData(secondMarker, "visible", true)
                     hasBox = true
@@ -144,11 +141,12 @@ function onKeyPress(button, press)
                 destroyElement(secondMarker)
                 showRandomPickupMarker()
                 hasBox = false
+                hasSeenPickupNotification = false
             end
         elseif isElement(dutyMarker) and getElementData(dutyMarker, "isDutyMarker") and isElementWithinMarker(localPlayer, dutyMarker) then
             if onDuty then
                 if hasBox then
-                    triggerServerEvent("playerCannotGoOffDuty", resourceRoot)  -- Send request to server
+                    triggerServerEvent("playerCannotGoOffDuty", resourceRoot)
                     return
                 end
                 if isElement(activeMarker) then

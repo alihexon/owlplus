@@ -1,11 +1,11 @@
 local pickupMarkers = {}
 local markerPositions = {
-    {936, -1117, 24 - 1},
-    {938, -1120, 24 - 1},
-    {940, -1122, 24 - 1},
-    {942, -1125, 24 - 1},
-    {944, -1127, 24 - 1},
-    {946, -1130, 24 - 1}
+    {2781, -2463, 13 -1},
+    {2782, -2448, 13 -1},
+    {2784, -2449, 13 -1},
+    {2785, -2463, 13 -1},
+    {2790, -2462, 13 -1},
+    {2790, -2448, 13 -1}
 }
 
 local secondMarker = nil
@@ -31,13 +31,13 @@ function createPickupMarkers()
 end
 
 function createDropoffMarker()
-    secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 80)
+    secondMarker = createMarker(2800, -2456, 13 -1, "cylinder", 1.5, 255, 0, 0, 80)
     setElementData(secondMarker, "isDropoff", true)
     destroyElement(secondMarker)
 end
 
 function createDutyMarker()
-    dutyMarker = createMarker(950.5419921875, -1099.7421875, 23, "cylinder", 1.5, 0, 0, 255, 80)
+    dutyMarker = createMarker(2750, -2450, 12, "cylinder", 1.5, 0, 0, 255, 80)
     setElementData(dutyMarker, "isDutyMarker", true)
 end
 
@@ -131,7 +131,7 @@ function onKeyPress(button, press)
                     if isElement(secondMarker) then
                         destroyElement(secondMarker)
                     end
-                    secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 150)
+                    secondMarker = createMarker(2800, -2456, 13, "cylinder", 1.5, 255, 0, 0, 80)
                     setElementData(secondMarker, "isDropoff", true)
                     setElementData(secondMarker, "visible", true)
                     hasBox = true
