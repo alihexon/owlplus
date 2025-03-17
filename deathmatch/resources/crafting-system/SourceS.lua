@@ -3,7 +3,7 @@ local craftingMarker = createMarker(markerX, markerY, markerZ, "cylinder", 1.5, 
 
 function onPlayerEnterMarker(hitPlayer, matchingDimension)
     if hitPlayer and getElementType(hitPlayer) == "player" and matchingDimension then
-        local hasItem = exports["item-system"]:hasItem(hitPlayer, 33, 1)
+        local hasItem = exports["item-system"]:hasItem(hitPlayer, 33, nil)
 
         if hasItem then
             outputChatBox("Processing... Please wait 5 seconds.", hitPlayer, 0, 255, 0)
@@ -11,7 +11,7 @@ function onPlayerEnterMarker(hitPlayer, matchingDimension)
             setTimer(function()
                 if isElement(hitPlayer) then  -- Ensure the player is still online
                     -- Remove item 33 first
-                    local removeSuccess = exports["item-system"]:takeItem(hitPlayer, 33, 1)
+                    local removeSuccess = exports["item-system"]:takeItem(hitPlayer, 33, nil)
                     if removeSuccess then
                         -- Give item 43 after 5 seconds
                         local success = exports["item-system"]:giveItem(hitPlayer, 43, 1)
