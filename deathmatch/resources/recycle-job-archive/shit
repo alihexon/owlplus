@@ -1,0 +1,166 @@
+local pickupMarkers = {}
+local markerPositions = {
+    {936, -1117, 24 - 1},
+    {938, -1120, 24 - 1},
+    {940, -1122, 24 - 1},
+    {942, -1125, 24 - 1},
+    {944, -1127, 24 - 1},
+    {946, -1130, 24 - 1}
+}
+
+local secondMarker = nil
+local activeMarker = nil
+local onDuty = false -- Track if the player is on duty
+local hasBox = false -- Track if the player has picked up a box
+local dutyMarker = nil
+
+-- Control functions
+function turnOnControls(player)
+    toggleControl("sprint", true)
+    toggleControl("jump", true)
+end
+
+function turnOffControls(player)
+    toggleControl("sprint", false)
+    toggleControl("jump", false)
+end
+
+-- Create pickup markers
+function createPickupMarkers()
+    if onDuty then
+        for i, pos in ipairs(markerPositions) do
+            local marker = createMarker(pos[1], pos[2], pos[3], "cylinder", 1.5, 0, 255, 0, 150)
+            setElementData(marker, "markerID", i)
+            setElementData(marker, "isPickup", true) -- Identify it as a pickup marker
+            table.insert(pickupMarkers, marker)
+        end
+    end
+end
+
+-- Create dropoff marker (hidden initially)
+function createDropoffMarker()
+    secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 150)
+    setElementData(secondMarker, "isDropoff", true)
+    destroyElement(secondMarker)  -- Make sure it's initially destroyed
+end
+
+-- Create the duty marker
+function createDutyMarker()
+    dutyMarker = createMarker(950.5419921875, -1099.7421875, 23, "cylinder", 2, 0, 0, 255, 150)
+    setElementData(dutyMarker, "isDutyMarker", true)
+end
+
+-- Show a random pickup marker
+function showRandomPickupMarker()
+    -- Ensure there are no existing pickup markers
+    for _, marker in ipairs(pickupMarkers) do
+        destroyElement(marker)
+    end
+    pickupMarkers = {}
+
+    -- Pick a random position and create a new pickup marker
+    local randomIndex = math.random(1, #markerPositions)
+    local pos = markerPositions[randomIndex]
+    activeMarker = createMarker(pos[1], pos[2], pos[3], "cylinder", 1.5, 0, 255, 0, 150)
+    setElementData(activeMarker, "isPickup", true)
+    table.insert(pickupMarkers, activeMarker)
+
+    outputChatBox("A new pickup marker is now active!", 0, 255, 0)
+end
+
+-- Marker hit events
+function onMarkerHit(player)
+    if player == localPlayer then
+        if getElementData(source, "isPickup") then
+            outputChatBox("Press E to pick up a box!", 0, 255, 0)
+        elseif getElementData(source, "isDropoff") then
+            outputChatBox("Press E to deliver the box!", 0, 255, 0)
+        elseif getElementData(source, "isDutyMarker") then
+            outputChatBox("Press E to toggle duty status.", 0, 0, 255)
+        end
+    end
+end
+
+-- Marker leave events
+function onMarkerLeave(player)
+    if player == localPlayer then
+        outputChatBox("You left the marker area.", 255, 0, 0)
+    end
+end
+
+-- Key press events
+function onKeyPress(button, press)
+    if button == "e" and press then
+        if isElement(dutyMarker) and getElementData(dutyMarker, "isDutyMarker") and isElementWithinMarker(localPlayer, dutyMarker) then
+            if onDuty then
+                -- Going off duty, remove markers
+                if isElement(activeMarker) then destroyElement(activeMarker) end
+                if isElement(secondMarker) then destroyElement(secondMarker) end
+                outputChatBox("You are now off duty.", 255, 0, 0)
+
+                -- Turn on controls when going off duty
+                turnOnControls(localPlayer)  -- Enable sprint and jump
+            else
+                -- Going on duty, create and show pickup markers
+                createPickupMarkers()
+                showRandomPickupMarker()
+
+                outputChatBox("You are now on duty. Pick up and deliver boxes.", 0, 255, 0)
+
+                -- Turn off controls when going on duty
+                turnOffControls(localPlayer)  -- Disable sprint and jump
+            end
+
+            -- Toggle the duty status
+            onDuty = not onDuty
+        elseif isElement(activeMarker) and getElementData(activeMarker, "isPickup") and isElementWithinMarker(localPlayer, activeMarker) then
+            if not hasBox then
+                outputChatBox("You picked up a box! Now go to the drop-off marker.", 255, 255, 0)
+                setPedAnimation(localPlayer, "CARRY", "liftup", -1, false, false, false, false)
+
+                -- Disable sprinting and jumping while holding the box
+
+
+                triggerServerEvent("playerPickedUpBox", resourceRoot)
+
+                -- Destroy the current pickup marker (activeMarker)
+                destroyElement(activeMarker)
+
+                -- Show the dropoff marker after pickup
+                if isElement(secondMarker) then destroyElement(secondMarker) end
+                secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 150)
+                setElementData(secondMarker, "isDropoff", true)
+
+                hasBox = true
+            end
+        elseif isElement(secondMarker) and getElementData(secondMarker, "isDropoff") and isElementWithinMarker(localPlayer, secondMarker) then
+            if hasBox then
+                outputChatBox("Box delivered! Receiving payment...", 255, 255, 0)
+                setPedAnimation(localPlayer, "CARRY", "putdwn", -1, false, false, false, false)
+
+                -- Enable sprinting and jumping after delivering the box
+                turnOnControls(localPlayer)
+
+                triggerServerEvent("playerDeliveredBox", resourceRoot)
+
+                destroyElement(secondMarker)
+
+                -- Show a new random pickup marker only after the delivery
+                showRandomPickupMarker()
+
+                hasBox = false
+            end
+        end
+    end
+end
+
+-- Initialize resource
+addEventHandler("onClientResourceStart", resourceRoot, function()
+    createDutyMarker()
+    createDropoffMarker()
+end)
+
+-- Event handlers
+addEventHandler("onClientMarkerHit", root, onMarkerHit)
+addEventHandler("onClientMarkerLeave", root, onMarkerLeave)
+addEventHandler("onClientKey", root, onKeyPress)

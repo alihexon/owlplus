@@ -1,0 +1,216 @@
+server:
+local materials = {
+    {name = "Rubber", price = 1000000000},
+    {name = "Plastic", price = 2000000000},
+    {name = "Iron", price = 3000000000},
+    {name = "Steel", price = 4000000000},
+    {name = "Aluminum", price = 5000000000},
+    {name = "Metalscrap", price = 6000000000},
+    {name = "Copper", price = 7000000000},
+    {name = "Glass", price = 8000000000}
+}
+
+local playerProgress = {}
+
+-- Function to send custom notifications
+function sendCustomNotification(player, message, type)
+    exports["alii_infobox"]:add(player, "Recycle Job", type, message)
+end
+
+-- Function to handle picking up a box
+function onPlayerPickupBox()
+    local player = client
+    if playerProgress[player] and playerProgress[player].grabbedBox then
+        sendCustomNotification(player, "You already have a box!", "error")
+        return
+    end
+
+    local selectedMaterial = materials[math.random(1, #materials)]
+    playerProgress[player] = {
+        grabbedBox = true,
+        material = selectedMaterial.name,
+        materialPrice = selectedMaterial.price
+    }
+    sendCustomNotification(player, "[OMEGA RP] Shoma yek box " .. selectedMaterial.name .. " daryaft kardid.", "info")
+end
+addEvent("playerPickedUpBox", true)
+addEventHandler("playerPickedUpBox", resourceRoot, onPlayerPickupBox)
+
+-- Function to handle delivering a box
+function onPlayerDeliverBox()
+    local player = client
+    if not playerProgress[player] or not playerProgress[player].grabbedBox then
+        sendCustomNotification(player, "[OMEGA RP] Shoma boxi baraye tahvil dadan nadarid.", "error")
+        return
+    end
+
+    local payment = playerProgress[player].materialPrice
+    exports.global:giveMoney(player, payment) -- Server-side money function
+    sendCustomNotification(player, "[OMEGA RP] Shoma box ra tahvil dadid va $" .. payment .. " daryaft kardid.", "success")
+
+    playerProgress[player] = nil
+end
+addEvent("playerDeliveredBox", true)
+addEventHandler("playerDeliveredBox", resourceRoot, onPlayerDeliverBox)
+
+-- Function to handle duty toggling
+function onPlayerToggleDuty(player, onDuty)
+    if onDuty then
+        sendCustomNotification(player, "[OMEGA RP] Shoma on-duty kardid.", "info")
+    else
+        sendCustomNotification(player, "[OMEGA RP] Shoma off-duty kardid.", "info")
+    end
+end
+addEvent("playerToggleDuty", true)
+addEventHandler("playerToggleDuty", resourceRoot, onPlayerToggleDuty)
+
+-- Define the toggle command for sprinting/jumping
+function toggleSprintAndJump(player)
+    local currentState = getElementData(player, "sprintingEnabled")
+    if currentState == nil then
+        setElementData(player, "sprintingEnabled", true)
+        currentState = true
+    end
+    local newState = not currentState
+    setElementData(player, "sprintingEnabled", newState)
+    toggleControl(player, "sprint", newState)
+    toggleControl(player, "jump", newState)
+end
+
+-- Bind command to the function
+addCommandHandler("giganiggasprint", function(player) toggleSprintAndJump(player) end)
+addCommandHandler("gnsprint", function(player) toggleSprintAndJump(player) end)
+
+client:
+local pickupMarkers = {}
+local markerPositions = {
+    {936, -1117, 24 - 1},
+    {938, -1120, 24 - 1},
+    {940, -1122, 24 - 1},
+    {942, -1125, 24 - 1},
+    {944, -1127, 24 - 1},
+    {946, -1130, 24 - 1}
+}
+
+local secondMarker = nil
+local activeMarker = nil
+local playerInRange = false
+local dutyMarker = nil
+local onDuty = false
+local hasBox = false
+
+-- Function to create pickup markers
+function createPickupMarkers()
+    if onDuty then
+        for i, pos in ipairs(markerPositions) do
+            local marker = createMarker(pos[1], pos[2], pos[3], "cylinder", 1.5, 0, 255, 0, 80)
+            setElementData(marker, "markerID", i)
+            setElementData(marker, "isPickup", true)
+            table.insert(pickupMarkers, marker)
+        end
+    end
+end
+
+-- Function to create the dropoff marker
+function createDropoffMarker()
+    secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 80)
+    setElementData(secondMarker, "isDropoff", true)
+    destroyElement(secondMarker)
+end
+
+-- Function to create the duty marker
+function createDutyMarker()
+    dutyMarker = createMarker(950.5419921875, -1099.7421875, 23, "cylinder", 1.5, 0, 0, 255, 80)
+    setElementData(dutyMarker, "isDutyMarker", true)
+end
+
+-- Function to show a random pickup marker
+function showRandomPickupMarker()
+    for _, marker in ipairs(pickupMarkers) do
+        destroyElement(marker)
+    end
+    pickupMarkers = {}
+
+    local randomIndex = math.random(1, #markerPositions)
+    local pos = markerPositions[randomIndex]
+    activeMarker = createMarker(pos[1], pos[2], pos[3], "cylinder", 1.5, 0, 255, 0, 150)
+    setElementData(activeMarker, "isPickup", true)
+    table.insert(pickupMarkers, activeMarker)
+end
+
+-- Function to handle marker hit events
+function onMarkerHit(player)
+    if player == localPlayer then
+        playerInRange = true
+        if getElementData(source, "isPickup") then
+            outputChatBox("[OMEGA RP] Baraye bardashtane yek box dokmeye E ra feshar dahid.", 0, 255, 0)
+        elseif getElementData(source, "isDropoff") then
+            outputChatBox("[OMEGA RP] Baraye gozashtane yek box dokmeye E ra feshar dahid.", 0, 255, 0)
+        elseif getElementData(source, "isDutyMarker") then
+            outputChatBox("[OMEGA RP] Baraye duty kardan dokmeye E ra feshar dahid.", 0, 255, 0)
+        end
+    end
+end
+
+-- Function to handle key press events
+function onKeyPress(button, press)
+    if onDuty then
+        toggleControl("sprint", false)
+        toggleControl("jump", false)
+    end
+
+    if button == "e" and press and playerInRange then
+        if isElement(activeMarker) and getElementData(activeMarker, "isPickup") and isElementWithinMarker(localPlayer, activeMarker) then
+            if not hasBox then
+                setPedAnimation(localPlayer, "CARRY", "liftup", -1, false, false, false, false)
+                triggerServerEvent("playerPickedUpBox", resourceRoot)
+                destroyElement(activeMarker)
+                if isElement(secondMarker) then
+                    destroyElement(secondMarker)
+                end
+                secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 150)
+                setElementData(secondMarker, "isDropoff", true)
+                setElementData(secondMarker, "visible", true)
+                hasBox = true
+            end
+        elseif isElement(secondMarker) and getElementData(secondMarker, "isDropoff") and isElementWithinMarker(localPlayer, secondMarker) then
+            if hasBox then
+                setPedAnimation(localPlayer, "CARRY", "putdwn", -1, false, false, false, false)
+                triggerServerEvent("playerDeliveredBox", resourceRoot)
+                destroyElement(secondMarker)
+                showRandomPickupMarker()
+                hasBox = false
+            end
+        elseif isElement(dutyMarker) and getElementData(dutyMarker, "isDutyMarker") and isElementWithinMarker(localPlayer, dutyMarker) then
+            if onDuty then
+                if isElement(activeMarker) then
+                    destroyElement(activeMarker)
+                end
+                if isElement(secondMarker) then
+                    destroyElement(secondMarker)
+                end
+                toggleControl("sprint", true)
+                toggleControl("jump", true)
+                triggerServerEvent("playerToggleDuty", resourceRoot, false)
+            else
+                createPickupMarkers()
+                showRandomPickupMarker()
+                toggleControl("sprint", false)
+                toggleControl("jump", false)
+                triggerServerEvent("playerToggleDuty", resourceRoot, true)
+            end
+            onDuty = not onDuty
+        end
+    end
+end
+
+-- Initialize markers and events
+addEventHandler("onClientResourceStart", resourceRoot, function()
+    createDutyMarker()
+    createDropoffMarker()
+end)
+
+addEventHandler("onClientMarkerHit", root, onMarkerHit)
+addEventHandler("onClientKey", root, onKeyPress)
+
+the notifications work fine for getting a box and delivering it. but when it comes to going duty, no custom notifications for duty tho

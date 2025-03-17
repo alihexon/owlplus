@@ -1,0 +1,187 @@
+local pickupMarkers = {}
+local markerPositions = {
+    {936, -1117, 24 - 1},
+    {938, -1120, 24 - 1},
+    {940, -1122, 24 - 1},
+    {942, -1125, 24 - 1},
+    {944, -1127, 24 - 1},
+    {946, -1130, 24 - 1}
+}
+
+local secondMarker = nil
+local activeMarker = nil
+local playerInRange = false -- Track if player is inside any of the markers
+local dutyMarker = nil
+local onDuty = false -- Track if the player is on duty
+local hasBox = false -- Track if the player has picked up a box
+
+function toggleSprintAndJump(player)
+    -- Reverse the logic: Allow sprint and jump when on duty, restrict when off duty
+    if onDuty then
+        -- Enable sprinting and jumping when on duty
+        toggleControl("sprint", true)
+        toggleControl("jump", true)
+    else
+        -- Disable sprinting and jumping when off duty
+        toggleControl("sprint", false)
+        toggleControl("jump", false)
+    end
+end
+
+
+function createPickupMarkers()
+    -- Create the markers only when going on duty
+    if onDuty then
+        for i, pos in ipairs(markerPositions) do
+            local marker = createMarker(pos[1], pos[2], pos[3], "cylinder", 1.5, 0, 255, 0, 150)
+            setElementData(marker, "markerID", i)
+            setElementData(marker, "isPickup", true) -- Identify it as a pickup marker
+            table.insert(pickupMarkers, marker)
+        end
+        -- Enable sprinting and jumping when on duty
+        toggleSprintAndJump(localPlayer)
+    end
+end
+
+function createDropoffMarker()
+    -- Create the dropoff marker (this is always available but hidden initially)
+    secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 150)
+    setElementData(secondMarker, "isDropoff", true) -- Identify it as a dropoff marker
+    -- Initially, destroy the second marker so it is not visible
+    destroyElement(secondMarker)
+end
+
+function createDutyMarker()
+    -- Create the duty marker at the given position
+    dutyMarker = createMarker(950.5419921875, -1099.7421875, 23, "cylinder", 2, 0, 0, 255, 150)
+    setElementData(dutyMarker, "isDutyMarker", true)
+end
+
+function showRandomPickupMarker()
+    -- Destroy the current pickup markers before showing a new one
+    for _, marker in ipairs(pickupMarkers) do
+        destroyElement(marker)
+    end
+    pickupMarkers = {} -- Reset the table after destroying the markers
+    
+    -- Show a new random pickup marker
+    local randomIndex = math.random(1, #markerPositions)
+    local pos = markerPositions[randomIndex]
+    activeMarker = createMarker(pos[1], pos[2], pos[3], "cylinder", 1.5, 0, 255, 0, 150)
+    setElementData(activeMarker, "isPickup", true)
+    table.insert(pickupMarkers, activeMarker) -- Add it to the pickup markers table
+
+    outputChatBox("A new pickup marker is now active!", 0, 255, 0)
+end
+
+function onMarkerHit(player)
+    if player == localPlayer then
+        playerInRange = true -- Player is in range of the marker
+        -- Inform player to press 'E' for interaction
+        if getElementData(source, "isPickup") then
+            outputChatBox("Press E to pick up a box!", 0, 255, 0)
+        elseif getElementData(source, "isDropoff") then
+            outputChatBox("Press E to deliver the box!", 0, 255, 0)
+        elseif getElementData(source, "isDutyMarker") then
+            outputChatBox("Press E to toggle duty status.", 0, 0, 255)
+        end
+    end
+end
+
+function onMarkerLeave(player)
+    if player == localPlayer then
+        playerInRange = false -- Player has left the marker area
+        outputChatBox("You left the marker area.", 255, 0, 0)
+    end
+end
+
+function onKeyPress(button, press)
+    if button == "e" and press and playerInRange then
+        -- Check if the player is near the pickup marker
+        if isElement(activeMarker) and getElementData(activeMarker, "isPickup") and isElementWithinMarker(localPlayer, activeMarker) then
+            if not hasBox then
+                -- Pick up the box
+                outputChatBox("You picked up a box! Now go to the drop-off marker.", 255, 255, 0)
+
+                -- Trigger animation to pick up the box (lifting animation)
+                setPedAnimation(localPlayer, "CARRY", "liftup", -1, false, false, false, false)
+
+                -- Disable sprinting while holding the box
+                toggleControl("sprint", false)
+                toggleControl("jump", false)  -- Optionally disable jumping as well
+                toggleControl("walk", true)   -- Ensure walking is enabled
+
+                triggerServerEvent("playerPickedUpBox", resourceRoot)
+
+                destroyElement(activeMarker) -- Remove the active pickup marker
+
+                -- Create and show the dropoff marker now that the player has picked up the box
+                if isElement(secondMarker) then
+                    destroyElement(secondMarker)
+                end
+                secondMarker = createMarker(930, -1119, 23, "cylinder", 1.5, 255, 0, 0, 150)
+                setElementData(secondMarker, "isDropoff", true)
+                
+                -- Make the dropoff marker visible now
+                setElementData(secondMarker, "visible", true) -- Mark it visible
+
+                hasBox = true -- Player now has the box
+            end
+        -- Check if the player is near the drop-off marker
+        elseif isElement(secondMarker) and getElementData(secondMarker, "isDropoff") and isElementWithinMarker(localPlayer, secondMarker) then
+            if hasBox then
+                -- Deliver the box
+                outputChatBox("Box delivered! Receiving payment...", 255, 255, 0)
+
+                -- Trigger animation to place down the box (placing-down animation)
+                setPedAnimation(localPlayer, "CARRY", "putdwn", -1, false, false, false, false)
+
+                -- Enable sprinting and jumping after delivering the box
+                toggleControl("sprint", true)
+                toggleControl("jump", true)
+                toggleControl("walk", false)  -- Optionally, allow running again
+
+                triggerServerEvent("playerDeliveredBox", resourceRoot)
+
+                destroyElement(secondMarker) -- Remove the drop-off marker
+                showRandomPickupMarker() -- Show a new pickup marker
+
+                hasBox = false -- Reset box status
+            end
+        -- Toggle duty status if near the duty marker
+        elseif isElement(dutyMarker) and getElementData(dutyMarker, "isDutyMarker") and isElementWithinMarker(localPlayer, dutyMarker) then
+            if onDuty then
+                -- Going off duty, remove the pickup and dropoff markers
+                if isElement(activeMarker) then
+                    destroyElement(activeMarker)
+                end
+                if isElement(secondMarker) then
+                    destroyElement(secondMarker)
+                end
+
+                outputChatBox("You are now off duty.", 255, 0, 0)
+
+                -- Restrict sprint and jump when off duty
+                toggleSprintAndJump(localPlayer)
+            else
+                -- Going on duty, create and show pickup and dropoff markers
+                createPickupMarkers()  -- Create markers only when going on duty
+                showRandomPickupMarker()
+
+                outputChatBox("You are now on duty. Pick up and deliver boxes.", 0, 255, 0)
+            end
+
+            -- Toggle the duty status
+            onDuty = not onDuty
+        end
+    end
+end
+
+addEventHandler("onClientResourceStart", resourceRoot, function()
+    createDutyMarker() -- Create the duty marker without creating any pickup markers initially
+    createDropoffMarker() -- Initially creates the dropoff marker but doesn't show it
+end)
+
+addEventHandler("onClientMarkerHit", root, onMarkerHit)
+addEventHandler("onClientMarkerLeave", root, onMarkerLeave)
+addEventHandler("onClientKey", root, onKeyPress) -- Handle 'E' key press

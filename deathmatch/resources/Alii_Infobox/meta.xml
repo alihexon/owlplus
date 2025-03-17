@@ -1,0 +1,22 @@
+<vz>
+    <script src = "Alii_C.lua" type = "client"/>
+    <script src = "Alii_S.lua" type = "server"/>
+	
+	<export function="add" type="client"/> 
+	<export function="add" type="server"/> 
+
+
+	<file src = "html/images/error.png" />
+	<file src = "html/images/info.png" />
+	<file src = "html/images/success.png" />
+	<file src = "html/images/warning.png" />
+	<file src = "html/images/money.png" />
+	<file src = "html/images/work.png" />
+
+    <file src = "html/jquery-1.11.3.min.js" />
+	<file src = "html/scripts.js" />
+	<file src = "html/anime.min.js" />
+	<file src = "html/styles.css" />
+	<file src = "html/sound.mp3" />
+    <file src = "html/ui.html" />
+</vz>

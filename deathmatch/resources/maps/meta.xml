@@ -1,0 +1,33 @@
+<meta>
+    <info type="map" version="1.0.0"></info>
+	<map src="trailers.map" dimension="0"></map>
+	<map src="threes.map" dimension="0"></map>
+	<map src="StadiumMapping.map" dimension="0"></map>
+	<map src="rshaulgasstation.map" dimension="0"></map>
+	<map src="RSHaulNew.map" dimension="0"></map>
+	<map src="pizzastack.map" dimension="0"></map>
+	<map src="parkinglot.map" dimension="0"></map>
+	<map src="nightclub.map" dimension="0"></map>
+	<map src="lspd.map" dimension="0"></map>
+	<map src="LSN.map" dimension="0"></map>
+	<map src="hotel.map" dimension="0"></map>
+	<map src="grovestreetparking.map" dimension="0"></map>
+	<map src="glenpark.map" dimension="0"></map>
+	<map src="gasstation-club.map" dimension="0"></map>
+	<map src="ElCorona2.map" dimension="0"></map>
+	<map src="ElCorona.map" dimension="0"></map>
+	<map src="beach.map" dimension="0"></map>
+    <settings>
+        <setting name="#maxplayers" value="[ 128 ]"></setting>
+        <setting name="#useLODs" value="[ false ]"></setting>
+        <setting name="#gamespeed" value="[ 1 ]"></setting>
+        <setting name="#minplayers" value="[ 0 ]"></setting>
+        <setting name="#gravity" value="[ 0.0080000003799796104 ]"></setting>
+        <setting name="#waveheight" value="[ 0 ]"></setting>
+        <setting name="#locked_time" value="[ false ]"></setting>
+        <setting name="#weather" value="[ 0 ]"></setting>
+        <setting name="#time" value="12:0"></setting>
+    </settings>
+    <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="mapEditorScriptingExtension_c.lua" type="client" validate="false"></script>
+</meta>

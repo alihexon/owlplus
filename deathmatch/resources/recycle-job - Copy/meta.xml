@@ -1,0 +1,8 @@
+<meta>
+    <info author="hexon" type="script" name="Recycle Job" description="A simple recycling job script." />
+    
+    <script src="sourceS.lua" type="server" />
+    <script src="sourceC.lua" type="client" />
+
+    <export function="giveMoney" type="server"/>
+</meta>
