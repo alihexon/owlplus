@@ -19421,3 +19421,1429 @@ Port 22005 TCP is open.
 [2025-03-18 11:10:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
 [2025-03-18 11:10:29] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
 [2025-03-18 11:10:29] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:13:47] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:13:47] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:13:47] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:13:47] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:13:47] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:13:47] Stopping recycle-job
+[2025-03-18 11:13:47] Stopping crafting-system
+[2025-03-18 11:13:47] Starting recycle-job
+[2025-03-18 11:13:47] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:13:47] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:13:47] recycle-job restarted successfully
+[2025-03-18 11:13:47] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 11:13:47] Starting crafting-system
+[2025-03-18 11:13:47] crafting-system restarted successfully
+[2025-03-18 11:13:53] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 11:14:12] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:14:12] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:14:12] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:14:12] Stopping id-system
+[2025-03-18 11:14:12] Starting id-system
+[2025-03-18 11:14:12] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:14:12] id-system restarted successfully
+[2025-03-18 11:14:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 11:14:13] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:14:24] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:14:25] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:14:31] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x11]
+[2025-03-18 11:14:33] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:15:29] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:15:29] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:16:50] ERROR: hud\s_overlay_basic_info.lua:46: exports: Call to non-running server resource (mdc-system) [string "?"]
+[2025-03-18 11:20:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 11:20:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:20:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:25:29] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:25:29] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:25:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:25:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:25:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:25:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:25:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:25:44] Stopping recycle-job
+[2025-03-18 11:25:44] Stopping crafting-system
+[2025-03-18 11:25:44] Starting recycle-job
+[2025-03-18 11:25:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:25:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:25:44] recycle-job restarted successfully
+[2025-03-18 11:25:44] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 11:25:44] Starting crafting-system
+[2025-03-18 11:25:44] crafting-system restarted successfully
+[2025-03-18 11:25:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 11:26:15] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:26:15] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:26:15] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:26:15] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:26:15] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:26:15] Stopping recycle-job
+[2025-03-18 11:26:15] Stopping crafting-system
+[2025-03-18 11:26:15] Starting recycle-job
+[2025-03-18 11:26:15] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:26:15] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:26:15] recycle-job restarted successfully
+[2025-03-18 11:26:15] Starting crafting-system
+[2025-03-18 11:26:15] crafting-system restarted successfully
+[2025-03-18 11:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 11:26:28] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:26:28] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:26:28] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:26:28] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:26:28] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:26:28] Stopping recycle-job
+[2025-03-18 11:26:28] Stopping crafting-system
+[2025-03-18 11:26:28] Starting recycle-job
+[2025-03-18 11:26:28] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:26:28] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:26:28] recycle-job restarted successfully
+[2025-03-18 11:26:28] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 11:26:28] Starting crafting-system
+[2025-03-18 11:26:28] crafting-system restarted successfully
+[2025-03-18 11:26:33] QUIT: script_oshakhlari left the game [Quit] 
+[2025-03-18 11:26:33] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 11:26:33] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:26:33] ERROR: admin-system\Player\s_recon.lua:56: attempt to concatenate local 'commandName' (a nil value)
+[2025-03-18 11:29:44] CONNECT: alihexon connected (IP: 192.168.1.4  Serial: D8D8DDDB7D5896AEACED2ED065C85E91  Version: 1.6.0-9.23088.0)
+[2025-03-18 11:29:46] JOIN: alihexon joined the game (IP: 192.168.1.4)
+[2025-03-18 11:29:46] NICK: alihexon is now known as TG.Player.3834
+[2025-03-18 11:30:08] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:30:08] INFO: Loading 3 account settings to client #1
+[2025-03-18 11:30:18] NICK: TG.Player.3834 is now known as script_oshakhlari
+[2025-03-18 11:30:18] INFO: Old Bankmoney for script_oshakhlari nil New value 8006 changed by: anticheat User changed by: nil
+[2025-03-18 11:30:18] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:30:18] INFO: Loading 1 character settings to client #1
+[2025-03-18 11:30:21] ERROR: hud\s_overlay_basic_info.lua:46: exports: Call to non-running server resource (mdc-system) [string "?"]
+[2025-03-18 11:30:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 11:30:29] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:30:29] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:30:49] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:30:49] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:30:49] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:30:49] Stopping recycle-job
+[2025-03-18 11:30:49] Starting recycle-job
+[2025-03-18 11:30:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:30:49] recycle-job restarted successfully
+[2025-03-18 11:30:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 11:35:29] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:35:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:40:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 11:40:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:40:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:42:51] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:42:51] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:42:51] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:42:51] Stopping recycle-job
+[2025-03-18 11:42:51] Starting recycle-job
+[2025-03-18 11:42:51] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:42:51] recycle-job restarted successfully
+[2025-03-18 11:42:53] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 11:42:53] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:42:53] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:42:53] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:42:53] Stopping recycle-job
+[2025-03-18 11:42:53] Starting recycle-job
+[2025-03-18 11:42:53] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:42:53] recycle-job restarted successfully
+[2025-03-18 11:42:59] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 11:43:00] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:43:00] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:43:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:43:00] Stopping recycle-job
+[2025-03-18 11:43:00] Starting recycle-job
+[2025-03-18 11:43:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:43:00] recycle-job restarted successfully
+[2025-03-18 11:43:01] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 11:43:01] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:43:01] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:43:01] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:43:01] Stopping recycle-job
+[2025-03-18 11:43:01] Starting recycle-job
+[2025-03-18 11:43:01] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:43:01] recycle-job restarted successfully
+[2025-03-18 11:43:07] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 11:43:11] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:43:11] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:43:11] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:43:11] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:43:11] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:43:11] Stopping recycle-job
+[2025-03-18 11:43:11] Stopping crafting-system
+[2025-03-18 11:43:11] Starting recycle-job
+[2025-03-18 11:43:11] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:43:11] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:43:11] recycle-job restarted successfully
+[2025-03-18 11:43:11] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 11:43:11] Starting crafting-system
+[2025-03-18 11:43:11] crafting-system restarted successfully
+[2025-03-18 11:43:17] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 11:44:41] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:45:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:45:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:48:24] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:48:24] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:48:24] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:48:24] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:48:24] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:48:24] Stopping recycle-job
+[2025-03-18 11:48:24] Stopping crafting-system
+[2025-03-18 11:48:24] Starting recycle-job
+[2025-03-18 11:48:24] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:48:24] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:48:24] recycle-job restarted successfully
+[2025-03-18 11:48:24] Starting crafting-system
+[2025-03-18 11:48:24] crafting-system restarted successfully
+[2025-03-18 11:48:30] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 11:50:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 11:50:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:50:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:53:04] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 11:55:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 11:55:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 11:55:46] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:55:46] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:55:46] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 11:55:46] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 11:55:46] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:55:46] Stopping recycle-job
+[2025-03-18 11:55:46] Stopping crafting-system
+[2025-03-18 11:55:46] Starting recycle-job
+[2025-03-18 11:55:46] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 11:55:46] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 11:55:46] recycle-job restarted successfully
+[2025-03-18 11:55:46] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 11:55:46] Starting crafting-system
+[2025-03-18 11:55:46] crafting-system restarted successfully
+[2025-03-18 11:55:47] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 11:55:47] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:00:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 12:00:29] INFO: Old Bankmoney for script_oshakhlari 8006 New value 8474 changed by: anticheat User changed by: nil
+[2025-03-18 12:00:29] INFO: WORLDSAVE INCOMING
+[2025-03-18 12:00:30] INFO: [DATA] Saved Faction Drop NPC logs records.
+[2025-03-18 12:00:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:00:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:02:39] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:02:39] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:02:39] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:02:39] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:02:39] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:02:39] Stopping recycle-job
+[2025-03-18 12:02:39] Stopping crafting-system
+[2025-03-18 12:02:39] Starting recycle-job
+[2025-03-18 12:02:39] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:02:39] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:02:39] recycle-job restarted successfully
+[2025-03-18 12:02:39] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 12:02:39] Starting crafting-system
+[2025-03-18 12:02:39] crafting-system restarted successfully
+[2025-03-18 12:02:45] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 12:02:59] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:02:59] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:02:59] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:02:59] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:02:59] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:02:59] Stopping recycle-job
+[2025-03-18 12:02:59] Starting recycle-job
+[2025-03-18 12:02:59] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:02:59] recycle-job restarted successfully
+[2025-03-18 12:03:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 12:03:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:03:00] Stopping crafting-system
+[2025-03-18 12:03:00] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 12:03:00] Starting crafting-system
+[2025-03-18 12:03:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:03:00] crafting-system restarted successfully
+[2025-03-18 12:03:06] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 12:03:32] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:03:32] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:03:32] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:03:32] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:03:32] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:03:32] Stopping recycle-job
+[2025-03-18 12:03:32] Stopping crafting-system
+[2025-03-18 12:03:32] Starting recycle-job
+[2025-03-18 12:03:32] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:03:32] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:03:32] recycle-job restarted successfully
+[2025-03-18 12:03:32] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 12:03:32] Starting crafting-system
+[2025-03-18 12:03:32] crafting-system restarted successfully
+[2025-03-18 12:03:38] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 12:05:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:05:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:08:16] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:08:16] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:08:16] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:08:16] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:08:16] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:08:16] Stopping recycle-job
+[2025-03-18 12:08:16] Stopping crafting-system
+[2025-03-18 12:08:16] Starting recycle-job
+[2025-03-18 12:08:16] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:08:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:08:16] recycle-job restarted successfully
+[2025-03-18 12:08:16] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 12:08:16] Starting crafting-system
+[2025-03-18 12:08:16] crafting-system restarted successfully
+[2025-03-18 12:08:17] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 12:08:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:08:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:08:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:08:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:08:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:08:17] Stopping recycle-job
+[2025-03-18 12:08:17] Stopping crafting-system
+[2025-03-18 12:08:17] Starting recycle-job
+[2025-03-18 12:08:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:08:17] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:08:17] recycle-job restarted successfully
+[2025-03-18 12:08:17] Starting crafting-system
+[2025-03-18 12:08:17] crafting-system restarted successfully
+[2025-03-18 12:08:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 12:10:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 12:10:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:10:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:12:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:12:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:12:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 12:12:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 12:12:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:12:44] Stopping recycle-job
+[2025-03-18 12:12:44] Stopping crafting-system
+[2025-03-18 12:12:44] Starting recycle-job
+[2025-03-18 12:12:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 12:12:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:12:44] recycle-job restarted successfully
+[2025-03-18 12:12:44] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 12:12:44] Starting crafting-system
+[2025-03-18 12:12:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 12:12:44] ERROR: crafting-system\SourceS.lua:102: attempt to index global 'vgui' (a nil value)
+[2025-03-18 12:12:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 12:12:44] crafting-system restarted successfully
+[2025-03-18 12:12:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 12:12:56] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:15:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:15:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:20:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 12:20:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:20:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:23:01] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:23:07] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:23:17] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:23:30] ERROR: item-system\s_combine_weapons.lua:196: attempt to index local 'firstClipArr' (a nil value)
+[2025-03-18 12:24:22] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:24:22] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:24:28] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:24:41] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:24:47] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x8]
+[2025-03-18 12:24:49] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:24:55] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x2]
+[2025-03-18 12:24:58] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:25:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:25:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:26:11] ERROR: chat-system\s_chat_system.lua:53: exports: Call to non-running server resource (text2speech) [string "?"]
+[2025-03-18 12:26:17] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:26:25] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:26:31] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x8]
+[2025-03-18 12:26:46] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:26:52] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:26:59] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 12:30:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 12:30:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:30:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:35:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:35:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:36:35] INFO: [WEATHER] / Line 57 / SQL Settings for weather successfully altered.
+[2025-03-18 12:40:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 12:40:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:40:36] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:45:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:45:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:50:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 12:50:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:50:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 12:55:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 12:55:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:00:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 13:00:29] INFO: WORLDSAVE INCOMING
+[2025-03-18 13:00:30] INFO: [DATA] Saved Faction Drop NPC logs records.
+[2025-03-18 13:00:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:00:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:05:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:05:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:10:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 13:10:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:10:36] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:15:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:15:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:20:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 13:20:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:20:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:25:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:25:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:30:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 13:30:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:30:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:30:35] INFO: [WEATHER] / Line 57 / SQL Settings for weather successfully altered.
+[2025-03-18 13:35:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:35:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:40:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 13:40:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:40:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:45:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:45:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:50:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 13:50:35] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:50:35] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 13:55:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 13:55:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:00:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 14:00:29] INFO: WORLDSAVE INCOMING
+[2025-03-18 14:00:30] INFO: [DATA] Saved Faction Drop NPC logs records.
+[2025-03-18 14:00:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:00:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:05:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:05:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:08:33] INFO: [WEATHER] SQL Settings for weather successfully set to 1.
+[2025-03-18 14:08:34] INFO: [WEATHER] SQL Settings for weather successfully set to 4.
+[2025-03-18 14:08:35] INFO: [WEATHER] SQL Settings for weather successfully set to 14.
+[2025-03-18 14:08:39] INFO: [WEATHER] SQL Settings for weather successfully set to 1.
+[2025-03-18 14:08:39] INFO: [WEATHER] SQL Settings for weather successfully set to 14.
+[2025-03-18 14:09:16] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:10:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 14:10:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:10:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:15:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:15:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:17:01] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:17:01] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:17:01] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:17:01] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:17:01] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:17:01] Stopping recycle-job
+[2025-03-18 14:17:01] Stopping crafting-system
+[2025-03-18 14:17:01] Starting recycle-job
+[2025-03-18 14:17:01] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:17:01] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:17:01] recycle-job restarted successfully
+[2025-03-18 14:17:01] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:17:01] Starting crafting-system
+[2025-03-18 14:17:01] crafting-system restarted successfully
+[2025-03-18 14:17:07] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:17:21] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:17:58] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:20:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 14:20:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:20:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:25:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:25:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:28:43] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:30:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 14:30:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:30:36] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:35:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:35:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:35:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:35:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:35:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:35:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:35:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:35:58] Stopping recycle-job
+[2025-03-18 14:35:58] Stopping crafting-system
+[2025-03-18 14:35:58] Starting recycle-job
+[2025-03-18 14:35:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:35:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:35:58] recycle-job restarted successfully
+[2025-03-18 14:35:58] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:35:58] Starting crafting-system
+[2025-03-18 14:35:58] crafting-system restarted successfully
+[2025-03-18 14:36:04] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:36:35] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:36:35] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:36:35] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:36:35] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:36:35] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:36:35] Stopping recycle-job
+[2025-03-18 14:36:35] Stopping crafting-system
+[2025-03-18 14:36:35] Starting recycle-job
+[2025-03-18 14:36:35] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:36:35] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:36:35] recycle-job restarted successfully
+[2025-03-18 14:36:35] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:36:35] Starting crafting-system
+[2025-03-18 14:36:35] crafting-system restarted successfully
+[2025-03-18 14:36:37] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:36:37] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:36:37] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:36:37] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:36:37] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:36:37] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:36:37] Stopping recycle-job
+[2025-03-18 14:36:37] Stopping crafting-system
+[2025-03-18 14:36:37] Starting recycle-job
+[2025-03-18 14:36:37] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:36:37] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:36:37] recycle-job restarted successfully
+[2025-03-18 14:36:37] Starting crafting-system
+[2025-03-18 14:36:37] crafting-system restarted successfully
+[2025-03-18 14:36:43] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:37:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:37:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:37:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:37:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:37:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:37:17] Stopping recycle-job
+[2025-03-18 14:37:17] Stopping crafting-system
+[2025-03-18 14:37:17] Starting recycle-job
+[2025-03-18 14:37:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:37:17] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:37:17] recycle-job restarted successfully
+[2025-03-18 14:37:17] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:37:17] Starting crafting-system
+[2025-03-18 14:37:17] crafting-system restarted successfully
+[2025-03-18 14:37:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:38:19] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:19] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:19] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:19] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:19] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:19] Stopping recycle-job
+[2025-03-18 14:38:19] Stopping crafting-system
+[2025-03-18 14:38:19] Starting recycle-job
+[2025-03-18 14:38:19] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:38:19] recycle-job restarted successfully
+[2025-03-18 14:38:19] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:38:19] Starting crafting-system
+[2025-03-18 14:38:19] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:38:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:38:19] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:38:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:38:19] crafting-system restarted successfully
+[2025-03-18 14:38:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:38:20] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:20] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:20] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:20] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:20] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:20] Stopping recycle-job
+[2025-03-18 14:38:20] Stopping crafting-system
+[2025-03-18 14:38:20] Starting recycle-job
+[2025-03-18 14:38:20] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:38:20] recycle-job restarted successfully
+[2025-03-18 14:38:20] Starting crafting-system
+[2025-03-18 14:38:20] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:38:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:38:20] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:38:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:38:20] crafting-system restarted successfully
+[2025-03-18 14:38:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:38:23] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:23] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:23] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:23] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:23] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:23] Stopping recycle-job
+[2025-03-18 14:38:23] Stopping crafting-system
+[2025-03-18 14:38:23] Starting recycle-job
+[2025-03-18 14:38:23] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:38:23] recycle-job restarted successfully
+[2025-03-18 14:38:23] Starting crafting-system
+[2025-03-18 14:38:23] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:38:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:38:23] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:38:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:38:23] crafting-system restarted successfully
+[2025-03-18 14:38:28] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:38:28] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:28] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:28] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:38:28] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:38:28] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:28] Stopping recycle-job
+[2025-03-18 14:38:28] Stopping crafting-system
+[2025-03-18 14:38:28] Starting recycle-job
+[2025-03-18 14:38:28] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:38:28] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:38:28] recycle-job restarted successfully
+[2025-03-18 14:38:28] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:38:28] Starting crafting-system
+[2025-03-18 14:38:28] crafting-system restarted successfully
+[2025-03-18 14:38:34] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:40:29] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 14:40:30] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:40:30] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:41:18] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:41:18] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:41:18] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:41:18] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:41:18] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:41:18] Stopping recycle-job
+[2025-03-18 14:41:18] Starting recycle-job
+[2025-03-18 14:41:18] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:41:18] recycle-job restarted successfully
+[2025-03-18 14:41:18] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:41:18] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:41:18] Stopping crafting-system
+[2025-03-18 14:41:18] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:41:18] Starting crafting-system
+[2025-03-18 14:41:18] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:41:18] crafting-system restarted successfully
+[2025-03-18 14:41:24] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:41:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:41:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:41:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:41:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:41:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:41:55] Stopping recycle-job
+[2025-03-18 14:41:55] Stopping crafting-system
+[2025-03-18 14:41:56] Starting recycle-job
+[2025-03-18 14:41:56] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:41:56] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:41:56] recycle-job restarted successfully
+[2025-03-18 14:41:56] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:41:56] Starting crafting-system
+[2025-03-18 14:41:56] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:41:56] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:41:56] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:41:56] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:41:56] crafting-system restarted successfully
+[2025-03-18 14:42:02] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:44:50] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:44:50] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:44:50] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:44:50] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:44:50] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:44:50] Stopping recycle-job
+[2025-03-18 14:44:50] Stopping crafting-system
+[2025-03-18 14:44:50] Starting recycle-job
+[2025-03-18 14:44:50] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:44:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:44:50] recycle-job restarted successfully
+[2025-03-18 14:44:50] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:44:50] Starting crafting-system
+[2025-03-18 14:44:50] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:44:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:44:50] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:44:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:44:50] crafting-system restarted successfully
+[2025-03-18 14:44:56] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:44:57] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:44:57] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:44:57] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:44:57] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:44:57] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:44:57] Stopping recycle-job
+[2025-03-18 14:44:57] Stopping crafting-system
+[2025-03-18 14:44:57] Starting recycle-job
+[2025-03-18 14:44:57] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:44:57] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:44:57] recycle-job restarted successfully
+[2025-03-18 14:44:57] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:44:57] Starting crafting-system
+[2025-03-18 14:44:57] crafting-system restarted successfully
+[2025-03-18 14:45:03] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:45:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:45:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:46:00] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:46:00] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:46:00] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:46:00] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:46:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:46:00] Stopping recycle-job
+[2025-03-18 14:46:00] Starting recycle-job
+[2025-03-18 14:46:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:46:00] recycle-job restarted successfully
+[2025-03-18 14:46:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:46:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:46:00] Stopping crafting-system
+[2025-03-18 14:46:00] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:46:00] Starting crafting-system
+[2025-03-18 14:46:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:46:00] crafting-system restarted successfully
+[2025-03-18 14:46:06] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:46:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:46:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:46:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:46:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:46:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:46:17] Stopping recycle-job
+[2025-03-18 14:46:17] Stopping crafting-system
+[2025-03-18 14:46:17] Starting recycle-job
+[2025-03-18 14:46:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:46:17] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:46:17] recycle-job restarted successfully
+[2025-03-18 14:46:17] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:46:17] Starting crafting-system
+[2025-03-18 14:46:17] crafting-system restarted successfully
+[2025-03-18 14:46:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:48:42] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:48:42] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:48:42] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:48:42] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:48:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:48:42] Stopping recycle-job
+[2025-03-18 14:48:42] Stopping crafting-system
+[2025-03-18 14:48:42] Starting recycle-job
+[2025-03-18 14:48:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:48:42] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:48:42] recycle-job restarted successfully
+[2025-03-18 14:48:42] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:48:42] Starting crafting-system
+[2025-03-18 14:48:42] crafting-system restarted successfully
+[2025-03-18 14:48:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:49:07] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:07] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:07] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:07] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:07] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:07] Stopping recycle-job
+[2025-03-18 14:49:07] Stopping crafting-system
+[2025-03-18 14:49:07] Starting recycle-job
+[2025-03-18 14:49:07] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:07] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:49:07] recycle-job restarted successfully
+[2025-03-18 14:49:07] Starting crafting-system
+[2025-03-18 14:49:07] crafting-system restarted successfully
+[2025-03-18 14:49:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:49:13] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:13] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:13] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:13] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:13] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:13] Stopping recycle-job
+[2025-03-18 14:49:13] Stopping crafting-system
+[2025-03-18 14:49:13] Starting recycle-job
+[2025-03-18 14:49:13] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:49:13] recycle-job restarted successfully
+[2025-03-18 14:49:13] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:49:13] Starting crafting-system
+[2025-03-18 14:49:13] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:49:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:49:13] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:49:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:49:13] crafting-system restarted successfully
+[2025-03-18 14:49:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:49:19] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:19] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:19] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:19] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:19] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:19] Stopping recycle-job
+[2025-03-18 14:49:19] Stopping crafting-system
+[2025-03-18 14:49:19] Starting recycle-job
+[2025-03-18 14:49:19] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:49:19] recycle-job restarted successfully
+[2025-03-18 14:49:19] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:49:19] Starting crafting-system
+[2025-03-18 14:49:19] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:49:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:49:19] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:49:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:49:19] crafting-system restarted successfully
+[2025-03-18 14:49:25] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:49:29] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:29] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:30] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:49:30] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:49:30] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:30] Stopping recycle-job
+[2025-03-18 14:49:30] Stopping crafting-system
+[2025-03-18 14:49:30] Starting recycle-job
+[2025-03-18 14:49:30] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:49:30] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:49:30] recycle-job restarted successfully
+[2025-03-18 14:49:30] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:49:30] Starting crafting-system
+[2025-03-18 14:49:30] crafting-system restarted successfully
+[2025-03-18 14:49:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:50:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 14:50:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:50:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:50:43] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:50:43] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:50:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:50:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:50:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:50:44] Stopping recycle-job
+[2025-03-18 14:50:44] Stopping crafting-system
+[2025-03-18 14:50:44] Starting recycle-job
+[2025-03-18 14:50:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:50:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:50:44] recycle-job restarted successfully
+[2025-03-18 14:50:44] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:50:44] Starting crafting-system
+[2025-03-18 14:50:44] crafting-system restarted successfully
+[2025-03-18 14:50:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:51:07] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:51:07] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:51:07] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:51:07] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:51:07] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:51:07] Stopping recycle-job
+[2025-03-18 14:51:07] Stopping crafting-system
+[2025-03-18 14:51:07] Starting recycle-job
+[2025-03-18 14:51:07] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:51:07] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:51:07] recycle-job restarted successfully
+[2025-03-18 14:51:07] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:51:07] Starting crafting-system
+[2025-03-18 14:51:07] crafting-system restarted successfully
+[2025-03-18 14:51:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:51:18] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:51:18] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:51:18] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:51:18] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:51:18] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:51:18] Stopping recycle-job
+[2025-03-18 14:51:18] Stopping crafting-system
+[2025-03-18 14:51:18] Starting recycle-job
+[2025-03-18 14:51:18] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:51:18] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:51:18] recycle-job restarted successfully
+[2025-03-18 14:51:18] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:51:18] Starting crafting-system
+[2025-03-18 14:51:19] crafting-system restarted successfully
+[2025-03-18 14:51:24] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:51:26] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:51:33] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:53:37] QUIT: script_oshakhlari left the game [Quit] 
+[2025-03-18 14:53:37] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:53:37] ERROR: admin-system\Player\s_recon.lua:56: attempt to concatenate local 'commandName' (a nil value)
+[2025-03-18 14:54:05] CONNECT: alihexon connected (IP: 192.168.1.4  Serial: D8D8DDDB7D5896AEACED2ED065C85E91  Version: 1.6.0-9.23088.0)
+[2025-03-18 14:54:05] JOIN: alihexon joined the game (IP: 192.168.1.4)
+[2025-03-18 14:54:05] NICK: alihexon is now known as TG.Player.1866
+[2025-03-18 14:54:15] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:54:16] INFO: Loading 3 account settings to client #1
+[2025-03-18 14:54:26] NICK: TG.Player.1866 is now known as script_oshakhlari
+[2025-03-18 14:54:26] INFO: Old Bankmoney for script_oshakhlari nil New value 8474 changed by: anticheat User changed by: nil
+[2025-03-18 14:54:26] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 14:54:26] INFO: Loading 1 character settings to client #1
+[2025-03-18 14:54:29] ERROR: hud\s_overlay_basic_info.lua:46: exports: Call to non-running server resource (mdc-system) [string "?"]
+[2025-03-18 14:55:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 14:55:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 14:58:13] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:58:13] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:58:13] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:58:13] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:58:13] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:58:13] Stopping recycle-job
+[2025-03-18 14:58:13] Stopping crafting-system
+[2025-03-18 14:58:13] Starting recycle-job
+[2025-03-18 14:58:13] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:58:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:58:13] recycle-job restarted successfully
+[2025-03-18 14:58:13] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:58:13] Starting crafting-system
+[2025-03-18 14:58:13] crafting-system restarted successfully
+[2025-03-18 14:58:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:58:42] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:58:42] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:58:42] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:58:42] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:58:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:58:42] Stopping recycle-job
+[2025-03-18 14:58:42] Stopping crafting-system
+[2025-03-18 14:58:42] Starting recycle-job
+[2025-03-18 14:58:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:58:42] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:58:42] recycle-job restarted successfully
+[2025-03-18 14:58:42] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:58:42] Starting crafting-system
+[2025-03-18 14:58:42] crafting-system restarted successfully
+[2025-03-18 14:58:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:58:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:58:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:58:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:58:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:58:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:58:55] Stopping recycle-job
+[2025-03-18 14:58:55] Stopping crafting-system
+[2025-03-18 14:58:55] Starting recycle-job
+[2025-03-18 14:58:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:58:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:58:55] recycle-job restarted successfully
+[2025-03-18 14:58:55] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:58:55] Starting crafting-system
+[2025-03-18 14:58:55] SCRIPT ERROR: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:58:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:58:55] ERROR: Loading script failed: crafting-system\SourceS.lua:5: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 14:58:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:58:55] crafting-system restarted successfully
+[2025-03-18 14:58:57] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 14:58:57] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 14:59:03] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 14:59:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:59:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:59:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:59:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:59:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:59:17] Stopping recycle-job
+[2025-03-18 14:59:17] Stopping crafting-system
+[2025-03-18 14:59:17] Starting recycle-job
+[2025-03-18 14:59:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:59:17] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:59:17] recycle-job restarted successfully
+[2025-03-18 14:59:17] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:59:17] Starting crafting-system
+[2025-03-18 14:59:17] crafting-system restarted successfully
+[2025-03-18 14:59:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:59:24] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:59:24] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:59:24] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:59:24] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:59:24] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:59:24] Stopping recycle-job
+[2025-03-18 14:59:24] Stopping crafting-system
+[2025-03-18 14:59:24] Starting recycle-job
+[2025-03-18 14:59:24] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:59:24] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:59:24] recycle-job restarted successfully
+[2025-03-18 14:59:24] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:59:24] Starting crafting-system
+[2025-03-18 14:59:24] crafting-system restarted successfully
+[2025-03-18 14:59:30] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:59:48] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:59:48] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:59:48] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 14:59:48] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 14:59:48] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:59:48] Stopping recycle-job
+[2025-03-18 14:59:48] Stopping crafting-system
+[2025-03-18 14:59:48] Starting recycle-job
+[2025-03-18 14:59:48] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 14:59:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 14:59:48] recycle-job restarted successfully
+[2025-03-18 14:59:48] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 14:59:48] Starting crafting-system
+[2025-03-18 14:59:48] crafting-system restarted successfully
+[2025-03-18 14:59:51] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 14:59:51] ERROR: crafting-system\SourceS.lua:31: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 14:59:57] ERROR: crafting-system\SourceS.lua:31: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 15:00:07] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:00:07] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:00:07] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:00:07] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:00:07] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:00:07] Stopping recycle-job
+[2025-03-18 15:00:07] Stopping crafting-system
+[2025-03-18 15:00:07] Starting recycle-job
+[2025-03-18 15:00:07] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:00:07] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:00:07] recycle-job restarted successfully
+[2025-03-18 15:00:07] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:00:07] Starting crafting-system
+[2025-03-18 15:00:07] crafting-system restarted successfully
+[2025-03-18 15:00:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:00:27] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:00:27] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:00:27] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:00:27] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:00:27] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:00:27] Stopping recycle-job
+[2025-03-18 15:00:27] Stopping crafting-system
+[2025-03-18 15:00:27] Starting recycle-job
+[2025-03-18 15:00:27] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:00:27] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:00:27] recycle-job restarted successfully
+[2025-03-18 15:00:27] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:00:27] Starting crafting-system
+[2025-03-18 15:00:27] crafting-system restarted successfully
+[2025-03-18 15:00:29] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:00:29] INFO: Old Bankmoney for script_oshakhlari 8474 New value 8950 changed by: anticheat User changed by: nil
+[2025-03-18 15:00:29] INFO: WORLDSAVE INCOMING
+[2025-03-18 15:00:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 15:00:30] INFO: [DATA] Saved Faction Drop NPC logs records.
+[2025-03-18 15:00:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:00:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:00:37] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:00:37] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:00:37] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:00:37] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:00:37] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:00:37] Stopping recycle-job
+[2025-03-18 15:00:37] Stopping crafting-system
+[2025-03-18 15:00:37] Starting recycle-job
+[2025-03-18 15:00:37] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:00:37] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:00:37] recycle-job restarted successfully
+[2025-03-18 15:00:37] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:00:37] Starting crafting-system
+[2025-03-18 15:00:37] crafting-system restarted successfully
+[2025-03-18 15:00:43] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:01:35] INFO: [WEATHER] / Line 57 / SQL Settings for weather successfully altered.
+[2025-03-18 15:05:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:05:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:09:19] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:09:19] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:09:19] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:09:19] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:09:19] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:09:19] Stopping recycle-job
+[2025-03-18 15:09:19] Stopping crafting-system
+[2025-03-18 15:09:19] Starting recycle-job
+[2025-03-18 15:09:19] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:09:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:09:20] recycle-job restarted successfully
+[2025-03-18 15:09:20] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:09:20] Starting crafting-system
+[2025-03-18 15:09:20] crafting-system restarted successfully
+[2025-03-18 15:09:25] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:09:49] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:09:49] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:09:49] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:09:49] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:09:49] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:09:49] Stopping recycle-job
+[2025-03-18 15:09:49] Stopping crafting-system
+[2025-03-18 15:09:49] Starting recycle-job
+[2025-03-18 15:09:49] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:09:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:09:49] recycle-job restarted successfully
+[2025-03-18 15:09:49] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:09:49] Starting crafting-system
+[2025-03-18 15:09:49] crafting-system restarted successfully
+[2025-03-18 15:09:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:10:10] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:10:10] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:10:10] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:10:10] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:10:10] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:10:10] Stopping recycle-job
+[2025-03-18 15:10:10] Starting recycle-job
+[2025-03-18 15:10:10] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:10:10] recycle-job restarted successfully
+[2025-03-18 15:10:10] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:10:10] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:10:10] Stopping crafting-system
+[2025-03-18 15:10:10] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:10:10] Starting crafting-system
+[2025-03-18 15:10:10] SCRIPT ERROR: crafting-system\SourceS.lua:6: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 15:10:10] ERROR: Loading script failed: crafting-system\SourceS.lua:6: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 15:10:10] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:10:10] crafting-system restarted successfully
+[2025-03-18 15:10:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:10:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 15:10:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:10:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:12:18] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:12:18] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:12:18] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:12:18] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:12:18] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:12:18] Stopping recycle-job
+[2025-03-18 15:12:18] Stopping crafting-system
+[2025-03-18 15:12:18] Starting recycle-job
+[2025-03-18 15:12:18] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:12:18] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:12:18] recycle-job restarted successfully
+[2025-03-18 15:12:18] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:12:18] Starting crafting-system
+[2025-03-18 15:12:18] crafting-system restarted successfully
+[2025-03-18 15:12:24] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:14:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:14:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:14:17] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:14:17] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:14:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:14:17] Stopping recycle-job
+[2025-03-18 15:14:17] Stopping crafting-system
+[2025-03-18 15:14:17] Starting recycle-job
+[2025-03-18 15:14:17] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:14:17] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:14:17] recycle-job restarted successfully
+[2025-03-18 15:14:17] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:14:17] Starting crafting-system
+[2025-03-18 15:14:17] crafting-system restarted successfully
+[2025-03-18 15:14:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:15:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:15:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:19:01] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:19:01] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:19:01] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:19:01] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:19:01] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:19:01] Stopping recycle-job
+[2025-03-18 15:19:01] Stopping crafting-system
+[2025-03-18 15:19:01] Starting recycle-job
+[2025-03-18 15:19:01] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:19:01] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:19:01] recycle-job restarted successfully
+[2025-03-18 15:19:01] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:19:01] Starting crafting-system
+[2025-03-18 15:19:01] crafting-system restarted successfully
+[2025-03-18 15:19:07] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:20:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 15:20:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:20:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:20:33] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:20:33] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:20:33] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:20:33] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:20:33] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:20:33] Stopping recycle-job
+[2025-03-18 15:20:33] Stopping crafting-system
+[2025-03-18 15:20:33] Starting recycle-job
+[2025-03-18 15:20:33] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:20:33] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:20:33] recycle-job restarted successfully
+[2025-03-18 15:20:33] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:20:33] Starting crafting-system
+[2025-03-18 15:20:33] crafting-system restarted successfully
+[2025-03-18 15:20:39] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:22:02] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:22:02] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:22:02] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:22:02] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:22:02] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:22:02] Stopping recycle-job
+[2025-03-18 15:22:02] Stopping crafting-system
+[2025-03-18 15:22:02] Starting recycle-job
+[2025-03-18 15:22:02] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:22:02] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:22:02] recycle-job restarted successfully
+[2025-03-18 15:22:02] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:22:02] Starting crafting-system
+[2025-03-18 15:22:02] crafting-system restarted successfully
+[2025-03-18 15:22:08] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:23:20] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:23:20] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:23:20] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:23:20] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:23:20] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:23:20] Stopping recycle-job
+[2025-03-18 15:23:20] Stopping crafting-system
+[2025-03-18 15:23:20] Starting recycle-job
+[2025-03-18 15:23:20] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:23:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:23:20] recycle-job restarted successfully
+[2025-03-18 15:23:20] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:23:20] Starting crafting-system
+[2025-03-18 15:23:20] crafting-system restarted successfully
+[2025-03-18 15:23:26] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:23:32] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:23:32] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:23:32] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:23:32] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:23:32] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:23:32] Stopping recycle-job
+[2025-03-18 15:23:32] Stopping crafting-system
+[2025-03-18 15:23:32] Starting recycle-job
+[2025-03-18 15:23:32] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:23:32] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:23:32] recycle-job restarted successfully
+[2025-03-18 15:23:32] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:23:32] Starting crafting-system
+[2025-03-18 15:23:32] crafting-system restarted successfully
+[2025-03-18 15:23:38] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:25:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:25:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:29:53] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:29:53] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:29:53] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:29:53] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:29:53] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:29:53] Stopping recycle-job
+[2025-03-18 15:29:53] Stopping crafting-system
+[2025-03-18 15:29:53] Starting recycle-job
+[2025-03-18 15:29:53] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:29:53] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:29:53] recycle-job restarted successfully
+[2025-03-18 15:29:53] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:29:53] Starting crafting-system
+[2025-03-18 15:29:53] crafting-system restarted successfully
+[2025-03-18 15:29:59] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:30:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 15:30:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:30:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:35:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:35:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:36:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:36:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)  [DUP x3]
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]  [DUP x3]
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:36:58] Stopping recycle-job
+[2025-03-18 15:36:58] Stopping crafting-system
+[2025-03-18 15:36:58] Starting recycle-job
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:36:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:36:58] recycle-job restarted successfully
+[2025-03-18 15:36:58] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:36:58] Starting crafting-system
+[2025-03-18 15:36:58] crafting-system restarted successfully
+[2025-03-18 15:36:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:36:58] Stopping recycle-job
+[2025-03-18 15:36:58] Stopping crafting-system
+[2025-03-18 15:36:58] Starting recycle-job
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:36:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:36:58] recycle-job restarted successfully
+[2025-03-18 15:36:58] Starting crafting-system
+[2025-03-18 15:36:58] crafting-system restarted successfully
+[2025-03-18 15:36:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:36:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:36:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:36:58] Stopping recycle-job
+[2025-03-18 15:36:58] Stopping crafting-system
+[2025-03-18 15:36:58] Starting recycle-job
+[2025-03-18 15:36:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:36:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:36:58] recycle-job restarted successfully
+[2025-03-18 15:36:58] Starting crafting-system
+[2025-03-18 15:36:58] crafting-system restarted successfully
+[2025-03-18 15:37:03] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:37:03] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:37:03] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:37:03] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:37:03] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:37:03] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:37:03] Stopping recycle-job
+[2025-03-18 15:37:03] Stopping crafting-system
+[2025-03-18 15:37:03] Starting recycle-job
+[2025-03-18 15:37:03] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:37:03] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:37:03] recycle-job restarted successfully
+[2025-03-18 15:37:03] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:37:03] Starting crafting-system
+[2025-03-18 15:37:03] crafting-system restarted successfully
+[2025-03-18 15:37:03] DIAGNOSTIC: script_oshakhlari #1002 HTTP server file mismatch! (crafting-system) SourceC.lua [CRC could not open file: No such file or directory]
+[2025-03-18 15:37:09] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:40:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 15:40:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:40:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:44:31] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:44:31] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:44:31] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:44:31] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:44:31] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:44:31] Stopping recycle-job
+[2025-03-18 15:44:31] Stopping crafting-system
+[2025-03-18 15:44:31] Starting recycle-job
+[2025-03-18 15:44:31] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:44:31] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:44:31] recycle-job restarted successfully
+[2025-03-18 15:44:31] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:44:32] Starting crafting-system
+[2025-03-18 15:44:32] crafting-system restarted successfully
+[2025-03-18 15:44:37] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:44:40] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:44:40] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:44:40] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:44:40] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:44:40] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:44:40] Stopping recycle-job
+[2025-03-18 15:44:40] Stopping crafting-system
+[2025-03-18 15:44:40] Starting recycle-job
+[2025-03-18 15:44:40] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:44:40] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:44:40] recycle-job restarted successfully
+[2025-03-18 15:44:40] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:44:40] Starting crafting-system
+[2025-03-18 15:44:40] SCRIPT ERROR: crafting-system\SourceS.lua:6: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 15:44:40] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:44:40] ERROR: Loading script failed: crafting-system\SourceS.lua:6: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 15:44:40] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:44:40] crafting-system restarted successfully
+[2025-03-18 15:44:46] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:45:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:45:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:45:36] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:45:36] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:45:36] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:45:36] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:45:36] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:45:36] Stopping recycle-job
+[2025-03-18 15:45:36] Stopping crafting-system
+[2025-03-18 15:45:36] Starting recycle-job
+[2025-03-18 15:45:36] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:45:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:45:36] recycle-job restarted successfully
+[2025-03-18 15:45:36] Starting crafting-system
+[2025-03-18 15:45:36] SCRIPT ERROR: crafting-system\SourceS.lua:6: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 15:45:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:45:36] ERROR: Loading script failed: crafting-system\SourceS.lua:6: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 15:45:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:45:36] crafting-system restarted successfully
+[2025-03-18 15:45:42] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:45:54] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:45:54] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:45:54] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:45:54] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:45:54] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:45:54] Stopping recycle-job
+[2025-03-18 15:45:54] Starting recycle-job
+[2025-03-18 15:45:54] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:45:54] recycle-job restarted successfully
+[2025-03-18 15:45:54] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:45:54] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:45:54] Stopping crafting-system
+[2025-03-18 15:45:54] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:45:54] Starting crafting-system
+[2025-03-18 15:45:54] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:45:54] crafting-system restarted successfully
+[2025-03-18 15:46:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 15:48:12] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:50:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 15:50:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:50:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:52:45] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:52:45] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:52:51] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:53:09] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:53:15] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:53:16] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:53:22] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:54:38] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:54:38] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:54:38] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:54:38] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:54:38] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:54:38] Stopping recycle-job
+[2025-03-18 15:54:38] Stopping crafting-system
+[2025-03-18 15:54:38] Starting recycle-job
+[2025-03-18 15:54:38] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:54:38] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:54:38] recycle-job restarted successfully
+[2025-03-18 15:54:38] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:54:38] Starting crafting-system
+[2025-03-18 15:54:38] crafting-system restarted successfully
+[2025-03-18 15:54:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:55:00] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:00] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:00] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:00] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:00] Stopping recycle-job
+[2025-03-18 15:55:00] Stopping crafting-system
+[2025-03-18 15:55:00] Starting recycle-job
+[2025-03-18 15:55:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:55:00] recycle-job restarted successfully
+[2025-03-18 15:55:00] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:55:00] Starting crafting-system
+[2025-03-18 15:55:00] crafting-system restarted successfully
+[2025-03-18 15:55:06] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:55:26] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:26] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:26] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:26] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:26] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:26] Stopping recycle-job
+[2025-03-18 15:55:26] Stopping crafting-system
+[2025-03-18 15:55:26] Starting recycle-job
+[2025-03-18 15:55:26] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:26] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:55:26] recycle-job restarted successfully
+[2025-03-18 15:55:26] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:55:26] Starting crafting-system
+[2025-03-18 15:55:26] crafting-system restarted successfully
+[2025-03-18 15:55:31] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:55:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 15:55:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 15:55:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:44] Stopping recycle-job
+[2025-03-18 15:55:44] Stopping crafting-system
+[2025-03-18 15:55:44] Starting recycle-job
+[2025-03-18 15:55:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:55:44] recycle-job restarted successfully
+[2025-03-18 15:55:44] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:55:44] Starting crafting-system
+[2025-03-18 15:55:44] crafting-system restarted successfully
+[2025-03-18 15:55:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:55:57] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:57] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:55:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:55:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:58] Stopping recycle-job
+[2025-03-18 15:55:58] Stopping crafting-system
+[2025-03-18 15:55:58] Starting recycle-job
+[2025-03-18 15:55:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:55:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:55:58] recycle-job restarted successfully
+[2025-03-18 15:55:58] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:55:58] Starting crafting-system
+[2025-03-18 15:55:58] crafting-system restarted successfully
+[2025-03-18 15:56:04] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:56:31] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:56:31] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:56:31] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:56:31] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:56:31] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:56:31] Stopping recycle-job
+[2025-03-18 15:56:31] Stopping crafting-system
+[2025-03-18 15:56:31] Starting recycle-job
+[2025-03-18 15:56:31] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:56:31] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:56:31] recycle-job restarted successfully
+[2025-03-18 15:56:31] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:56:31] Starting crafting-system
+[2025-03-18 15:56:31] crafting-system restarted successfully
+[2025-03-18 15:56:37] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:56:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:56:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:56:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:56:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:56:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:56:55] Stopping recycle-job
+[2025-03-18 15:56:55] Stopping crafting-system
+[2025-03-18 15:56:55] Starting recycle-job
+[2025-03-18 15:56:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:56:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:56:55] recycle-job restarted successfully
+[2025-03-18 15:56:55] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:56:55] Starting crafting-system
+[2025-03-18 15:56:55] crafting-system restarted successfully
+[2025-03-18 15:57:01] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:58:21] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:58:21] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:58:21] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 15:58:21] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 15:58:21] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:58:21] Stopping recycle-job
+[2025-03-18 15:58:21] Stopping crafting-system
+[2025-03-18 15:58:21] Starting recycle-job
+[2025-03-18 15:58:21] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 15:58:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 15:58:21] recycle-job restarted successfully
+[2025-03-18 15:58:21] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 15:58:21] Starting crafting-system
+[2025-03-18 15:58:21] crafting-system restarted successfully
+[2025-03-18 15:58:27] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 15:58:54] QUIT: script_oshakhlari left the game [Quit] 
+[2025-03-18 15:58:54] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 15:58:54] ERROR: admin-system\Player\s_recon.lua:56: attempt to concatenate local 'commandName' (a nil value)
+[2025-03-18 16:00:29] INFO: WORLDSAVE INCOMING
+[2025-03-18 16:00:30] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 16:00:30] INFO: [DATA] Saved Faction Drop NPC logs records.
+[2025-03-18 16:00:31] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 16:00:31] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 16:04:19] Server stopped!
+[2025-03-18 16:04:19] Stopping resources...................................................
+[2025-03-18 16:04:19] INFO: [Factions] Saving duty allow changes...
+[2025-03-18 16:04:19] INFO: [Factions] Completed in 0 seconds.
+[2025-03-18 16:04:19] ERROR: item-system\s_world_items.lua:918: exports: Call to non-running server resource (anticheat) [string "?"]
+[2025-03-18 16:04:19] ERROR: item-system\s_world_items.lua:918: exports: Call to non-running server resource (anticheat) [string "?"]  [DUP x3]
+[2025-03-18 16:04:19] ERROR: pool\server\s_pool.lua:151: exports: Call to non-running server resource (data) [string "?"]
+[2025-03-18 16:04:19] ERROR: pool\server\s_pool.lua:152: exports: Call to non-running server resource (data) [string "?"]
+[2025-03-18 16:04:19] ERROR: report-system\s_reports.lua:115: exports: Call to non-running server resource (data) [string "?"]
+[2025-03-18 16:04:19] ERROR: shop-system\faction_drop_s.lua:269: exports: Call to non-running server resource (mysql) [string "?"]
+[2025-03-18 16:04:19] ERROR: shop-system\faction_drop_s.lua:269: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:04:19] ERROR: shop-system\faction_drop_s.lua:269: exports: Call to non-running server resource (global) [string "?"]  [DUP x2]
+[2025-03-18 16:04:19] ERROR: shop-system\faction_drop_s.lua:269: attempt to concatenate a nil value
+[2025-03-18 16:04:19] MODULE: Unloaded "MySQL 5.0 database module" (0.50) by "Alberto Alonso <rydencillo@gmail.com>"
+[2025-03-18 16:04:24] Closing SQLite3 database
