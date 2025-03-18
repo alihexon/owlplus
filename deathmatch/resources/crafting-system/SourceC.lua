@@ -2,7 +2,10 @@
 local craftableItems = {
     { name = "pcp", id = 43, material = 33 },       -- Craft PCP
     { name = "redbandana", id = 123, material = 160 }, -- Craft Red Bandana
-    { name = "heroin", id = 35, material = 37 }  -- Added heroin item: requires material id 37
+    { name = "cocaine", id = 50, material = 42 },
+    { name = "item4", id = 80, material = 100 },     -- Add a 4th item here
+    { name = "item5", id = 101, material = 200 },    -- Add a 5th item here
+    -- Add more items here
 }
 
 local window, buttons = nil, {}
@@ -37,7 +40,7 @@ function openCraftingGUI()
     if window and isElement(window) then return end -- Prevent duplicate windows
 
     local screenW, screenH = guiGetScreenSize()
-    local windowW, windowH = 300, 200
+    local windowW, windowH = 300, 300 -- Increased window height to accommodate more items
     local posX, posY = (screenW - windowW) / 2, (screenH - windowH) / 2
 
     window = guiCreateWindow(posX, posY, windowW, windowH, "Crafting Menu", false)
@@ -46,10 +49,13 @@ function openCraftingGUI()
     -- Clear any previous buttons
     buttons = {}
 
+    -- Create a scroll pane to hold the buttons
+    local scrollPane = guiCreateScrollPane(50, 50, 200, 200, false, window) -- Increased height of the scroll pane
+    local yOffset = 0 -- Start the vertical position at 0
+
     -- Loop through each craftable item and create a button
-    local yOffset = 50 -- Initial vertical offset for the first button
     for _, item in ipairs(craftableItems) do
-        local button = guiCreateButton(50, yOffset, 200, 40, "Craft " .. item.name, false, window)
+        local button = guiCreateButton(0, yOffset, 200, 40, "Craft " .. item.name, false, scrollPane)
         table.insert(buttons, { button = button, itemName = item.name })
 
         -- Add event handler for each button
@@ -62,7 +68,7 @@ function openCraftingGUI()
     end
 
     -- Close button
-    local closeButton = guiCreateButton(50, yOffset, 200, 40, "Close", false, window)
+    local closeButton = guiCreateButton(50, yOffset + 50, 200, 40, "Close", false, window) -- Adjusted close button position
     addEventHandler("onClientGUIClick", closeButton, function()
         destroyElement(window)
         window = nil

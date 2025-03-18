@@ -2,7 +2,8 @@
 local craftableItems = {
     { name = "pcp", id = 43, material = 33 },       -- PCP requires itemid33
     { name = "redbandana", id = 123, material = 160 }, -- Red Bandana requires itemid160
-    { name = "heroin", id = 35, material = 37 }  -- Added heroin item: requires material id 37
+    { name = "cocaine", id = 50, material = 42 },
+    -- Add more items here
 }
 
 -- Create a crafting marker (using your coordinates)
