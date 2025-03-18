@@ -20847,3 +20847,1505 @@ Port 22005 TCP is open.
 [2025-03-18 16:04:19] ERROR: shop-system\faction_drop_s.lua:269: attempt to concatenate a nil value
 [2025-03-18 16:04:19] MODULE: Unloaded "MySQL 5.0 database module" (0.50) by "Alberto Alonso <rydencillo@gmail.com>"
 [2025-03-18 16:04:24] Closing SQLite3 database
+==================================================================
+= Multi Theft Auto: San Andreas v1.6
+==================================================================
+= Server name      : Latvian test server
+= Server IP address: auto
+= Server port      : 22003
+= 
+= Log file         : ..ktop/server/mods/deathmatch/logs/server.log
+= Maximum players  : 32
+= HTTP port        : 22005
+= Voice Chat       : Disabled
+= Bandwidth saving : Medium
+==================================================================
+[2025-03-18 16:04:46] Resource 'acpanel' requests some acl rights. Use the command 'aclrequest list acpanel'
+[2025-03-18 16:04:47] Resource 'mapmanager' requests some acl rights. Use the command 'aclrequest list mapmanager'
+[2025-03-18 16:04:47] ERROR: Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 16:04:47] Loading of resource 'maps' failed
+[2025-03-18 16:04:47] Resource 'runcode' requests some acl rights. Use the command 'aclrequest list runcode'
+[2025-03-18 16:04:48] ERROR: Problem with resource: assault; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Not processing resource 'briefcase' as it has duplicates on different paths:
+                  Path #1: "resources\briefcase"
+                  Path #2: "resources\[gamemodes]\[briefcaserace]\briefcase"
+[2025-03-18 16:04:48] ERROR: Problem with resource: briefcaserace; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: ctf; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: ctf-bombsite; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: ctf-canals; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: ctf-hydrastrike; 
+[2025-03-18 16:04:48] ERROR: Problem with resource: ctf-tbd; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: ctv; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: deathmatch; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: editor; 
+[2025-03-18 16:04:48] ERROR: Problem with resource: editor_main; Failed to link to freecam
+[2025-03-18 16:04:48] ERROR: Problem with resource: fallout; Failed to link to freecam
+[2025-03-18 16:04:48] ERROR: Not processing resource 'freecam' as it has duplicates on different paths:
+                  Path #1: "resources\freecam"
+                  Path #2: "resources\[editor]\freecam"
+[2025-03-18 16:04:48] ERROR: Problem with resource: hay; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Not processing resource 'ipb' as it has duplicates on different paths:
+                  Path #1: "resources\ipb"
+                  Path #2: "resources\[admin]\ipb"
+[2025-03-18 16:04:48] ERROR: Problem with resource: maps; Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 16:04:48] ERROR: Not processing resource 'parachute' as it has duplicates on different paths:
+                  Path #1: "resources\parachute"
+                  Path #2: "resources\[gameplay]\parachute"
+[2025-03-18 16:04:48] ERROR: Problem with resource: race; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Not processing resource 'scoreboard' as it has duplicates on different paths:
+                  Path #1: "resources\scoreboard"
+                  Path #2: "resources\[gameplay]\scoreboard"
+[2025-03-18 16:04:48] ERROR: Problem with resource: scores; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: stealth; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: tdm; Failed to link to scoreboard
+[2025-03-18 16:04:48] ERROR: Problem with resource: tdma; Failed to link to scoreboard
+[2025-03-18 16:04:48] Resources: 336 loaded, 19 failed
+[2025-03-18 16:04:48] MODULE: Loaded "MySQL 5.0 database module" (0.50) by "Alberto Alonso <rydencillo@gmail.com>"
+[2025-03-18 16:04:48] Starting resources....
+[2025-03-18 16:04:48] WARNING: account/c_main.lua(Line 3) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:04:48] WARNING: account/c_characters.lua(Line 7) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:04:48] WARNING: account/c_options.lua(Line 248) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:04:48] Some files in 'account' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:48] ERROR: account\g_events.lua:24: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:04:48] ERROR: account\s_main.lua:29: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:04:48] WARNING: account\s_main.lua:29: Bad argument @ 'setRuleValue' [Expected string at argument 2, got nil]
+[2025-03-18 16:04:48] ERROR: account\s_main.lua:33: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] ERROR: account\s_main.lua:33: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:04:48] Server minclientversion is now 1.6.0-9.23088.0
+[2025-03-18 16:04:48] WARNING: admin-system/Player/s_teleport.lua(Line 32) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:48] WARNING: admin-system/c_overlay.lua(Line 116) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:48] Some files in 'admin-system' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:48] ERROR: admin-system\staff_manager\staff_manager_s.lua:3: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:04:48] Server password cleared
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: announcement/client.lua(Line 20) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:48] Some files in 'announcement' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:04:48] ERROR: announcement\motd_g.lua:7: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x34]
+[2025-03-18 16:04:48] ERROR: bank\s_atm_management.lua:114: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: billiard-game/b_c.lua(Line 36) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:48] Some files in 'billiard-game' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:48] ERROR: Couldn't find resource briefcase. Check it exists.
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 16:04:48] ERROR: camera-system\s_camera_management.lua:42: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] ERROR: camera-system\s_camera_management.lua:42: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 16:04:48] ERROR: carshop-system\s_shop.lua:42: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:04:48] ERROR: carshop-system\s_shop.lua:458: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:04:48] ERROR: carshop-system\s_shop.lua:458: attempt to concatenate a nil value
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] ERROR: Couldn't find resource clock-analog. Check it exists.
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:04:48] ERROR: clubtec\s_clubtec.lua:7: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:04:48] ERROR: clubtec\s_clubtec.lua:8: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:04:48] ERROR: clubtec\s_clubtec.lua:9: exports: Call to non-running server resource (item-world) [string "?"]
+[2025-03-18 16:04:48] ERROR: clubtec\s_clubtec.lua:10: exports: Call to non-running server resource (fakevideo) [string "?"]
+[2025-03-18 16:04:48] ERROR: clubtec\s_clubtec.lua:11: exports: Call to non-running server resource (item-system) [string "?"]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:48] ERROR: cmd-library\s_panel_admin_help.lua:25: bad argument #1 to 'insert' (table expected, got nil)
+[2025-03-18 16:04:48] ERROR: cmd-library\s_panel_gm_help.lua:25: bad argument #1 to 'insert' (table expected, got nil)
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: driveby/driveby_client.lua(Line 258) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:04:48] Some files in 'driveby' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x104]
+[2025-03-18 16:04:48] INFO: MYSQL ERROR 1146: Table 'owl_mta.elections' doesn't exist
+[2025-03-18 16:04:48] ERROR: mysql\connection.lua:43: exports: Call to non-running server resource (logs) [string "?"]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: elevator-system/s_elevator_system.lua(Line 362) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:48] Some files in 'elevator-system' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:48] ERROR: Couldn't find resource faction. Check it exists.
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x34]
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_system.lua:31: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_system.lua:31: exports: Call to non-running server resource (pool) [string "?"]  [DUP x17]
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_system.lua:96: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_system.lua:99: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_system.lua:100: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_system.lua:167: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_system.lua:168: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:04:48] ERROR: faction-system\s_faction_admin.lua:507: attempt to index local 'maxrow' (a nil value)
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:48] ERROR: fakevideo\s_fakevideo.lua:8: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:04:48] ERROR: fakevideo\s_fakevideo.lua:9: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:04:48] ERROR: fakevideo\s_fakevideo.lua:11: exports: Call to non-running server resource (item-world) [string "?"]
+[2025-03-18 16:04:48] INFO: Loaded 0 animated texture records in 0ms
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] ERROR: Couldn't find resource flood. Check it exists.
+[2025-03-18 16:04:48] ERROR: Couldn't find resource freecam. Check it exists.
+[2025-03-18 16:04:48] WARNING: fuel-system/s_fuel_peds.lua(Line 639) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:48] Some files in 'fuel-system' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:04:48] ERROR: fuel-system\s_fuel_peds.lua:479: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:48] ERROR: fuel-system\s_fuel_peds.lua:479: exports: Call to non-running server resource (pool) [string "?"]  [DUP x7]
+[2025-03-18 16:04:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:48] WARNING: gate-manager/s_gate_manager.lua(Line 203) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:48] Some files in 'gate-manager' use deprecated functions.
+[2025-03-18 16:04:48] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] SCRIPT ERROR: global\g_version_globals.lua:10: '=' expected near 'UCP'
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:04:49] ERROR: Loading script failed: global\g_version_globals.lua:10: '=' expected near 'UCP'
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] Please wait...
+[2025-03-18 16:04:49] ERROR: Couldn't find resource headwaresurvey. Check it exists.
+[2025-03-18 16:04:49] ERROR: Couldn't find resource heath-addon. Check it exists.
+[2025-03-18 16:04:49] WARNING: heligrab/c_heli.lua(Line 191) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] Some files in 'heligrab' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: hud/c_overlay_top_right.lua(Line 56) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] WARNING: hud/c_overlay_bottom_center.lua(Line 47) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] Some files in 'hud' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x41]
+[2025-03-18 16:04:49] ERROR: id-system\s_id_system.lua:29: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] ERROR: id-system\s_id_system.lua:31: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] ERROR: informationicon-system c_informationicons.lua is invalid. Please re-compile at http://luac.mtasa.com/
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:49] INFO: Loaded 0 information icons in 1ms
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] ERROR: Couldn't find resource ipb. Check it exists.
+[2025-03-18 16:04:49] WARNING: item-system/c_itemchange.lua(Line 5) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:04:49] Some files in 'item-system' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 16:04:49] ERROR: item-texture\s_itemtexture.lua:8: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] ERROR: item-texture\s_itemtexture.lua:24: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] WARNING: item-texture\s_itemtexture.lua:44: Bad argument @ 'getElementsByType' [Expected element at argument 2, got boolean]
+[2025-03-18 16:04:49] ERROR: item-texture\s_itemtexture.lua:48: attempt to get length of local 'worldItems' (a boolean value)
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:49] INFO: [ITEM WORLD] Loading 4 world items will be finished in approximately 0.25 seconds.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: job-system-trucker/s_trucker_job.lua(Line 684) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:49] WARNING: job-system-trucker/c_overlay.lua(Line 294) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] Some files in 'job-system-trucker' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 16:04:49] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:49] ERROR: language-system\s_language_system.lua:113: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] ERROR: language-system\s_language_system.lua:114: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x27]
+[2025-03-18 16:04:49] INFO: LeFire Script loaded ...
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:49] INFO: Loaded 0 clothing items
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] ERROR: Unable to start resource maps; Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 16:04:49] WARNING: maximedevtools <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.6.0-9.21695 because of 'getAllElementData')
+[2025-03-18 16:04:49] WARNING: maximedevtools requires upgrade as <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.6.0-9.21695 because of 'getAllElementData')
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] ERROR: Couldn't find resource mdc=system. Check it exists.
+[2025-03-18 16:04:49] ERROR: Couldn't find resource obkect-interaction. Check it exists.
+[2025-03-18 16:04:49] ERROR: Couldn't find resource official-interior. Check it exists.
+[2025-03-18 16:04:49] ERROR: Couldn't find resource parachute. Check it exists.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 16:04:49] ERROR: paynspray-system\s_paynspray_system.lua:65: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] ERROR: paynspray-system\s_paynspray_system.lua:68: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] ERROR: paynspray-system\s_paynspray_system.lua:65: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 16:04:49] ERROR: paynspray-system\s_paynspray_system.lua:68: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: pd-system/c_policedeagle.lua(Line 110) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] WARNING: pd-system/c_policeshotgun.lua(Line 84) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] Some files in 'pd-system' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:49] ERROR: pd-system\s_police_garage.lua:10: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:49] ERROR: ped-system\s_peds.lua:36: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:04:49] ERROR: ped-system\s_peds.lua:37: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:04:49] INFO: PRISON-SYSTEM: Loaded 24 cell gates from s_gates.lua
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] WARNING: realism-system/c_backup_bleepers.lua(Line 86) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] WARNING: realism-system/c_cruise_control.lua(Line 36) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:04:49] WARNING: realism-system/c_fpview.lua(Line 112) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] WARNING: realism-system/c_heli_rotors.lua(Line 7) [Client] setHelicopterRotorSpeed is deprecated and may not work in future versions. Please replace with setVehicleRotorSpeed.
+[2025-03-18 16:04:49] WARNING: realism-system/c_carrealism.lua(Line 89) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] WARNING: realism-system/handbrake_c.lua(Line 55) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] WARNING: realism-system/handbrake_c.lua(Line 56) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:04:49] Some files in 'realism-system' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: report-system/c_external_report_box.lua(Line 68) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] WARNING: report-system/c_top_right_box.lua(Line 22) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:49] Some files in 'report-system' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x27]
+[2025-03-18 16:04:49] INFO: Loaded 0 reports.
+[2025-03-18 16:04:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:49] ERROR: Couldn't find resource scoreboard. Check it exists.
+[2025-03-18 16:04:49] WARNING: sfia/s_airtrack.lua(Line 58) [Server] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:04:49] Some files in 'sfia' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:49] WARNING: shop-system/s_generalshop_system.lua(Line 349) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:49] Some files in 'shop-system' use deprecated functions.
+[2025-03-18 16:04:49] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:50] WARNING: spike-system/c_spikes.lua(Line 24) [Client] getVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with getElementAngularVelocity.
+[2025-03-18 16:04:50] WARNING: spike-system/c_spikes.lua(Line 25) [Client] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:50] Some files in 'spike-system' use deprecated functions.
+[2025-03-18 16:04:50] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:50] WARNING: superman/c_superman.lua(Line 339) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:04:50] Some files in 'superman' use deprecated functions.
+[2025-03-18 16:04:50] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:50] ERROR: Couldn't find resource text2speech. Check it exists.
+[2025-03-18 16:04:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x160]
+[2025-03-18 16:04:50] INFO: Loaded 0 texture records for all interiors in 0ms
+[2025-03-18 16:04:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:50] SCRIPT ERROR: ticket-system\s_vehticket.lua:98: ')' expected near 'Los'
+[2025-03-18 16:04:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:04:50] ERROR: Loading script failed: ticket-system\s_vehticket.lua:98: ')' expected near 'Los'
+[2025-03-18 16:04:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:04:50] WARNING: vehicle-interiors/s_vehicle_interiors.lua(Line 488) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:50] Some files in 'vehicle-interiors' use deprecated functions.
+[2025-03-18 16:04:50] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:50] WARNING: vehicle-manager/s_vehicle_commands.lua(Line 198) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:04:50] Some files in 'vehicle-manager' use deprecated functions.
+[2025-03-18 16:04:50] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:04:50] ERROR: Couldn't find resource xmas. Check it exists.
+[2025-03-18 16:04:50] Authorized serial account protection is enabled for the ACL group(s): `Admin`  See http://mtasa.com/authserial
+[2025-03-18 16:04:50] WARNING: <owner_email_address> not set
+[2025-03-18 16:04:50] Server started and is ready to accept connections!
+[2025-03-18 16:04:50] To stop the server, type 'shutdown' or press Ctrl-C
+[2025-03-18 16:04:50] Type 'help' for a list of commands.
+[2025-03-18 16:04:52] Querying MTA master server... success! (Auto detected IP:5.233.99.43)
+[2025-03-18 16:04:52] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x118]
+[2025-03-18 16:04:52] ERROR: vehicle-system\s_vehicle_system.lua:283: cannot resume dead coroutine [string "?"]
+[2025-03-18 16:04:55] ERROR: vehicle-system\s_vehicle_system.lua:283: cannot resume dead coroutine [string "?"]  [DUP x11]
+[2025-03-18 16:04:55] INFO: [WEATHER] / Line 57 / SQL Settings for weather successfully altered.
+[2025-03-18 16:05:18] INFO: [ELEVATOR] Spawning 1 elevators will be finished in approx. 1 seconds.
+[2025-03-18 16:05:49] Stopping item-texture
+[2025-03-18 16:05:49] Starting item-texture
+[2025-03-18 16:05:49] INFO: item-texture: Loading textures for 4 world items
+[2025-03-18 16:05:49] INFO: item-texture: 0 clients waiting on initial sync.
+[2025-03-18 16:05:49] INFO: item-texture: 1 textured elements were added for initial sync.
+[2025-03-18 16:05:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:05:49] item-texture restarted successfully
+[2025-03-18 16:05:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:08] Server stopped!
+[2025-03-18 16:06:08] Stopping resources...................................................
+[2025-03-18 16:06:08] INFO: [Factions] Saving duty allow changes...
+[2025-03-18 16:06:08] INFO: [Factions] Completed in 0 seconds.
+[2025-03-18 16:06:08] ERROR: item-system\s_world_items.lua:918: exports: Call to non-running server resource (anticheat) [string "?"]
+[2025-03-18 16:06:08] ERROR: item-system\s_world_items.lua:918: exports: Call to non-running server resource (anticheat) [string "?"]  [DUP x3]
+[2025-03-18 16:06:08] ERROR: pool\server\s_pool.lua:151: exports: Call to non-running server resource (data) [string "?"]
+[2025-03-18 16:06:08] ERROR: pool\server\s_pool.lua:152: exports: Call to non-running server resource (data) [string "?"]
+[2025-03-18 16:06:08] ERROR: report-system\s_reports.lua:115: exports: Call to non-running server resource (data) [string "?"]
+[2025-03-18 16:06:08] ERROR: shop-system\faction_drop_s.lua:269: exports: Call to non-running server resource (mysql) [string "?"]
+[2025-03-18 16:06:08] ERROR: shop-system\faction_drop_s.lua:269: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:06:08] ERROR: shop-system\faction_drop_s.lua:269: exports: Call to non-running server resource (global) [string "?"]  [DUP x2]
+[2025-03-18 16:06:08] ERROR: shop-system\faction_drop_s.lua:269: attempt to concatenate a nil value
+[2025-03-18 16:06:08] MODULE: Unloaded "MySQL 5.0 database module" (0.50) by "Alberto Alonso <rydencillo@gmail.com>"
+[2025-03-18 16:06:13] Closing SQLite3 database
+==================================================================
+= Multi Theft Auto: San Andreas v1.6
+==================================================================
+= Server name      : Latvian test server
+= Server IP address: auto
+= Server port      : 22003
+= 
+= Log file         : ..ktop/server/mods/deathmatch/logs/server.log
+= Maximum players  : 32
+= HTTP port        : 22005
+= Voice Chat       : Disabled
+= Bandwidth saving : Medium
+==================================================================
+[2025-03-18 16:06:19] Resource 'acpanel' requests some acl rights. Use the command 'aclrequest list acpanel'
+[2025-03-18 16:06:19] Resource 'mapmanager' requests some acl rights. Use the command 'aclrequest list mapmanager'
+[2025-03-18 16:06:19] ERROR: Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 16:06:19] Loading of resource 'maps' failed
+[2025-03-18 16:06:20] Resource 'runcode' requests some acl rights. Use the command 'aclrequest list runcode'
+[2025-03-18 16:06:20] ERROR: Problem with resource: assault; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Not processing resource 'briefcase' as it has duplicates on different paths:
+                  Path #1: "resources\briefcase"
+                  Path #2: "resources\[gamemodes]\[briefcaserace]\briefcase"
+[2025-03-18 16:06:20] ERROR: Problem with resource: briefcaserace; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: ctf; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: ctf-bombsite; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: ctf-canals; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: ctf-hydrastrike; 
+[2025-03-18 16:06:20] ERROR: Problem with resource: ctf-tbd; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: ctv; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: deathmatch; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: editor; 
+[2025-03-18 16:06:20] ERROR: Problem with resource: editor_main; Failed to link to freecam
+[2025-03-18 16:06:20] ERROR: Problem with resource: fallout; Failed to link to freecam
+[2025-03-18 16:06:20] ERROR: Not processing resource 'freecam' as it has duplicates on different paths:
+                  Path #1: "resources\freecam"
+                  Path #2: "resources\[editor]\freecam"
+[2025-03-18 16:06:20] ERROR: Problem with resource: hay; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Not processing resource 'ipb' as it has duplicates on different paths:
+                  Path #1: "resources\ipb"
+                  Path #2: "resources\[admin]\ipb"
+[2025-03-18 16:06:20] ERROR: Problem with resource: maps; Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 16:06:20] ERROR: Not processing resource 'parachute' as it has duplicates on different paths:
+                  Path #1: "resources\parachute"
+                  Path #2: "resources\[gameplay]\parachute"
+[2025-03-18 16:06:20] ERROR: Problem with resource: race; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Not processing resource 'scoreboard' as it has duplicates on different paths:
+                  Path #1: "resources\scoreboard"
+                  Path #2: "resources\[gameplay]\scoreboard"
+[2025-03-18 16:06:20] ERROR: Problem with resource: scores; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: stealth; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: tdm; Failed to link to scoreboard
+[2025-03-18 16:06:20] ERROR: Problem with resource: tdma; Failed to link to scoreboard
+[2025-03-18 16:06:20] Resources: 336 loaded, 19 failed
+[2025-03-18 16:06:20] MODULE: Loaded "MySQL 5.0 database module" (0.50) by "Alberto Alonso <rydencillo@gmail.com>"
+[2025-03-18 16:06:20] Starting resources....
+[2025-03-18 16:06:20] WARNING: account/c_main.lua(Line 3) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:06:20] WARNING: account/c_characters.lua(Line 7) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:06:20] WARNING: account/c_options.lua(Line 248) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:06:20] Some files in 'account' use deprecated functions.
+[2025-03-18 16:06:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:20] ERROR: account\g_events.lua:24: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:06:20] ERROR: account\s_main.lua:29: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:06:20] WARNING: account\s_main.lua:29: Bad argument @ 'setRuleValue' [Expected string at argument 2, got nil]
+[2025-03-18 16:06:20] ERROR: account\s_main.lua:33: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:20] ERROR: account\s_main.lua:33: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:06:20] Server minclientversion is now 1.6.0-9.23088.0
+[2025-03-18 16:06:20] WARNING: admin-system/Player/s_teleport.lua(Line 32) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:20] WARNING: admin-system/c_overlay.lua(Line 116) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:20] Some files in 'admin-system' use deprecated functions.
+[2025-03-18 16:06:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:20] ERROR: admin-system\staff_manager\staff_manager_s.lua:3: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:06:20] Server password cleared
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:20] WARNING: announcement/client.lua(Line 20) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:20] Some files in 'announcement' use deprecated functions.
+[2025-03-18 16:06:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:06:20] ERROR: announcement\motd_g.lua:7: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x34]
+[2025-03-18 16:06:20] ERROR: bank\s_atm_management.lua:114: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:20] WARNING: billiard-game/b_c.lua(Line 36) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:20] Some files in 'billiard-game' use deprecated functions.
+[2025-03-18 16:06:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:20] ERROR: Couldn't find resource briefcase. Check it exists.
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 16:06:20] ERROR: camera-system\s_camera_management.lua:42: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:20] ERROR: camera-system\s_camera_management.lua:42: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 16:06:20] ERROR: carshop-system\s_shop.lua:42: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:06:20] ERROR: carshop-system\s_shop.lua:458: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:06:20] ERROR: carshop-system\s_shop.lua:458: attempt to concatenate a nil value
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:20] ERROR: Couldn't find resource clock-analog. Check it exists.
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:06:20] ERROR: clubtec\s_clubtec.lua:7: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:06:20] ERROR: clubtec\s_clubtec.lua:8: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:06:20] ERROR: clubtec\s_clubtec.lua:9: exports: Call to non-running server resource (item-world) [string "?"]
+[2025-03-18 16:06:20] ERROR: clubtec\s_clubtec.lua:10: exports: Call to non-running server resource (fakevideo) [string "?"]
+[2025-03-18 16:06:20] ERROR: clubtec\s_clubtec.lua:11: exports: Call to non-running server resource (item-system) [string "?"]
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:20] ERROR: cmd-library\s_panel_admin_help.lua:25: bad argument #1 to 'insert' (table expected, got nil)
+[2025-03-18 16:06:20] ERROR: cmd-library\s_panel_gm_help.lua:25: bad argument #1 to 'insert' (table expected, got nil)
+[2025-03-18 16:06:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: driveby/driveby_client.lua(Line 258) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:06:21] Some files in 'driveby' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x104]
+[2025-03-18 16:06:21] INFO: MYSQL ERROR 1146: Table 'owl_mta.elections' doesn't exist
+[2025-03-18 16:06:21] ERROR: mysql\connection.lua:43: exports: Call to non-running server resource (logs) [string "?"]
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: elevator-system/s_elevator_system.lua(Line 362) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:21] Some files in 'elevator-system' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] ERROR: Couldn't find resource faction. Check it exists.
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x34]
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_system.lua:31: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_system.lua:31: exports: Call to non-running server resource (pool) [string "?"]  [DUP x17]
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_system.lua:96: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_system.lua:99: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_system.lua:100: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_system.lua:167: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_system.lua:168: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:06:21] ERROR: faction-system\s_faction_admin.lua:507: attempt to index local 'maxrow' (a nil value)
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:21] ERROR: fakevideo\s_fakevideo.lua:8: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 16:06:21] ERROR: fakevideo\s_fakevideo.lua:9: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 16:06:21] ERROR: fakevideo\s_fakevideo.lua:11: exports: Call to non-running server resource (item-world) [string "?"]
+[2025-03-18 16:06:21] INFO: Loaded 0 animated texture records in 0ms
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] ERROR: Couldn't find resource flood. Check it exists.
+[2025-03-18 16:06:21] ERROR: Couldn't find resource freecam. Check it exists.
+[2025-03-18 16:06:21] WARNING: fuel-system/s_fuel_peds.lua(Line 639) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:21] Some files in 'fuel-system' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:06:21] ERROR: fuel-system\s_fuel_peds.lua:479: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: fuel-system\s_fuel_peds.lua:479: exports: Call to non-running server resource (pool) [string "?"]  [DUP x7]
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: gate-manager/s_gate_manager.lua(Line 203) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:21] Some files in 'gate-manager' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] SCRIPT ERROR: global\g_version_globals.lua:10: '=' expected near 'UCP'
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:06:21] ERROR: Loading script failed: global\g_version_globals.lua:10: '=' expected near 'UCP'
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] Please wait...
+[2025-03-18 16:06:21] ERROR: Couldn't find resource headwaresurvey. Check it exists.
+[2025-03-18 16:06:21] ERROR: Couldn't find resource heath-addon. Check it exists.
+[2025-03-18 16:06:21] WARNING: heligrab/c_heli.lua(Line 191) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:21] Some files in 'heligrab' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] WARNING: hud/c_overlay_top_right.lua(Line 56) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:21] WARNING: hud/c_overlay_bottom_center.lua(Line 47) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:21] Some files in 'hud' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x41]
+[2025-03-18 16:06:21] ERROR: id-system\s_id_system.lua:29: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: id-system\s_id_system.lua:31: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] ERROR: informationicon-system c_informationicons.lua is invalid. Please re-compile at http://luac.mtasa.com/
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:21] INFO: Loaded 0 information icons in 2ms
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] ERROR: Couldn't find resource ipb. Check it exists.
+[2025-03-18 16:06:21] WARNING: item-system/c_itemchange.lua(Line 5) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:06:21] Some files in 'item-system' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 16:06:21] ERROR: item-texture\s_itemtexture.lua:8: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: item-texture\s_itemtexture.lua:24: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] WARNING: item-texture\s_itemtexture.lua:44: Bad argument @ 'getElementsByType' [Expected element at argument 2, got boolean]
+[2025-03-18 16:06:21] ERROR: item-texture\s_itemtexture.lua:48: attempt to get length of local 'worldItems' (a boolean value)
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:21] INFO: [ITEM WORLD] Loading 4 world items will be finished in approximately 0.25 seconds.
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: job-system-trucker/s_trucker_job.lua(Line 684) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:21] WARNING: job-system-trucker/c_overlay.lua(Line 294) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:21] Some files in 'job-system-trucker' use deprecated functions.
+[2025-03-18 16:06:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 16:06:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:21] ERROR: language-system\s_language_system.lua:113: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:21] ERROR: language-system\s_language_system.lua:114: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x27]
+[2025-03-18 16:06:21] INFO: LeFire Script loaded ...
+[2025-03-18 16:06:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:22] INFO: Loaded 0 clothing items
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] ERROR: Unable to start resource maps; Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 16:06:22] WARNING: maximedevtools <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.6.0-9.21695 because of 'getAllElementData')
+[2025-03-18 16:06:22] WARNING: maximedevtools requires upgrade as <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.6.0-9.21695 because of 'getAllElementData')
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] ERROR: Couldn't find resource mdc=system. Check it exists.
+[2025-03-18 16:06:22] ERROR: Couldn't find resource obkect-interaction. Check it exists.
+[2025-03-18 16:06:22] ERROR: Couldn't find resource official-interior. Check it exists.
+[2025-03-18 16:06:22] ERROR: Couldn't find resource parachute. Check it exists.
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 16:06:22] ERROR: paynspray-system\s_paynspray_system.lua:65: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:22] ERROR: paynspray-system\s_paynspray_system.lua:68: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:22] ERROR: paynspray-system\s_paynspray_system.lua:65: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 16:06:22] ERROR: paynspray-system\s_paynspray_system.lua:68: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] WARNING: pd-system/c_policedeagle.lua(Line 110) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] WARNING: pd-system/c_policeshotgun.lua(Line 84) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] Some files in 'pd-system' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:22] ERROR: pd-system\s_police_garage.lua:10: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:22] ERROR: ped-system\s_peds.lua:36: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 16:06:22] ERROR: ped-system\s_peds.lua:37: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 16:06:22] INFO: PRISON-SYSTEM: Loaded 24 cell gates from s_gates.lua
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] WARNING: realism-system/c_backup_bleepers.lua(Line 86) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] WARNING: realism-system/c_cruise_control.lua(Line 36) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:06:22] WARNING: realism-system/c_fpview.lua(Line 112) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] WARNING: realism-system/c_heli_rotors.lua(Line 7) [Client] setHelicopterRotorSpeed is deprecated and may not work in future versions. Please replace with setVehicleRotorSpeed.
+[2025-03-18 16:06:22] WARNING: realism-system/c_carrealism.lua(Line 89) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] WARNING: realism-system/handbrake_c.lua(Line 55) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] WARNING: realism-system/handbrake_c.lua(Line 56) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 16:06:22] Some files in 'realism-system' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] WARNING: report-system/c_external_report_box.lua(Line 68) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] WARNING: report-system/c_top_right_box.lua(Line 22) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] Some files in 'report-system' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x27]
+[2025-03-18 16:06:22] INFO: Loaded 0 reports.
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] ERROR: Couldn't find resource scoreboard. Check it exists.
+[2025-03-18 16:06:22] WARNING: sfia/s_airtrack.lua(Line 58) [Server] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 16:06:22] Some files in 'sfia' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] WARNING: shop-system/s_generalshop_system.lua(Line 349) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:22] Some files in 'shop-system' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] WARNING: spike-system/c_spikes.lua(Line 24) [Client] getVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with getElementAngularVelocity.
+[2025-03-18 16:06:22] WARNING: spike-system/c_spikes.lua(Line 25) [Client] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:22] Some files in 'spike-system' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] WARNING: superman/c_superman.lua(Line 339) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 16:06:22] Some files in 'superman' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] ERROR: Couldn't find resource text2speech. Check it exists.
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x160]
+[2025-03-18 16:06:22] INFO: Loaded 0 texture records for all interiors in 0ms
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] SCRIPT ERROR: ticket-system\s_vehticket.lua:98: ')' expected near 'Los'
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 16:06:22] ERROR: Loading script failed: ticket-system\s_vehticket.lua:98: ')' expected near 'Los'
+[2025-03-18 16:06:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:06:22] WARNING: vehicle-interiors/s_vehicle_interiors.lua(Line 488) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:22] Some files in 'vehicle-interiors' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] WARNING: vehicle-manager/s_vehicle_commands.lua(Line 198) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 16:06:22] Some files in 'vehicle-manager' use deprecated functions.
+[2025-03-18 16:06:22] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 16:06:22] ERROR: Couldn't find resource xmas. Check it exists.
+[2025-03-18 16:06:22] Querying MTA master server... success! (Auto detected IP:5.233.99.43)
+[2025-03-18 16:06:22] Authorized serial account protection is enabled for the ACL group(s): `Admin`  See http://mtasa.com/authserial
+[2025-03-18 16:06:22] WARNING: <owner_email_address> not set
+[2025-03-18 16:06:22] Server started and is ready to accept connections!
+[2025-03-18 16:06:22] To stop the server, type 'shutdown' or press Ctrl-C
+[2025-03-18 16:06:22] Type 'help' for a list of commands.
+[2025-03-18 16:06:24] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x118]
+[2025-03-18 16:06:24] ERROR: vehicle-system\s_vehicle_system.lua:283: cannot resume dead coroutine [string "?"]
+[2025-03-18 16:06:27] ERROR: vehicle-system\s_vehicle_system.lua:283: cannot resume dead coroutine [string "?"]  [DUP x11]
+[2025-03-18 16:06:27] INFO: [WEATHER] / Line 57 / SQL Settings for weather successfully altered.
+[2025-03-18 16:06:51] INFO: [ELEVATOR] Spawning 1 elevators will be finished in approx. 1 seconds.
+[2025-03-18 16:07:22] Stopping item-texture
+[2025-03-18 16:07:22] Starting item-texture
+[2025-03-18 16:07:22] INFO: item-texture: Loading textures for 4 world items
+[2025-03-18 16:07:22] INFO: item-texture: 0 clients waiting on initial sync.
+[2025-03-18 16:07:22] INFO: item-texture: 1 textured elements were added for initial sync.
+[2025-03-18 16:07:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 16:07:22] item-texture restarted successfully
+[2025-03-18 16:07:28] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+==================================================================
+= Multi Theft Auto: San Andreas v1.6
+==================================================================
+= Server name      : Latvian test server
+= Server IP address: auto
+= Server port      : 22003
+= 
+= Log file         : ..ktop/server/mods/deathmatch/logs/server.log
+= Maximum players  : 32
+= HTTP port        : 22005
+= Voice Chat       : Disabled
+= Bandwidth saving : Medium
+==================================================================
+[2025-03-18 17:25:57] Resource 'acpanel' requests some acl rights. Use the command 'aclrequest list acpanel'
+[2025-03-18 17:26:08] Resource 'mapmanager' requests some acl rights. Use the command 'aclrequest list mapmanager'
+[2025-03-18 17:26:08] ERROR: Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 17:26:08] Loading of resource 'maps' failed
+[2025-03-18 17:26:15] Resource 'runcode' requests some acl rights. Use the command 'aclrequest list runcode'
+[2025-03-18 17:26:19] ERROR: Problem with resource: assault; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Not processing resource 'briefcase' as it has duplicates on different paths:
+                  Path #1: "resources\briefcase"
+                  Path #2: "resources\[gamemodes]\[briefcaserace]\briefcase"
+[2025-03-18 17:26:19] ERROR: Problem with resource: briefcaserace; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: ctf; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: ctf-bombsite; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: ctf-canals; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: ctf-hydrastrike; 
+[2025-03-18 17:26:19] ERROR: Problem with resource: ctf-tbd; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: ctv; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: deathmatch; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: editor; 
+[2025-03-18 17:26:19] ERROR: Problem with resource: editor_main; Failed to link to freecam
+[2025-03-18 17:26:19] ERROR: Problem with resource: fallout; Failed to link to freecam
+[2025-03-18 17:26:19] ERROR: Not processing resource 'freecam' as it has duplicates on different paths:
+                  Path #1: "resources\freecam"
+                  Path #2: "resources\[editor]\freecam"
+[2025-03-18 17:26:19] ERROR: Problem with resource: hay; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Not processing resource 'ipb' as it has duplicates on different paths:
+                  Path #1: "resources\ipb"
+                  Path #2: "resources\[admin]\ipb"
+[2025-03-18 17:26:19] ERROR: Problem with resource: maps; Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 17:26:19] ERROR: Not processing resource 'parachute' as it has duplicates on different paths:
+                  Path #1: "resources\parachute"
+                  Path #2: "resources\[gameplay]\parachute"
+[2025-03-18 17:26:19] ERROR: Problem with resource: race; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Not processing resource 'scoreboard' as it has duplicates on different paths:
+                  Path #1: "resources\scoreboard"
+                  Path #2: "resources\[gameplay]\scoreboard"
+[2025-03-18 17:26:19] ERROR: Problem with resource: scores; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: stealth; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: tdm; Failed to link to scoreboard
+[2025-03-18 17:26:19] ERROR: Problem with resource: tdma; Failed to link to scoreboard
+[2025-03-18 17:26:19] Resources: 336 loaded, 19 failed
+[2025-03-18 17:26:19] MODULE: Loaded "MySQL 5.0 database module" (0.50) by "Alberto Alonso <rydencillo@gmail.com>"
+[2025-03-18 17:26:19] Starting resources....
+[2025-03-18 17:26:19] WARNING: account/c_main.lua(Line 3) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 17:26:19] WARNING: account/c_characters.lua(Line 7) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 17:26:19] WARNING: account/c_options.lua(Line 248) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 17:26:19] Some files in 'account' use deprecated functions.
+[2025-03-18 17:26:19] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:19] ERROR: account\g_events.lua:24: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 17:26:19] ERROR: account\s_main.lua:29: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 17:26:19] WARNING: account\s_main.lua:29: Bad argument @ 'setRuleValue' [Expected string at argument 2, got nil]
+[2025-03-18 17:26:19] ERROR: account\s_main.lua:33: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:19] ERROR: account\s_main.lua:33: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 17:26:19] Server minclientversion is now 1.6.0-9.23088.0
+[2025-03-18 17:26:19] WARNING: admin-system/Player/s_teleport.lua(Line 32) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:19] WARNING: admin-system/c_overlay.lua(Line 116) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:19] Some files in 'admin-system' use deprecated functions.
+[2025-03-18 17:26:19] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:19] ERROR: admin-system\staff_manager\staff_manager_s.lua:3: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 17:26:19] Server password cleared
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:19] WARNING: announcement/client.lua(Line 20) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:19] Some files in 'announcement' use deprecated functions.
+[2025-03-18 17:26:19] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 17:26:19] ERROR: announcement\motd_g.lua:7: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x34]
+[2025-03-18 17:26:19] ERROR: bank\s_atm_management.lua:114: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:19] WARNING: billiard-game/b_c.lua(Line 36) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:19] Some files in 'billiard-game' use deprecated functions.
+[2025-03-18 17:26:19] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:19] ERROR: Couldn't find resource briefcase. Check it exists.
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 17:26:19] ERROR: camera-system\s_camera_management.lua:42: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:19] ERROR: camera-system\s_camera_management.lua:42: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:26:19] ERROR: carshop-system\s_shop.lua:42: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 17:26:19] ERROR: carshop-system\s_shop.lua:458: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 17:26:19] ERROR: carshop-system\s_shop.lua:458: attempt to concatenate a nil value
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:19] ERROR: Couldn't find resource clock-analog. Check it exists.
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 17:26:19] ERROR: clubtec\s_clubtec.lua:7: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 17:26:19] ERROR: clubtec\s_clubtec.lua:8: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 17:26:19] ERROR: clubtec\s_clubtec.lua:9: exports: Call to non-running server resource (item-world) [string "?"]
+[2025-03-18 17:26:19] ERROR: clubtec\s_clubtec.lua:10: exports: Call to non-running server resource (fakevideo) [string "?"]
+[2025-03-18 17:26:19] ERROR: clubtec\s_clubtec.lua:11: exports: Call to non-running server resource (item-system) [string "?"]
+[2025-03-18 17:26:19] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:20] ERROR: cmd-library\s_panel_admin_help.lua:25: bad argument #1 to 'insert' (table expected, got nil)
+[2025-03-18 17:26:20] ERROR: cmd-library\s_panel_gm_help.lua:25: bad argument #1 to 'insert' (table expected, got nil)
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] WARNING: driveby/driveby_client.lua(Line 258) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 17:26:20] Some files in 'driveby' use deprecated functions.
+[2025-03-18 17:26:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x104]
+[2025-03-18 17:26:20] INFO: MYSQL ERROR 1146: Table 'owl_mta.elections' doesn't exist
+[2025-03-18 17:26:20] ERROR: mysql\connection.lua:43: exports: Call to non-running server resource (logs) [string "?"]
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] WARNING: elevator-system/s_elevator_system.lua(Line 362) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:20] Some files in 'elevator-system' use deprecated functions.
+[2025-03-18 17:26:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:20] ERROR: Couldn't find resource faction. Check it exists.
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x34]
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_system.lua:31: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_system.lua:31: exports: Call to non-running server resource (pool) [string "?"]  [DUP x17]
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_system.lua:96: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_system.lua:99: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_system.lua:100: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_system.lua:167: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_system.lua:168: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 17:26:20] ERROR: faction-system\s_faction_admin.lua:507: attempt to index local 'maxrow' (a nil value)
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:20] ERROR: fakevideo\s_fakevideo.lua:8: exports: Call to non-running server resource (global) [string "?"]
+[2025-03-18 17:26:20] ERROR: fakevideo\s_fakevideo.lua:9: exports: Call to non-running server resource (integration) [string "?"]
+[2025-03-18 17:26:20] ERROR: fakevideo\s_fakevideo.lua:11: exports: Call to non-running server resource (item-world) [string "?"]
+[2025-03-18 17:26:20] INFO: Loaded 0 animated texture records in 0ms
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] ERROR: Couldn't find resource flood. Check it exists.
+[2025-03-18 17:26:20] ERROR: Couldn't find resource freecam. Check it exists.
+[2025-03-18 17:26:20] WARNING: fuel-system/s_fuel_peds.lua(Line 639) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:20] Some files in 'fuel-system' use deprecated functions.
+[2025-03-18 17:26:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 17:26:20] ERROR: fuel-system\s_fuel_peds.lua:479: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:20] ERROR: fuel-system\s_fuel_peds.lua:479: exports: Call to non-running server resource (pool) [string "?"]  [DUP x7]
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] WARNING: gate-manager/s_gate_manager.lua(Line 203) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:20] Some files in 'gate-manager' use deprecated functions.
+[2025-03-18 17:26:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:20] SCRIPT ERROR: global\g_version_globals.lua:10: '=' expected near 'UCP'
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 17:26:20] ERROR: Loading script failed: global\g_version_globals.lua:10: '=' expected near 'UCP'
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] Please wait...
+[2025-03-18 17:26:20] ERROR: Couldn't find resource headwaresurvey. Check it exists.
+[2025-03-18 17:26:20] ERROR: Couldn't find resource heath-addon. Check it exists.
+[2025-03-18 17:26:20] WARNING: heligrab/c_heli.lua(Line 191) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:20] Some files in 'heligrab' use deprecated functions.
+[2025-03-18 17:26:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:20] WARNING: hud/c_overlay_top_right.lua(Line 56) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:20] WARNING: hud/c_overlay_bottom_center.lua(Line 47) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:20] Some files in 'hud' use deprecated functions.
+[2025-03-18 17:26:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x41]
+[2025-03-18 17:26:20] ERROR: id-system\s_id_system.lua:29: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:20] ERROR: id-system\s_id_system.lua:31: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] ERROR: informationicon-system c_informationicons.lua is invalid. Please re-compile at http://luac.mtasa.com/
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:20] INFO: Loaded 0 information icons in 5ms
+[2025-03-18 17:26:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:20] ERROR: Couldn't find resource ipb. Check it exists.
+[2025-03-18 17:26:20] WARNING: item-system/c_itemchange.lua(Line 5) [Client] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 17:26:20] Some files in 'item-system' use deprecated functions.
+[2025-03-18 17:26:20] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 17:26:21] ERROR: item-texture\s_itemtexture.lua:8: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:21] ERROR: item-texture\s_itemtexture.lua:24: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:21] WARNING: item-texture\s_itemtexture.lua:44: Bad argument @ 'getElementsByType' [Expected element at argument 2, got boolean]
+[2025-03-18 17:26:21] ERROR: item-texture\s_itemtexture.lua:48: attempt to get length of local 'worldItems' (a boolean value)
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:21] INFO: [ITEM WORLD] Loading 4 world items will be finished in approximately 0.25 seconds.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: job-system-trucker/s_trucker_job.lua(Line 684) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:21] WARNING: job-system-trucker/c_overlay.lua(Line 294) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] Some files in 'job-system-trucker' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:26:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:21] ERROR: language-system\s_language_system.lua:113: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:21] ERROR: language-system\s_language_system.lua:114: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x27]
+[2025-03-18 17:26:21] INFO: LeFire Script loaded ...
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:21] INFO: Loaded 0 clothing items
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] ERROR: Unable to start resource maps; Couldn't find map StadiumMapping.map for resource maps
+[2025-03-18 17:26:21] WARNING: maximedevtools <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.6.0-9.21695 because of 'getAllElementData')
+[2025-03-18 17:26:21] WARNING: maximedevtools requires upgrade as <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.6.0-9.21695 because of 'getAllElementData')
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] ERROR: Couldn't find resource mdc=system. Check it exists.
+[2025-03-18 17:26:21] ERROR: Couldn't find resource obkect-interaction. Check it exists.
+[2025-03-18 17:26:21] ERROR: Couldn't find resource official-interior. Check it exists.
+[2025-03-18 17:26:21] ERROR: Couldn't find resource parachute. Check it exists.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x69]
+[2025-03-18 17:26:21] ERROR: paynspray-system\s_paynspray_system.lua:65: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:21] ERROR: paynspray-system\s_paynspray_system.lua:68: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:21] ERROR: paynspray-system\s_paynspray_system.lua:65: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 17:26:21] ERROR: paynspray-system\s_paynspray_system.lua:68: exports: Call to non-running server resource (pool) [string "?"]  [DUP x3]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: pd-system/c_policedeagle.lua(Line 110) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] WARNING: pd-system/c_policeshotgun.lua(Line 84) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] Some files in 'pd-system' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:21] ERROR: pd-system\s_police_garage.lua:10: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:21] ERROR: ped-system\s_peds.lua:36: exports: Call to non-running server resource (pool) [string "?"]
+[2025-03-18 17:26:21] ERROR: ped-system\s_peds.lua:37: bad argument #1 to 'ipairs' (table expected, got nil)
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x20]
+[2025-03-18 17:26:21] INFO: PRISON-SYSTEM: Loaded 24 cell gates from s_gates.lua
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: realism-system/c_backup_bleepers.lua(Line 86) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] WARNING: realism-system/c_cruise_control.lua(Line 36) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 17:26:21] WARNING: realism-system/c_fpview.lua(Line 112) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] WARNING: realism-system/c_heli_rotors.lua(Line 7) [Client] setHelicopterRotorSpeed is deprecated and may not work in future versions. Please replace with setVehicleRotorSpeed.
+[2025-03-18 17:26:21] WARNING: realism-system/c_carrealism.lua(Line 89) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] WARNING: realism-system/handbrake_c.lua(Line 55) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] WARNING: realism-system/handbrake_c.lua(Line 56) [Client] setControlState is deprecated and may not work in future versions. Please replace with setPedControlState.
+[2025-03-18 17:26:21] Some files in 'realism-system' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: report-system/c_external_report_box.lua(Line 68) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] WARNING: report-system/c_top_right_box.lua(Line 22) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] Some files in 'report-system' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x27]
+[2025-03-18 17:26:21] INFO: Loaded 0 reports.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] ERROR: Couldn't find resource scoreboard. Check it exists.
+[2025-03-18 17:26:21] WARNING: sfia/s_airtrack.lua(Line 58) [Server] showPlayerHudComponent is deprecated and may not work in future versions. Please replace with setPlayerHudComponentVisible.
+[2025-03-18 17:26:21] Some files in 'sfia' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: shop-system/s_generalshop_system.lua(Line 349) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:21] Some files in 'shop-system' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: spike-system/c_spikes.lua(Line 24) [Client] getVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with getElementAngularVelocity.
+[2025-03-18 17:26:21] WARNING: spike-system/c_spikes.lua(Line 25) [Client] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:21] Some files in 'spike-system' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: superman/c_superman.lua(Line 339) [Client] getControlState is deprecated and may not work in future versions. Please replace with getPedControlState.
+[2025-03-18 17:26:21] Some files in 'superman' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] ERROR: Couldn't find resource text2speech. Check it exists.
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x160]
+[2025-03-18 17:26:21] INFO: Loaded 0 texture records for all interiors in 0ms
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] SCRIPT ERROR: ticket-system\s_vehticket.lua:98: ')' expected near 'Los'
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:26:21] ERROR: Loading script failed: ticket-system\s_vehticket.lua:98: ')' expected near 'Los'
+[2025-03-18 17:26:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:26:21] WARNING: vehicle-interiors/s_vehicle_interiors.lua(Line 488) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:21] Some files in 'vehicle-interiors' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] WARNING: vehicle-manager/s_vehicle_commands.lua(Line 198) [Server] setVehicleTurnVelocity is deprecated and may not work in future versions. Please replace with setElementAngularVelocity.
+[2025-03-18 17:26:21] Some files in 'vehicle-manager' use deprecated functions.
+[2025-03-18 17:26:21] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2025-03-18 17:26:21] ERROR: Couldn't find resource xmas. Check it exists.
+[2025-03-18 17:26:21] Querying MTA master server... success! (Auto detected IP:5.233.99.43)
+[2025-03-18 17:26:21] Authorized serial account protection is enabled for the ACL group(s): `Admin`  See http://mtasa.com/authserial
+[2025-03-18 17:26:21] WARNING: <owner_email_address> not set
+[2025-03-18 17:26:21] Server started and is ready to accept connections!
+[2025-03-18 17:26:21] To stop the server, type 'shutdown' or press Ctrl-C
+[2025-03-18 17:26:21] Type 'help' for a list of commands.
+[2025-03-18 17:26:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x118]
+[2025-03-18 17:26:23] ERROR: vehicle-system\s_vehicle_system.lua:283: cannot resume dead coroutine [string "?"]
+[2025-03-18 17:26:26] ERROR: vehicle-system\s_vehicle_system.lua:283: cannot resume dead coroutine [string "?"]  [DUP x11]
+[2025-03-18 17:26:26] INFO: [WEATHER] / Line 57 / SQL Settings for weather successfully altered.
+[2025-03-18 17:26:50] INFO: [ELEVATOR] Spawning 1 elevators will be finished in approx. 1 seconds.
+[2025-03-18 17:27:21] Stopping item-texture
+[2025-03-18 17:27:21] Starting item-texture
+[2025-03-18 17:27:21] INFO: item-texture: Loading textures for 4 world items
+[2025-03-18 17:27:21] INFO: item-texture: 0 clients waiting on initial sync.
+[2025-03-18 17:27:21] INFO: item-texture: 1 textured elements were added for initial sync.
+[2025-03-18 17:27:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:27:21] item-texture restarted successfully
+[2025-03-18 17:27:27] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:28:15] CONNECT: alihexon connected (IP: 192.168.1.4  Serial: D8D8DDDB7D5896AEACED2ED065C85E91  Version: 1.6.0-9.23088.0)
+[2025-03-18 17:28:17] JOIN: alihexon joined the game (IP: 192.168.1.4)
+[2025-03-18 17:28:17] NICK: alihexon is now known as TG.Player.9953
+[2025-03-18 17:28:45] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:28:45] INFO: Loading 4 account settings to client #1
+[2025-03-18 17:29:34] NICK: TG.Player.9953 is now known as script_oshakhlari
+[2025-03-18 17:29:34] INFO: Old Bankmoney for script_oshakhlari nil New value 8950 changed by: anticheat User changed by: nil
+[2025-03-18 17:29:34] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:29:34] INFO: Loading 1 character settings to client #1
+[2025-03-18 17:29:37] ERROR: hud\s_overlay_basic_info.lua:46: exports: Call to non-running server resource (mdc-system) [string "?"]
+[2025-03-18 17:30:21] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:30:21] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:30:21] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:30:21] Stopping recycle-job
+[2025-03-18 17:30:21] Starting recycle-job
+[2025-03-18 17:30:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:30:21] recycle-job restarted successfully
+[2025-03-18 17:30:27] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:30:36] Starting crafting-system
+[2025-03-18 17:30:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:30:36] startResource: Resource 'crafting-system' started
+[2025-03-18 17:30:42] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:31:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 17:31:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 17:31:21] Stopping Restart
+[2025-03-18 17:31:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:31:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:31:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:31:55] Stopping recycle-job
+[2025-03-18 17:31:55] Starting recycle-job
+[2025-03-18 17:31:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:31:55] recycle-job restarted successfully
+[2025-03-18 17:32:01] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:32:05] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:32:05] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:32:05] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:32:05] Stopping recycle-job
+[2025-03-18 17:32:05] Starting recycle-job
+[2025-03-18 17:32:05] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:32:05] recycle-job restarted successfully
+[2025-03-18 17:32:11] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:32:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:32:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:32:44] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:32:44] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:32:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:32:44] Stopping recycle-job
+[2025-03-18 17:32:44] Stopping crafting-system
+[2025-03-18 17:32:44] Starting recycle-job
+[2025-03-18 17:32:44] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:32:44] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:32:44] recycle-job restarted successfully
+[2025-03-18 17:32:44] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:32:44] Starting crafting-system
+[2025-03-18 17:32:44] crafting-system restarted successfully
+[2025-03-18 17:32:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:33:14] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:33:14] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:33:14] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:33:14] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:33:14] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:33:14] Stopping recycle-job
+[2025-03-18 17:33:14] Stopping crafting-system
+[2025-03-18 17:33:14] Starting recycle-job
+[2025-03-18 17:33:14] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:33:14] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:33:14] recycle-job restarted successfully
+[2025-03-18 17:33:14] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:33:14] Starting crafting-system
+[2025-03-18 17:33:14] crafting-system restarted successfully
+[2025-03-18 17:33:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:33:30] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:33:30] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:33:30] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:33:30] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:33:30] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:33:30] Stopping recycle-job
+[2025-03-18 17:33:30] Stopping crafting-system
+[2025-03-18 17:33:30] Starting recycle-job
+[2025-03-18 17:33:30] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:33:30] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:33:30] recycle-job restarted successfully
+[2025-03-18 17:33:30] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:33:30] Starting crafting-system
+[2025-03-18 17:33:30] crafting-system restarted successfully
+[2025-03-18 17:33:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:33:46] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:33:46] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:33:47] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:33:47] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:33:47] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:33:47] Stopping recycle-job
+[2025-03-18 17:33:47] Stopping crafting-system
+[2025-03-18 17:33:47] Starting recycle-job
+[2025-03-18 17:33:47] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:33:47] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:33:47] recycle-job restarted successfully
+[2025-03-18 17:33:47] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:33:47] Starting crafting-system
+[2025-03-18 17:33:47] crafting-system restarted successfully
+[2025-03-18 17:33:53] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:34:34] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:34:34] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:34:34] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:34:34] Stopping id-system
+[2025-03-18 17:34:34] Starting id-system
+[2025-03-18 17:34:34] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:34:34] id-system restarted successfully
+[2025-03-18 17:34:40] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:34:41] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:34:47] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x4]
+[2025-03-18 17:34:54] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:35:00] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x2]
+[2025-03-18 17:35:06] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:35:12] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x7]
+[2025-03-18 17:35:13] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:13] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:13] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:13] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:13] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:13] Stopping recycle-job
+[2025-03-18 17:35:13] Stopping crafting-system
+[2025-03-18 17:35:13] Starting recycle-job
+[2025-03-18 17:35:13] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:13] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:35:13] recycle-job restarted successfully
+[2025-03-18 17:35:13] Starting crafting-system
+[2025-03-18 17:35:13] crafting-system restarted successfully
+[2025-03-18 17:35:15] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:35:15] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:15] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:15] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:15] Stopping id-system
+[2025-03-18 17:35:15] Starting id-system
+[2025-03-18 17:35:15] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:35:15] id-system restarted successfully
+[2025-03-18 17:35:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:35:16] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:35:38] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:38] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:38] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:38] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:38] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:38] Stopping recycle-job
+[2025-03-18 17:35:38] Stopping crafting-system
+[2025-03-18 17:35:38] Starting recycle-job
+[2025-03-18 17:35:38] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:38] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:35:38] recycle-job restarted successfully
+[2025-03-18 17:35:38] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:35:38] Starting crafting-system
+[2025-03-18 17:35:38] crafting-system restarted successfully
+[2025-03-18 17:35:41] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:35:41] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:35:42] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:42] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:42] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:42] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:42] Stopping recycle-job
+[2025-03-18 17:35:42] Stopping crafting-system
+[2025-03-18 17:35:42] Starting recycle-job
+[2025-03-18 17:35:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:42] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:35:42] recycle-job restarted successfully
+[2025-03-18 17:35:42] Starting crafting-system
+[2025-03-18 17:35:42] crafting-system restarted successfully
+[2025-03-18 17:35:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:35:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:55] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:35:55] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:35:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:55] Stopping recycle-job
+[2025-03-18 17:35:55] Stopping crafting-system
+[2025-03-18 17:35:55] Starting recycle-job
+[2025-03-18 17:35:55] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:35:55] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:35:55] recycle-job restarted successfully
+[2025-03-18 17:35:55] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:35:55] Starting crafting-system
+[2025-03-18 17:35:55] crafting-system restarted successfully
+[2025-03-18 17:36:01] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:36:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 17:36:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 17:36:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 17:36:21] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:36:21] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:36:21] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:36:21] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:36:21] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:36:21] Stopping recycle-job
+[2025-03-18 17:36:21] Stopping crafting-system
+[2025-03-18 17:36:21] Starting recycle-job
+[2025-03-18 17:36:21] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:36:21] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:36:21] recycle-job restarted successfully
+[2025-03-18 17:36:21] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:36:21] Starting crafting-system
+[2025-03-18 17:36:21] crafting-system restarted successfully
+[2025-03-18 17:36:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:36:22] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:37:20] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:37:20] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:37:20] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:37:20] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:37:20] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:37:20] Stopping recycle-job
+[2025-03-18 17:37:20] Stopping crafting-system
+[2025-03-18 17:37:20] Starting recycle-job
+[2025-03-18 17:37:20] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:37:20] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:37:20] recycle-job restarted successfully
+[2025-03-18 17:37:20] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:37:20] Starting crafting-system
+[2025-03-18 17:37:20] crafting-system restarted successfully
+[2025-03-18 17:37:26] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:37:32] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:37:32] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:37:32] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:37:32] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:37:32] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:37:32] Stopping recycle-job
+[2025-03-18 17:37:32] Stopping crafting-system
+[2025-03-18 17:37:32] Starting recycle-job
+[2025-03-18 17:37:32] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:37:32] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:37:32] recycle-job restarted successfully
+[2025-03-18 17:37:32] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:37:32] Starting crafting-system
+[2025-03-18 17:37:32] crafting-system restarted successfully
+[2025-03-18 17:37:38] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:37:43] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:37:43] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:37:43] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:37:43] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:37:43] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:37:43] Stopping recycle-job
+[2025-03-18 17:37:43] Stopping crafting-system
+[2025-03-18 17:37:43] Starting recycle-job
+[2025-03-18 17:37:43] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:37:43] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:37:43] recycle-job restarted successfully
+[2025-03-18 17:37:43] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:37:43] Starting crafting-system
+[2025-03-18 17:37:43] crafting-system restarted successfully
+[2025-03-18 17:37:49] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:38:55] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:39:01] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x3]
+[2025-03-18 17:39:38] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:39:47] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:39:54] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:40:05] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:40:15] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:40:21] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]  [DUP x2]
+[2025-03-18 17:40:22] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:41:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 17:41:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 17:42:37] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:42:38] ERROR: logs\s_logs.lua:105: call: failed to call 'mysql:lazyQuery' [string "?"]
+[2025-03-18 17:46:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 17:46:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 17:46:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 17:51:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 17:51:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 17:53:02] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:53:02] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:53:02] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:53:02] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:53:02] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:53:02] Stopping recycle-job
+[2025-03-18 17:53:02] Stopping crafting-system
+[2025-03-18 17:53:02] Starting recycle-job
+[2025-03-18 17:53:02] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:53:02] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:53:02] recycle-job restarted successfully
+[2025-03-18 17:53:02] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:53:02] Starting crafting-system
+[2025-03-18 17:53:02] crafting-system restarted successfully
+[2025-03-18 17:53:08] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:53:23] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:53:23] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:53:23] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:53:23] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:53:23] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:53:23] Stopping recycle-job
+[2025-03-18 17:53:23] Stopping crafting-system
+[2025-03-18 17:53:23] Starting recycle-job
+[2025-03-18 17:53:23] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:53:23] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:53:23] recycle-job restarted successfully
+[2025-03-18 17:53:23] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:53:23] Starting crafting-system
+[2025-03-18 17:53:23] crafting-system restarted successfully
+[2025-03-18 17:53:29] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:56:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 17:56:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 17:56:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 17:56:50] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:56:50] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:56:50] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:56:50] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:56:50] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:56:50] Stopping recycle-job
+[2025-03-18 17:56:50] Stopping crafting-system
+[2025-03-18 17:56:50] Starting recycle-job
+[2025-03-18 17:56:50] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:56:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:56:50] recycle-job restarted successfully
+[2025-03-18 17:56:50] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:56:50] Starting crafting-system
+[2025-03-18 17:56:50] SCRIPT ERROR: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:56:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:56:50] ERROR: Loading script failed: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:56:50] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:56:50] crafting-system restarted successfully
+[2025-03-18 17:56:56] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:56:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:56:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:56:58] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:56:58] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:56:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:56:58] Stopping recycle-job
+[2025-03-18 17:56:58] Stopping crafting-system
+[2025-03-18 17:56:58] Starting recycle-job
+[2025-03-18 17:56:58] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:56:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:56:58] recycle-job restarted successfully
+[2025-03-18 17:56:58] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:56:58] Starting crafting-system
+[2025-03-18 17:56:58] SCRIPT ERROR: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:56:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:56:58] ERROR: Loading script failed: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:56:58] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:56:58] crafting-system restarted successfully
+[2025-03-18 17:57:04] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:57:04] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:04] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:04] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:04] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:04] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:04] Stopping recycle-job
+[2025-03-18 17:57:04] Stopping crafting-system
+[2025-03-18 17:57:04] Starting recycle-job
+[2025-03-18 17:57:04] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:04] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:57:04] recycle-job restarted successfully
+[2025-03-18 17:57:04] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:57:04] Starting crafting-system
+[2025-03-18 17:57:04] SCRIPT ERROR: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:57:04] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:57:04] ERROR: Loading script failed: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:57:04] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:57:04] crafting-system restarted successfully
+[2025-03-18 17:57:10] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:57:12] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:12] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:12] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:12] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:12] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:12] Stopping recycle-job
+[2025-03-18 17:57:12] Stopping crafting-system
+[2025-03-18 17:57:12] Starting recycle-job
+[2025-03-18 17:57:12] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:12] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:57:12] recycle-job restarted successfully
+[2025-03-18 17:57:12] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:57:12] Starting crafting-system
+[2025-03-18 17:57:12] crafting-system restarted successfully
+[2025-03-18 17:57:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 17:57:16] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:16] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:16] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:16] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:16] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:16] Stopping recycle-job
+[2025-03-18 17:57:16] Starting recycle-job
+[2025-03-18 17:57:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:57:16] recycle-job restarted successfully
+[2025-03-18 17:57:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:57:16] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:16] Stopping crafting-system
+[2025-03-18 17:57:16] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:57:16] Starting crafting-system
+[2025-03-18 17:57:16] SCRIPT ERROR: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:57:16] ERROR: Loading script failed: crafting-system\SourceS.lua:7: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 17:57:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:57:16] crafting-system restarted successfully
+[2025-03-18 17:57:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 17:57:59] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:59] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:59] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 17:57:59] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 17:57:59] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:59] Stopping recycle-job
+[2025-03-18 17:57:59] Stopping crafting-system
+[2025-03-18 17:57:59] Starting recycle-job
+[2025-03-18 17:57:59] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 17:57:59] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 17:57:59] recycle-job restarted successfully
+[2025-03-18 17:57:59] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 17:57:59] Starting crafting-system
+[2025-03-18 17:57:59] crafting-system restarted successfully
+[2025-03-18 17:58:05] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:00:21] INFO: Old Bankmoney for script_oshakhlari 8950 New value 9433 changed by: anticheat User changed by: nil
+[2025-03-18 18:01:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 18:01:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 18:06:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 18:06:27] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 18:06:27] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 18:06:41] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:06:41] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:06:42] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:06:42] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:06:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:06:42] Stopping recycle-job
+[2025-03-18 18:06:42] Stopping crafting-system
+[2025-03-18 18:06:42] Starting recycle-job
+[2025-03-18 18:06:42] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:06:42] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:06:42] recycle-job restarted successfully
+[2025-03-18 18:06:42] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:06:42] Starting crafting-system
+[2025-03-18 18:06:42] crafting-system restarted successfully
+[2025-03-18 18:06:48] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:07:04] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:04] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:05] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:05] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:05] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:05] Stopping recycle-job
+[2025-03-18 18:07:05] Stopping crafting-system
+[2025-03-18 18:07:05] Starting recycle-job
+[2025-03-18 18:07:05] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:05] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:07:05] recycle-job restarted successfully
+[2025-03-18 18:07:05] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:07:05] Starting crafting-system
+[2025-03-18 18:07:05] crafting-system restarted successfully
+[2025-03-18 18:07:11] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:07:22] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:22] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:22] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:22] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:22] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:22] Stopping recycle-job
+[2025-03-18 18:07:22] Stopping crafting-system
+[2025-03-18 18:07:22] Starting recycle-job
+[2025-03-18 18:07:22] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:07:22] recycle-job restarted successfully
+[2025-03-18 18:07:22] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:07:22] Starting crafting-system
+[2025-03-18 18:07:22] SCRIPT ERROR: crafting-system\SourceS.lua:9: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 18:07:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 18:07:22] ERROR: Loading script failed: crafting-system\SourceS.lua:9: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 18:07:22] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:07:22] crafting-system restarted successfully
+[2025-03-18 18:07:28] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 18:07:31] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:31] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:31] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:31] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:31] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:31] Stopping recycle-job
+[2025-03-18 18:07:31] Stopping crafting-system
+[2025-03-18 18:07:31] Starting recycle-job
+[2025-03-18 18:07:31] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:31] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:07:31] recycle-job restarted successfully
+[2025-03-18 18:07:31] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:07:31] Starting crafting-system
+[2025-03-18 18:07:31] SCRIPT ERROR: crafting-system\SourceS.lua:9: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 18:07:31] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 18:07:31] ERROR: Loading script failed: crafting-system\SourceS.lua:9: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 18:07:31] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:07:31] crafting-system restarted successfully
+[2025-03-18 18:07:37] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 18:07:41] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:41] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:41] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:07:41] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:07:41] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:41] Stopping recycle-job
+[2025-03-18 18:07:41] Stopping crafting-system
+[2025-03-18 18:07:41] Starting recycle-job
+[2025-03-18 18:07:41] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:07:41] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:07:41] recycle-job restarted successfully
+[2025-03-18 18:07:41] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:07:41] Starting crafting-system
+[2025-03-18 18:07:41] crafting-system restarted successfully
+[2025-03-18 18:07:47] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:11:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 18:11:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 18:16:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 18:16:27] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 18:16:27] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 18:21:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 18:21:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 18:26:21] INFO: [JOB-SYSTEM-TRUCKER] Fetched 0 actual orders sucessfully from SQL
+[2025-03-18 18:26:21] INFO: WORLDSAVE INCOMING
+[2025-03-18 18:26:21] INFO: [DATA] Saved Faction Drop NPC logs records.
+[2025-03-18 18:26:21] WARNING: report-system\s_reports.lua:83: Bad argument @ 'getPlayersInTeam' [Expected team at argument 1, got nil]
+[2025-03-18 18:26:21] ERROR: report-system\s_reports.lua:83: attempt to get length of a boolean value
+[2025-03-18 18:27:09] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:27:09] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:27:09] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:27:09] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:27:09] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:27:09] Stopping recycle-job
+[2025-03-18 18:27:09] Stopping crafting-system
+[2025-03-18 18:27:09] Starting recycle-job
+[2025-03-18 18:27:09] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:27:09] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:27:09] recycle-job restarted successfully
+[2025-03-18 18:27:09] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:27:09] Starting crafting-system
+[2025-03-18 18:27:09] crafting-system restarted successfully
+[2025-03-18 18:27:12] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:27:12] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:27:35] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:27:35] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:27:36] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:27:36] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:27:36] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:27:36] Stopping recycle-job
+[2025-03-18 18:27:36] Stopping crafting-system
+[2025-03-18 18:27:36] Starting recycle-job
+[2025-03-18 18:27:36] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:27:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:27:36] recycle-job restarted successfully
+[2025-03-18 18:27:36] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:27:36] Starting crafting-system
+[2025-03-18 18:27:36] SCRIPT ERROR: crafting-system\SourceS.lua:9: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 18:27:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 18:27:36] ERROR: Loading script failed: crafting-system\SourceS.lua:9: '}' expected (to close '{' at line 2) near '{'
+[2025-03-18 18:27:36] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:27:36] crafting-system restarted successfully
+[2025-03-18 18:27:42] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 18:28:00] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:28:00] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:28:00] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:28:00] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:28:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:28:00] Stopping recycle-job
+[2025-03-18 18:28:00] Stopping crafting-system
+[2025-03-18 18:28:00] Starting recycle-job
+[2025-03-18 18:28:00] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:28:00] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:28:00] recycle-job restarted successfully
+[2025-03-18 18:28:00] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:28:00] Starting crafting-system
+[2025-03-18 18:28:00] crafting-system restarted successfully
+[2025-03-18 18:28:03] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:28:03] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:28:04] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 18:28:10] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:28:10] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 18:28:10] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:28:10] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 18:28:11] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:28:17] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 18:28:17] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:28:17] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 18:28:26] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:28:26] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:28:26] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:28:26] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:28:26] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:28:26] Stopping recycle-job
+[2025-03-18 18:28:26] Stopping crafting-system
+[2025-03-18 18:28:26] Starting recycle-job
+[2025-03-18 18:28:26] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:28:26] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:28:26] recycle-job restarted successfully
+[2025-03-18 18:28:26] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:28:26] Starting crafting-system
+[2025-03-18 18:28:26] crafting-system restarted successfully
+[2025-03-18 18:28:32] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:28:39] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:28:39] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:28:39] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:28:39] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:28:39] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:28:39] Stopping recycle-job
+[2025-03-18 18:28:39] Stopping crafting-system
+[2025-03-18 18:28:39] Starting recycle-job
+[2025-03-18 18:28:39] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:28:39] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:28:39] recycle-job restarted successfully
+[2025-03-18 18:28:39] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:28:39] Starting crafting-system
+[2025-03-18 18:28:39] crafting-system restarted successfully
+[2025-03-18 18:28:40] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x13]
+[2025-03-18 18:28:40] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:28:41] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 18:28:47] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:28:47] ERROR: Client (script_oshakhlari) triggered serverside event requestCrafting, but event is not added serverside
+[2025-03-18 18:28:47] ERROR: crafting-system\SourceS.lua:23: attempt to call global 'guiGetScreenSize' (a nil value)
+[2025-03-18 18:29:09] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:29:09] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:29:09] ERROR: global\g_chat_globals.lua:143: attempt to concatenate local 'rank' (a nil value)
+[2025-03-18 18:29:09] ERROR: admin-system\Resources\s_resource_commands.lua:11: call: failed to call 'global:getPlayerFullIdentity' [string "?"]
+[2025-03-18 18:29:09] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:29:09] Stopping recycle-job
+[2025-03-18 18:29:09] Starting recycle-job
+[2025-03-18 18:29:09] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:29:09] recycle-job restarted successfully
+[2025-03-18 18:29:10] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
+[2025-03-18 18:29:10] ERROR: admin-system\Resources\s_resource_commands.lua:129: attempt to concatenate upvalue 'adminTitle' (a boolean value)
+[2025-03-18 18:29:10] Stopping crafting-system
+[2025-03-18 18:29:10] Resource 'crafting-system' changed, reloading and starting
+[2025-03-18 18:29:10] Starting crafting-system
+[2025-03-18 18:29:10] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]
+[2025-03-18 18:29:10] crafting-system restarted successfully
+[2025-03-18 18:29:16] WARNING: admin-system\Player\s_player_commands.lua:734: Bad argument @ 'setWeaponProperty' [Expected number, got non-convertible string]  [DUP x6]
