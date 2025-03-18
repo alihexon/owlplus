@@ -2,3 +2,9 @@ deathmatch/resources/kekemashin/server.lua
 deathmatch/resources/kekemashin/client.lua
 deathmatch/resource-cache/http-client-files/kekemashin/client.lua
 deathmatch/resources/kekemashin/meta.xml
+deathmatch/resources/salamm/ui.html
+deathmatch/resources/salamm/salamm.lua
+deathmatch/resources/salamm/meta.xml
+deathmatch/resources/salamm/client.lua
+deathmatch/resource-cache/http-client-files/salamm/ui.html
+deathmatch/resource-cache/http-client-files/salamm/client.lua
