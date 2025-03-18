@@ -5,7 +5,8 @@ local craftableItems = {
     { name = "cocaine", id = 50, material = 42 },
     { name = "cocainee", id = 51, material = 43 },
     { name = "meth", id = 52, material = 44 },
-    { name = "heroin", id = 53, material = 45 }
+    { name = "heroin", id = 53, material = 45 },
+    { name = "heroinn", id = 53, material = 46 }
 }
 
 -- Create crafting marker
