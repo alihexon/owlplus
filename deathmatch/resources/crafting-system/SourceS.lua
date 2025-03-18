@@ -1,7 +1,8 @@
 -- Define craftable items
 local craftableItems = {
     { name = "pcp", id = 43, material = 33 },       -- PCP requires itemid33
-    { name = "redbandana", id = 123, material = 160 } -- Red Bandana requires itemid160
+    { name = "redbandana", id = 123, material = 160 }, -- Red Bandana requires itemid160
+    { name = "heroin", id = 35, material = 37 }  -- Added heroin item: requires material id 37
 }
 
 -- Create a crafting marker (using your coordinates)
@@ -69,7 +70,7 @@ end
 function onPlayerEnterMarker(hitPlayer, matchingDimension)
     if hitPlayer and getElementType(hitPlayer) == "player" and matchingDimension then
         playersInMarker[hitPlayer] = true
-        outputChatBox("Type /craft to see the GUI.", hitPlayer, 0, 255, 0)
+        outputChatBox("Type /craft to open the crafting menu.", hitPlayer, 0, 255, 0)
     end
 end
 addEventHandler("onMarkerHit", craftingMarker, onPlayerEnterMarker)
