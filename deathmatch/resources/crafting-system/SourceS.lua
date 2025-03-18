@@ -62,23 +62,14 @@ function craftItem(player, itemName)
             return
         end
     end
-    outputChatBox("Invalid item name. Use /craft [pcp|redbandana]", player, 255, 0, 0)
+    outputChatBox("Invalid item name.", player, 255, 0, 0)
 end
-
--- Command to craft an item
-addCommandHandler("craft", function(player, _, itemName)
-    if itemName then
-        craftItem(player, itemName)
-    else
-        outputChatBox("Usage: /craft [pcp|redbandana]", player, 255, 255, 0)
-    end
-end)
 
 -- Marker hit event (track players inside the marker)
 function onPlayerEnterMarker(hitPlayer, matchingDimension)
     if hitPlayer and getElementType(hitPlayer) == "player" and matchingDimension then
         playersInMarker[hitPlayer] = true
-        outputChatBox("Type /craft [pcp|redbandana] to craft an item.", hitPlayer, 0, 255, 0)
+        outputChatBox("Type /craft to see the GUI.", hitPlayer, 0, 255, 0)
     end
 end
 addEventHandler("onMarkerHit", craftingMarker, onPlayerEnterMarker)
@@ -97,7 +88,6 @@ function onPlayerLeaveMarker(hitPlayer, matchingDimension)
     end
 end
 addEventHandler("onMarkerLeave", craftingMarker, onPlayerLeaveMarker)
-
 
 -- Handle crafting request from client
 addEvent("requestCrafting", true)

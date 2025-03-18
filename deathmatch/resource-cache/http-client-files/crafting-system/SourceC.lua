@@ -28,7 +28,7 @@ function craftItem(itemName)
     window = nil
 end
 
--- Command to open the crafting GUI
+-- Command to open the crafting GUI (keep this for opening the menu)
 addCommandHandler("craft", function()
     openCraftingGUI()
 end)
