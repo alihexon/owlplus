@@ -1,11 +1,11 @@
 -- Table to hold the craftable items and their details
 local craftableItems = {
-    { name = "pcp", id = 43, material = 33 },       -- Craft PCP
-    { name = "redbandana", id = 123, material = 160 }, -- Craft Red Bandana
+    { name = "pcp", id = 43, material = 33 },       
+    { name = "redbandana", id = 123, material = 160 }, 
     { name = "cocaine", id = 50, material = 42 },
-    { name = "item4", id = 80, material = 100 },     -- Add a 4th item here
-    { name = "item5", id = 101, material = 200 },    -- Add a 5th item here
-    -- Add more items here
+    { name = "cocainee", id = 51, material = 43 },
+    { name = "meth", id = 52, material = 44 },  -- Added extra items for testing
+    { name = "heroin", id = 53, material = 45 }
 }
 
 local window, buttons = nil, {}
@@ -40,35 +40,31 @@ function openCraftingGUI()
     if window and isElement(window) then return end -- Prevent duplicate windows
 
     local screenW, screenH = guiGetScreenSize()
-    local windowW, windowH = 300, 300 -- Increased window height to accommodate more items
+    local windowW, windowH = 300, 450 -- Increased window height
     local posX, posY = (screenW - windowW) / 2, (screenH - windowH) / 2
 
     window = guiCreateWindow(posX, posY, windowW, windowH, "Crafting Menu", false)
     guiWindowSetSizable(window, false)
 
-    -- Clear any previous buttons
-    buttons = {}
+    -- Create a scroll pane to handle more items
+    local scrollPane = guiCreateScrollPane(50, 50, 200, 300, false, window)
+    local yOffset = 0 
 
-    -- Create a scroll pane to hold the buttons
-    local scrollPane = guiCreateScrollPane(50, 50, 200, 200, false, window) -- Increased height of the scroll pane
-    local yOffset = 0 -- Start the vertical position at 0
+    buttons = {} -- Reset buttons table
 
-    -- Loop through each craftable item and create a button
     for _, item in ipairs(craftableItems) do
-        local button = guiCreateButton(0, yOffset, 200, 40, "Craft " .. item.name, false, scrollPane)
+        local button = guiCreateButton(0, yOffset, 180, 40, "Craft " .. item.name, false, scrollPane)
         table.insert(buttons, { button = button, itemName = item.name })
 
-        -- Add event handler for each button
         addEventHandler("onClientGUIClick", button, function()
             craftItem(item.name)
         end, false)
 
-        -- Adjust yOffset for the next button
-        yOffset = yOffset + 50
+        yOffset = yOffset + 45
     end
 
-    -- Close button
-    local closeButton = guiCreateButton(50, yOffset + 50, 200, 40, "Close", false, window) -- Adjusted close button position
+    -- Close button below the scroll pane
+    local closeButton = guiCreateButton(50, windowH - 60, 200, 40, "Close", false, window)
     addEventHandler("onClientGUIClick", closeButton, function()
         destroyElement(window)
         window = nil
