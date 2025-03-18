@@ -62,23 +62,21 @@ function craftItem(player, itemName)
             return
         end
     end
-    outputChatBox("Invalid item name. Use /craft [pcp|redbandana]", player, 255, 0, 0)
+    outputChatBox("Invalid item name.", player, 255, 0, 0)
 end
 
--- Command to craft an item
-addCommandHandler("craft", function(player, _, itemName)
-    if itemName then
-        craftItem(player, itemName)
-    else
-        outputChatBox("Usage: /craft [pcp|redbandana]", player, 255, 255, 0)
-    end
+-- Event to handle crafting requests from the client
+addEvent("onClientCraftItem", true)
+addEventHandler("onClientCraftItem", resourceRoot, function(itemName)
+    craftItem(client, itemName)
 end)
 
 -- Marker hit event (track players inside the marker)
 function onPlayerEnterMarker(hitPlayer, matchingDimension)
     if hitPlayer and getElementType(hitPlayer) == "player" and matchingDimension then
         playersInMarker[hitPlayer] = true
-        outputChatBox("Type /craft [pcp|redbandana] to craft an item.", hitPlayer, 0, 255, 0)
+        outputChatBox("Type /craft to open the crafting menu.", hitPlayer, 0, 255, 0)
+        triggerClientEvent(hitPlayer, "onPlayerEnterCraftingMarker", resourceRoot)
     end
 end
 addEventHandler("onMarkerHit", craftingMarker, onPlayerEnterMarker)
@@ -88,6 +86,7 @@ function onPlayerLeaveMarker(hitPlayer, matchingDimension)
     if hitPlayer and getElementType(hitPlayer) == "player" and matchingDimension then
         playersInMarker[hitPlayer] = nil
         outputChatBox("You left the crafting area.", hitPlayer, 255, 0, 0)
+        triggerClientEvent(hitPlayer, "onPlayerLeaveCraftingMarker", resourceRoot)
 
         -- Cancel crafting if the player leaves the marker
         if activeCraftingSessions[hitPlayer] then
