@@ -97,3 +97,12 @@ function onPlayerLeaveMarker(hitPlayer, matchingDimension)
     end
 end
 addEventHandler("onMarkerLeave", craftingMarker, onPlayerLeaveMarker)
+
+
+-- Handle crafting request from client
+addEvent("requestCrafting", true)
+addEventHandler("requestCrafting", root, function(itemName)
+    if client then
+        craftItem(client, itemName)
+    end
+end)
