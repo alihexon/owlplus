@@ -4,6 +4,7 @@ local craftingProgress = false
 local progressValue = 0
 local progressMax = 0
 local progressItemName = ""
+local progressStart, progressEnd  -- Added variables for time tracking
 
 -- Function to open the crafting menu
 function openCraftingMenu()
@@ -46,9 +47,15 @@ addEventHandler("receiveCraftableItems", root, function(items)
     if isElement(craftingList) then
         guiGridListClear(craftingList)
         for _, item in ipairs(items) do
+            local materialsText = ""
+            for _, mat in ipairs(item.materials) do
+                materialsText = materialsText .. exports["item-system"]:getItemName(mat.id).." ("..mat.quantity.."), "
+            end
+            materialsText = materialsText:sub(1, -3)  -- Remove trailing comma
+            
             local row = guiGridListAddRow(craftingList)
             guiGridListSetItemText(craftingList, row, 1, item.displayName, false, false)
-            guiGridListSetItemText(craftingList, row, 2, item.materials, false, false)  -- New materials column
+            guiGridListSetItemText(craftingList, row, 2, materialsText, false, false)
             guiGridListSetItemText(craftingList, row, 3, tostring(item.time), false, false)
             guiGridListSetItemData(craftingList, row, 1, item.id)
         end
@@ -57,25 +64,35 @@ end)
 
 -- Function to draw a rounded rectangle (for progress bar)
 function dxDrawRoundedRectangle(x, y, width, height, color, radius)
-    dxDrawRectangle(x + radius, y, width - 2 * radius, height, color)  -- Main middle part
-    dxDrawRectangle(x, y + radius, width, height - 2 * radius, color)  -- Main vertical parts
-    dxDrawCircle(x + radius, y + radius, radius, 180, 270, color, color, 10) -- Top-left corner
-    dxDrawCircle(x + width - radius, y + radius, radius, 270, 360, color, color, 10) -- Top-right corner
-    dxDrawCircle(x + radius, y + height - radius, radius, 90, 180, color, color, 10) -- Bottom-left corner
-    dxDrawCircle(x + width - radius, y + height - radius, radius, 0, 90, color, color, 10) -- Bottom-right corner
+    dxDrawRectangle(x + radius, y, width - 2 * radius, height, color)
+    dxDrawRectangle(x, y + radius, width, height - 2 * radius, color)
+    dxDrawCircle(x + radius, y + radius, radius, 180, 270, color, color, 10)
+    dxDrawCircle(x + width - radius, y + radius, radius, 270, 360, color, color, 10)
+    dxDrawCircle(x + radius, y + height - radius, radius, 90, 180, color, color, 10)
+    dxDrawCircle(x + width - radius, y + height - radius, radius, 0, 90, color, color, 10)
 end
 
 -- Crafting progress bar rendering
 function renderCraftingProgress()
     if craftingProgress then
+        local currentTime = getTickCount()
+        progressValue = currentTime - progressStart
+        local progressPercentage = math.min(progressValue / progressMax, 1)
+        
+        if currentTime >= progressEnd then
+            craftingProgress = false
+        end
+
         local barWidth = 300
         local barHeight = 30
         local barX = (screenW - barWidth) / 2
-        local barY = screenH - 220  -- Adjusted slightly higher
+        local barY = screenH - 220
 
-        dxDrawRoundedRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200), 10) -- Background
-        dxDrawRoundedRectangle(barX + 2, barY + 2, (barWidth - 4) * (progressValue / progressMax), barHeight - 4, tocolor(0, 200, 0, 255), 10) -- Green bar
-        dxDrawText(progressItemName .. " (" .. math.floor((progressValue / progressMax) * 100) .. "%)", barX, barY, barX + barWidth, barY + barHeight, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center")
+        dxDrawRoundedRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200), 10)
+        dxDrawRoundedRectangle(barX + 2, barY + 2, (barWidth - 4) * progressPercentage, barHeight - 4, tocolor(0, 200, 0, 255), 10)
+        dxDrawText(progressItemName .. " (" .. math.floor(progressPercentage * 100) .. "%)", 
+                   barX, barY, barX + barWidth, barY + barHeight, 
+                   tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center")
     end
 end
 addEventHandler("onClientRender", root, renderCraftingProgress)
@@ -83,21 +100,16 @@ addEventHandler("onClientRender", root, renderCraftingProgress)
 addEvent("startCraftingProgress", true)
 addEventHandler("startCraftingProgress", root, function(itemName, duration)
     progressItemName = itemName
-    progressValue = 0
     progressMax = duration
     craftingProgress = true
-
-    -- Smooth progress increment, update every frame
-    local progressTimer = setTimer(function()
-        progressValue = progressValue + (duration / 100)  -- Increment by 1% of total time
-        if progressValue >= progressMax then
-            craftingProgress = false
-            killTimer(progressTimer)
-        end
-    end, 10, 0)  -- Update every 10ms for smoother progress
+    progressStart = getTickCount()
+    progressEnd = progressStart + duration
 end)
 
 addEvent("stopCraftingProgress", true)
 addEventHandler("stopCraftingProgress", root, function()
     craftingProgress = false
+    progressValue = 0
+    progressStart = nil
+    progressEnd = nil
 end)
