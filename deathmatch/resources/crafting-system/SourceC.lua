@@ -1,5 +1,5 @@
 local screenW, screenH = guiGetScreenSize()
-local craftingGUI, craftingList, craftButton
+local craftingGUI, craftingList, craftButton, closeButton
 local craftingProgress = false
 local progressValue = 0
 local progressMax = 0
@@ -9,14 +9,16 @@ local progressItemName = ""
 function openCraftingMenu()
     if isElement(craftingGUI) then destroyElement(craftingGUI) end
     
-    craftingGUI = guiCreateWindow((screenW - 400) / 2, (screenH - 300) / 2, 400, 300, "Crafting Menu", false)
+    craftingGUI = guiCreateWindow((screenW - 450) / 2, (screenH - 350) / 2, 450, 350, "Crafting Menu", false)
     guiWindowSetSizable(craftingGUI, false)
 
-    craftingList = guiCreateGridList(10, 30, 380, 200, false, craftingGUI)
-    local colName = guiGridListAddColumn(craftingList, "Item", 0.6)
-    local colTime = guiGridListAddColumn(craftingList, "Time (sec)", 0.3)
-    
-    craftButton = guiCreateButton(10, 240, 380, 40, "Craft Selected Item", false, craftingGUI)
+    craftingList = guiCreateGridList(10, 30, 430, 230, false, craftingGUI)
+    local colName = guiGridListAddColumn(craftingList, "Item", 0.3)
+    local colMaterials = guiGridListAddColumn(craftingList, "Materials", 0.4)
+    local colTime = guiGridListAddColumn(craftingList, "Time (sec)", 0.2)
+
+    craftButton = guiCreateButton(10, 270, 210, 40, "Craft Selected Item", false, craftingGUI)
+    closeButton = guiCreateButton(230, 270, 210, 40, "Close", false, craftingGUI)
 
     addEventHandler("onClientGUIClick", craftButton, function()
         local selectedRow = guiGridListGetSelectedItem(craftingList)
@@ -27,6 +29,10 @@ function openCraftingMenu()
         else
             outputChatBox("Select an item to craft.", 255, 0, 0)
         end
+    end, false)
+
+    addEventHandler("onClientGUIClick", closeButton, function()
+        if isElement(craftingGUI) then destroyElement(craftingGUI) end
     end, false)
 
     -- Request craftable items from server
@@ -42,11 +48,22 @@ addEventHandler("receiveCraftableItems", root, function(items)
         for _, item in ipairs(items) do
             local row = guiGridListAddRow(craftingList)
             guiGridListSetItemText(craftingList, row, 1, item.displayName, false, false)
-            guiGridListSetItemText(craftingList, row, 2, tostring(item.time), false, false)
+            guiGridListSetItemText(craftingList, row, 2, item.materials, false, false)  -- New materials column
+            guiGridListSetItemText(craftingList, row, 3, tostring(item.time), false, false)
             guiGridListSetItemData(craftingList, row, 1, item.id)
         end
     end
 end)
+
+-- Function to draw a rounded rectangle (for progress bar)
+function dxDrawRoundedRectangle(x, y, width, height, color, radius)
+    dxDrawRectangle(x + radius, y, width - 2 * radius, height, color)  -- Main middle part
+    dxDrawRectangle(x, y + radius, width, height - 2 * radius, color)  -- Main vertical parts
+    dxDrawCircle(x + radius, y + radius, radius, 180, 270, color, color, 10) -- Top-left corner
+    dxDrawCircle(x + width - radius, y + radius, radius, 270, 360, color, color, 10) -- Top-right corner
+    dxDrawCircle(x + radius, y + height - radius, radius, 90, 180, color, color, 10) -- Bottom-left corner
+    dxDrawCircle(x + width - radius, y + height - radius, radius, 0, 90, color, color, 10) -- Bottom-right corner
+end
 
 -- Crafting progress bar rendering
 function renderCraftingProgress()
@@ -54,10 +71,10 @@ function renderCraftingProgress()
         local barWidth = 300
         local barHeight = 30
         local barX = (screenW - barWidth) / 2
-        local barY = screenH - 200 
+        local barY = screenH - 220  -- Adjusted slightly higher
 
-        dxDrawRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200)) -- Background
-        dxDrawRectangle(barX + 2, barY + 2, (barWidth - 4) * (progressValue / progressMax), barHeight - 4, tocolor(0, 200, 0, 255)) -- Green bar
+        dxDrawRoundedRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200), 10) -- Background
+        dxDrawRoundedRectangle(barX + 2, barY + 2, (barWidth - 4) * (progressValue / progressMax), barHeight - 4, tocolor(0, 200, 0, 255), 10) -- Green bar
         dxDrawText(progressItemName .. " (" .. math.floor((progressValue / progressMax) * 100) .. "%)", barX, barY, barX + barWidth, barY + barHeight, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center")
     end
 end
