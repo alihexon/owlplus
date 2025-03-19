@@ -27,54 +27,61 @@ function craftItem(player, itemName)
         return
     end
 
+    local foundItem = nil
     for _, item in ipairs(craftableItems) do
-        if item.name == itemName then
-            -- Check if the player has the required materials
-            for _, material in ipairs(item.materials) do
-                if exports["item-system"]:countItems(player, material.id) < material.quantity then
-                    outputChatBox("You do not have enough materials for " .. item.displayName .. ".", player, 255, 0, 0)
-                    return
-                end
-            end
-
-            -- Start crafting process
-            activeCraftingSessions[player] = true
-            outputChatBox("Processing... Crafting " .. item.displayName .. " (5 seconds).", player, 0, 255, 0)
-
-            setTimer(function()
-                if isElement(player) and playersInMarker[player] then
-                    -- Recheck materials before finalizing
-                    for _, material in ipairs(item.materials) do
-                        if exports["item-system"]:countItems(player, material.id) < material.quantity then
-                            outputChatBox("Crafting failed! You lost or used some materials.", player, 255, 0, 0)
-                            activeCraftingSessions[player] = nil
-                            return
-                        end
-                    end
-
-                    -- Remove materials
-                    for _, material in ipairs(item.materials) do
-                        for i = 1, material.quantity do
-                            exports["item-system"]:takeItem(player, material.id)
-                        end
-                    end
-
-                    -- Give crafted item
-                    local giveSuccess = exports["item-system"]:giveItem(player, item.id, 1)
-                    if giveSuccess then
-                        outputChatBox("You crafted a " .. item.displayName .. "!", player, 0, 255, 0)
-                    else
-                        outputChatBox("Failed to give item. Inventory might be full.", player, 255, 0, 0)
-                    end
-                else
-                    outputChatBox("Crafting canceled. You left the crafting area.", player, 255, 0, 0)
-                end
-                activeCraftingSessions[player] = nil
-            end, 5000, 1)
-
-            return
+        if item.name:lower() == itemName:lower() then  -- Case-insensitive check
+            foundItem = item
+            break
         end
     end
+
+    if foundItem then
+        -- Check if the player has the required materials
+        for _, material in ipairs(foundItem.materials) do
+            if exports["item-system"]:countItems(player, material.id) < material.quantity then
+                outputChatBox("You do not have enough materials for " .. foundItem.displayName .. ".", player, 255, 0, 0)
+                return
+            end
+        end
+
+        -- Start crafting process
+        activeCraftingSessions[player] = true
+        outputChatBox("Processing... Crafting " .. foundItem.displayName .. " (5 seconds).", player, 0, 255, 0)
+
+        setTimer(function()
+            if isElement(player) and playersInMarker[player] then
+                -- Recheck materials before finalizing
+                for _, material in ipairs(foundItem.materials) do
+                    if exports["item-system"]:countItems(player, material.id) < material.quantity then
+                        outputChatBox("Crafting failed! You lost or used some materials.", player, 255, 0, 0)
+                        activeCraftingSessions[player] = nil
+                        return
+                    end
+                end
+
+                -- Remove materials
+                for _, material in ipairs(foundItem.materials) do
+                    for i = 1, material.quantity do
+                        exports["item-system"]:takeItem(player, material.id)
+                    end
+                end
+
+                -- Give crafted item
+                local giveSuccess = exports["item-system"]:giveItem(player, foundItem.id, 1)
+                if giveSuccess then
+                    outputChatBox("You crafted a " .. foundItem.displayName .. "!", player, 0, 255, 0)
+                else
+                    outputChatBox("Failed to give item. Inventory might be full.", player, 255, 0, 0)
+                end
+            else
+                outputChatBox("Crafting canceled. You left the crafting area.", player, 255, 0, 0)
+            end
+            activeCraftingSessions[player] = nil
+        end, 5000, 1)
+
+        return
+    end
+
     outputChatBox("Invalid item name.", player, 255, 0, 0)
 end
 
