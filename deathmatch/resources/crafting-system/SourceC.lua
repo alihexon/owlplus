@@ -64,12 +64,16 @@ end)
 
 -- Function to draw a rounded rectangle (for progress bar)
 function dxDrawRoundedRectangle(x, y, width, height, color, radius)
+    -- Draw the main rectangle
     dxDrawRectangle(x + radius, y, width - 2 * radius, height, color)
-    dxDrawRectangle(x, y + radius, width, height - 2 * radius, color)
-    dxDrawCircle(x + radius, y + radius, radius, 180, 270, color, color, 10)
-    dxDrawCircle(x + width - radius, y + radius, radius, 270, 360, color, color, 10)
-    dxDrawCircle(x + radius, y + height - radius, radius, 90, 180, color, color, 10)
-    dxDrawCircle(x + width - radius, y + height - radius, radius, 0, 90, color, color, 10)
+    dxDrawRectangle(x, y + radius, radius, height - 2 * radius, color) -- Left side
+    dxDrawRectangle(x + width - radius, y + radius, radius, height - 2 * radius, color) -- Right side
+
+    -- Draw the rounded corners
+    dxDrawCircle(x + radius, y + radius, radius, 180, 270, color, color, 10) -- Top-left corner
+    dxDrawCircle(x + width - radius, y + radius, radius, 270, 360, color, color, 10) -- Top-right corner
+    dxDrawCircle(x + radius, y + height - radius, radius, 90, 180, color, color, 10) -- Bottom-left corner
+    dxDrawCircle(x + width - radius, y + height - radius, radius, 0, 90, color, color, 10) -- Bottom-right corner
 end
 
 -- Crafting progress bar rendering
@@ -78,7 +82,7 @@ function renderCraftingProgress()
         local currentTime = getTickCount()
         progressValue = currentTime - progressStart
         local progressPercentage = math.min(progressValue / progressMax, 1)
-        
+
         if currentTime >= progressEnd then
             craftingProgress = false
         end
@@ -87,16 +91,28 @@ function renderCraftingProgress()
         local barHeight = 30
         local barX = (screenW - barWidth) / 2
         local barY = screenH - 220
+        local radius = 10 -- Radius for rounded corners
 
-        dxDrawRoundedRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200), 10)
-        dxDrawRoundedRectangle(barX + 2, barY + 2, (barWidth - 4) * progressPercentage, barHeight - 4, tocolor(0, 200, 0, 255), 10)
-        dxDrawText(progressItemName .. " (" .. math.floor(progressPercentage * 100) .. "%)", 
-                   barX, barY, barX + barWidth, barY + barHeight, 
+        -- Draw the background of the progress bar
+        dxDrawRoundedRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200), radius)
+
+        -- Calculate the width of the progress bar
+        local progressWidth = (barWidth - 2 * radius) * progressPercentage
+
+        -- Draw the progress bar with rounded corners
+        if progressWidth > 0 then
+            dxDrawRoundedRectangle(barX, barY, progressWidth + 2 * radius, barHeight, tocolor(0, 200, 0, 255), radius)
+        end
+
+        -- Draw the progress text
+        dxDrawText(progressItemName .. " (" .. math.floor(progressPercentage * 100) .. "%)",
+                   barX, barY, barX + barWidth, barY + barHeight,
                    tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center")
     end
 end
 addEventHandler("onClientRender", root, renderCraftingProgress)
 
+-- Event to start crafting progress
 addEvent("startCraftingProgress", true)
 addEventHandler("startCraftingProgress", root, function(itemName, duration)
     progressItemName = itemName
@@ -106,6 +122,7 @@ addEventHandler("startCraftingProgress", root, function(itemName, duration)
     progressEnd = progressStart + duration
 end)
 
+-- Event to stop crafting progress
 addEvent("stopCraftingProgress", true)
 addEventHandler("stopCraftingProgress", root, function()
     craftingProgress = false
