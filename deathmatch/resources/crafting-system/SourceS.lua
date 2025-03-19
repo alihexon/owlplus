@@ -43,6 +43,15 @@ function craftItem(player, itemName)
 
             setTimer(function()
                 if isElement(player) and playersInMarker[player] then
+                    -- Check again if player still has all required materials
+                    for _, materialID in ipairs(item.materials) do
+                        if not exports["item-system"]:hasItem(player, materialID) then
+                            outputChatBox("Crafting failed! You no longer have the required materials.", player, 255, 0, 0)
+                            activeCraftingSessions[player] = nil
+                            return
+                        end
+                    end
+
                     -- Remove one unit of each material (since we're ignoring quantity)
                     for _, materialID in ipairs(item.materials) do
                         exports["item-system"]:takeItem(player, materialID)
