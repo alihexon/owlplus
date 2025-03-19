@@ -5,13 +5,13 @@ local craftButton = nil
 local closeButton = nil
 
 local craftableItems = {
-    { name = "pcp" },
-    { name = "redbandana" },
-    { name = "cocaine" },
-    { name = "cocainee" },
-    { name = "meth" },
-    { name = "heroin" },
-    { name = "heroinn" }
+    { name = "pcp", displayName = "PCP" },
+    { name = "redbandana", displayName = "Red Bandana" },
+    { name = "cocaine", displayName = "Cocaine" },
+    { name = "cocainee", displayName = "Cocaine Brick" },
+    { name = "meth", displayName = "Meth" },
+    { name = "heroin", displayName = "Heroin" },
+    { name = "heroinn", displayName = "Heroin Brick" }
 }
 
 function openCraftingMenu()
@@ -24,7 +24,7 @@ function openCraftingMenu()
     
     for _, item in ipairs(craftableItems) do
         local row = guiGridListAddRow(craftingList)
-        guiGridListSetItemText(craftingList, row, 1, item.name, false, false)
+        guiGridListSetItemText(craftingList, row, 1, item.displayName, false, false)
     end
 
     craftButton = guiCreateButton(10, 240, 180, 40, "Craft Item", false, craftingWindow)
