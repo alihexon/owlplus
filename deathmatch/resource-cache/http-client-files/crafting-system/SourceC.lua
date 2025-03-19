@@ -1,65 +1,85 @@
 local screenW, screenH = guiGetScreenSize()
-local craftingWindow, craftingList, craftButton, closeButton
-local craftableItems = {}
-local progressBar = nil
-local progress = 0
-local craftingTime = 0
+local craftingGUI, craftingList, craftButton
+local craftingProgress = false
+local progressValue = 0
+local progressMax = 0
+local progressItemName = ""
 
+-- Function to open the crafting menu
 function openCraftingMenu()
-    if isElement(craftingWindow) then return end
-
-    triggerServerEvent("requestCraftableItems", localPlayer)
-
-    craftingWindow = guiCreateWindow((screenW - 400) / 2, (screenH - 300) / 2, 400, 300, "Crafting Menu", false)
-    craftingList = guiCreateGridList(10, 30, 380, 200, false, craftingWindow)
+    if isElement(craftingGUI) then destroyElement(craftingGUI) end
     
-    guiGridListAddColumn(craftingList, "Item Name", 0.85)
+    craftingGUI = guiCreateWindow((screenW - 400) / 2, (screenH - 300) / 2, 400, 300, "Crafting Menu", false)
+    guiWindowSetSizable(craftingGUI, false)
 
-    craftButton = guiCreateButton(10, 240, 180, 40, "Craft Item", false, craftingWindow)
-    closeButton = guiCreateButton(210, 240, 180, 40, "Close", false, craftingWindow)
+    craftingList = guiCreateGridList(10, 30, 380, 200, false, craftingGUI)
+    local colName = guiGridListAddColumn(craftingList, "Item", 0.6)
+    local colTime = guiGridListAddColumn(craftingList, "Time (sec)", 0.3)
+    
+    craftButton = guiCreateButton(10, 240, 380, 40, "Craft Selected Item", false, craftingGUI)
 
     addEventHandler("onClientGUIClick", craftButton, function()
         local selectedRow = guiGridListGetSelectedItem(craftingList)
         if selectedRow ~= -1 then
-            local itemID = guiGridListGetItemData(craftingList, selectedRow, 1)
+            local itemID = guiGridListGetItemData(craftingList, selectedRow, colName)
             triggerServerEvent("requestCrafting", localPlayer, itemID)
+            destroyElement(craftingGUI)
         else
             outputChatBox("Select an item to craft.", 255, 0, 0)
         end
     end, false)
 
-    addEventHandler("onClientGUIClick", closeButton, function()
-        if isElement(craftingWindow) then
-            destroyElement(craftingWindow)
-        end
-    end, false)
+    -- Request craftable items from server
+    triggerServerEvent("requestCraftableItems", localPlayer)
 end
 addCommandHandler("craft", openCraftingMenu)
 
+-- Receive craftable items from server
 addEvent("receiveCraftableItems", true)
-addEventHandler("receiveCraftableItems", root, function(serverItems)
-    craftableItems = serverItems
-    guiGridListClear(craftingList)
-    
-    for _, item in ipairs(craftableItems) do
-        local row = guiGridListAddRow(craftingList)
-        guiGridListSetItemText(craftingList, row, 1, item.displayName, false, false)
-        guiGridListSetItemData(craftingList, row, 1, item.id)
+addEventHandler("receiveCraftableItems", root, function(items)
+    if isElement(craftingList) then
+        guiGridListClear(craftingList)
+        for _, item in ipairs(items) do
+            local row = guiGridListAddRow(craftingList)
+            guiGridListSetItemText(craftingList, row, 1, item.displayName, false, false)
+            guiGridListSetItemText(craftingList, row, 2, tostring(item.time), false, false)
+            guiGridListSetItemData(craftingList, row, 1, item.id)
+        end
     end
 end)
 
-addEvent("startCraftingProgress", true)
-addEventHandler("startCraftingProgress", root, function(time)
-    craftingTime = time
-    progress = 0
-    addEventHandler("onClientRender", root, renderProgressBar)
-end)
+-- Crafting progress bar rendering
+function renderCraftingProgress()
+    if craftingProgress then
+        local barWidth = 300
+        local barHeight = 30
+        local barX = (screenW - barWidth) / 2
+        local barY = screenH - 200 
 
-function renderProgressBar()
-    dxDrawRectangle(screenW / 2 - 150, screenH - 50, 300, 30, tocolor(0, 0, 0, 200))
-    dxDrawRectangle(screenW / 2 - 150, screenH - 50, 300 * (progress / craftingTime), 30, tocolor(0, 255, 0, 200))
-    progress = progress + 0.05
-    if progress >= craftingTime then
-        removeEventHandler("onClientRender", root, renderProgressBar)
+        dxDrawRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200)) -- Background
+        dxDrawRectangle(barX + 2, barY + 2, (barWidth - 4) * (progressValue / progressMax), barHeight - 4, tocolor(0, 200, 0, 255)) -- Green bar
+        dxDrawText(progressItemName .. " (" .. math.floor((progressValue / progressMax) * 100) .. "%)", barX, barY, barX + barWidth, barY + barHeight, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center")
     end
 end
+addEventHandler("onClientRender", root, renderCraftingProgress)
+
+addEvent("startCraftingProgress", true)
+addEventHandler("startCraftingProgress", root, function(itemName, duration)
+    progressItemName = itemName
+    progressValue = 0
+    progressMax = duration
+    craftingProgress = true
+
+    local progressTimer = setTimer(function()
+        progressValue = progressValue + 500
+        if progressValue >= progressMax then
+            craftingProgress = false
+            killTimer(progressTimer)
+        end
+    end, 500, duration / 500)
+end)
+
+addEvent("stopCraftingProgress", true)
+addEventHandler("stopCraftingProgress", root, function()
+    craftingProgress = false
+end)
