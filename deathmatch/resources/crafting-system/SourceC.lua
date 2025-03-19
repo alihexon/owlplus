@@ -87,13 +87,14 @@ addEventHandler("startCraftingProgress", root, function(itemName, duration)
     progressMax = duration
     craftingProgress = true
 
+    -- Smooth progress increment, update every frame
     local progressTimer = setTimer(function()
-        progressValue = progressValue + 500
+        progressValue = progressValue + (duration / 100)  -- Increment by 1% of total time
         if progressValue >= progressMax then
             craftingProgress = false
             killTimer(progressTimer)
         end
-    end, 500, duration / 500)
+    end, 10, 0)  -- Update every 10ms for smoother progress
 end)
 
 addEvent("stopCraftingProgress", true)
