@@ -1,11 +1,14 @@
 local screenW, screenH = guiGetScreenSize()
 local craftingWindow, craftingList, craftButton, closeButton
 local craftableItems = {}
+local progressBar = nil
+local progress = 0
+local craftingTime = 0
 
 function openCraftingMenu()
-    if isElement(craftingWindow) then return end -- Prevent multiple windows
+    if isElement(craftingWindow) then return end
 
-    triggerServerEvent("requestCraftableItems", localPlayer) -- Request item list
+    triggerServerEvent("requestCraftableItems", localPlayer)
 
     craftingWindow = guiCreateWindow((screenW - 400) / 2, (screenH - 300) / 2, 400, 300, "Crafting Menu", false)
     craftingList = guiCreateGridList(10, 30, 380, 200, false, craftingWindow)
@@ -44,3 +47,19 @@ addEventHandler("receiveCraftableItems", root, function(serverItems)
         guiGridListSetItemData(craftingList, row, 1, item.id)
     end
 end)
+
+addEvent("startCraftingProgress", true)
+addEventHandler("startCraftingProgress", root, function(time)
+    craftingTime = time
+    progress = 0
+    addEventHandler("onClientRender", root, renderProgressBar)
+end)
+
+function renderProgressBar()
+    dxDrawRectangle(screenW / 2 - 150, screenH - 50, 300, 30, tocolor(0, 0, 0, 200))
+    dxDrawRectangle(screenW / 2 - 150, screenH - 50, 300 * (progress / craftingTime), 30, tocolor(0, 255, 0, 200))
+    progress = progress + 0.05
+    if progress >= craftingTime then
+        removeEventHandler("onClientRender", root, renderProgressBar)
+    end
+end
