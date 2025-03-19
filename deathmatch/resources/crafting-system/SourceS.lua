@@ -1,12 +1,12 @@
--- Define craftable items with required materials (ignoring quantity)
+-- Define craftable items with required materials (ID and Quantity)
 local craftableItems = {
-    { name = "pcp", id = 43, materials = {33, 34} },       
-    { name = "redbandana", id = 123, materials = {160} }, 
-    { name = "cocaine", id = 50, materials = {42} },
-    { name = "cocainee", id = 51, materials = {43} },
-    { name = "meth", id = 52, materials = {44, 42} },
-    { name = "heroin", id = 53, materials = {45} },
-    { name = "heroinn", id = 53, materials = {46, 44} }
+    { name = "pcp", id = 43, materials = { {33, 2}, {34, 1} } },       
+    { name = "redbandana", id = 123, materials = { {160, 1} } }, 
+    { name = "cocaine", id = 50, materials = { {42, 3} } },
+    { name = "cocainee", id = 51, materials = { {43, 2} } },
+    { name = "meth", id = 52, materials = { {44, 2}, {42, 1} } },
+    { name = "heroin", id = 53, materials = { {45, 3} } },
+    { name = "heroinn", id = 53, materials = { {46, 2}, {44, 1} } }
 }
 
 -- Create crafting marker
@@ -29,10 +29,13 @@ function craftItem(player, itemName)
 
     for _, item in ipairs(craftableItems) do
         if item.name == itemName then
-            -- Check if the player has all required materials (ignoring quantity)
-            for _, materialID in ipairs(item.materials) do
-                if not exports["item-system"]:hasItem(player, materialID) then
-                    outputChatBox("You do not have the required materials.", player, 255, 0, 0)
+            -- Check if the player has the required materials (with quantity)
+            for _, material in ipairs(item.materials) do
+                local materialID = material[1]
+                local requiredQuantity = material[2]
+                
+                if exports["item-system"]:countItems(player, materialID) < requiredQuantity then
+                    outputChatBox("You do not have enough of the required materials.", player, 255, 0, 0)
                     return
                 end
             end
@@ -43,18 +46,23 @@ function craftItem(player, itemName)
 
             setTimer(function()
                 if isElement(player) and playersInMarker[player] then
-                    -- Check again if player still has all required materials
-                    for _, materialID in ipairs(item.materials) do
-                        if not exports["item-system"]:hasItem(player, materialID) then
-                            outputChatBox("Crafting failed! You no longer have the required materials.", player, 255, 0, 0)
+                    -- Recheck if they still have the materials before finalizing
+                    for _, material in ipairs(item.materials) do
+                        local materialID = material[1]
+                        local requiredQuantity = material[2]
+
+                        if exports["item-system"]:countItems(player, materialID) < requiredQuantity then
+                            outputChatBox("Crafting failed! You lost or used some materials during crafting.", player, 255, 0, 0)
                             activeCraftingSessions[player] = nil
                             return
                         end
                     end
 
-                    -- Remove one unit of each material (since we're ignoring quantity)
-                    for _, materialID in ipairs(item.materials) do
-                        exports["item-system"]:takeItem(player, materialID)
+                    -- Remove required quantity of each material
+                    for _, material in ipairs(item.materials) do
+                        local materialID = material[1]
+                        local requiredQuantity = material[2]
+                        exports["item-system"]:takeItem(player, materialID, requiredQuantity)
                     end
 
                     -- Give the crafted item
