@@ -286,3 +286,28 @@ function updateSliderValue()
     end
 end
 addEventHandler("onClientRender", root, updateSliderValue)
+
+--------------------------------------------------------------------------------
+-- MOUSE WHEEL SCROLLING FOR GRID
+--------------------------------------------------------------------------------
+function handleMouseWheel(key, state)
+    if not craftingGUI.visible then return end
+
+    -- Check if the mouse is over the grid area
+    if isMouseInPosition(grid.startX, grid.startY, grid.totalWidth, grid.visibleHeight) then
+        local totalItems = #craftingGUI.items
+        local totalRows = math.ceil(totalItems / 2)
+        local maxScrollRows = math.max(totalRows - grid.visibleRows, 0)
+
+        -- Scroll up (negative key value)
+        if key == "mouse_wheel_up" then
+            slider.currentValue = math.max(slider.minValue, slider.currentValue - 10) -- Scroll up by 10 units
+        end
+
+        -- Scroll down (positive key value)
+        if key == "mouse_wheel_down" then
+            slider.currentValue = math.min(slider.maxValue, slider.currentValue + 10) -- Scroll down by 10 units
+        end
+    end
+end
+addEventHandler("onClientKey", root, handleMouseWheel)
