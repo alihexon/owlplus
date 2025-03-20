@@ -1,3 +1,6 @@
+-------------------------
+-- SERVER SIDE SCRIPT
+-------------------------
 -- Define craftable items (server-side only) with specific crafting times
 local craftableItems = {
     { id = 1, name = "pcp", displayName = "PCP", itemID = 43, materials = { { id = 33, quantity = 2 }, { id = 34, quantity = 1 }, { id = 35, quantity = 1 }, { id = 36, quantity = 1 }, { id = 37, quantity = 1 } }, time = 3 },       

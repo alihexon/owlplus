@@ -1,3 +1,6 @@
+-------------------------
+-- CLIENT SIDE SCRIPT
+-------------------------
 local screenW, screenH = guiGetScreenSize()
 
 -- Crafting GUI settings
@@ -80,12 +83,7 @@ function renderCraftingMenu()
     local scrollOffsetPixels = scrollOffsetRows * (grid.itemHeight + grid.padding)
 
     -- Draw items to the render target so they are clipped to the grid area
-    dxSetRenderTarget(gridRT, false)
-    -- Clear the render target with a fully transparent rectangle using a blend mode override
-    dxSetBlendMode("modulate_add")
-    dxDrawRectangle(0, 0, grid.totalWidth, grid.visibleHeight, tocolor(0, 0, 0, 0))
-    dxSetBlendMode("blend")
-
+    dxSetRenderTarget(gridRT, true)  -- enable clear mode; this clears automatically
     for i, item in ipairs(craftingGUI.items) do
         local row = math.floor((i - 1) / 2)
         local col = (i - 1) % 2
@@ -203,9 +201,12 @@ function handleCraftingMenuClick(button, state)
             local scrollOffsetPixels = scrollOffsetRows * (grid.itemHeight + grid.padding)
             y = y - scrollOffsetPixels
             
-            if isMouseInPosition(x, y, grid.itemWidth, grid.itemHeight) then
-                craftingGUI.selectedItem = i
-                break
+            -- Only allow selection if the item is within the visible grid area
+            if y + grid.itemHeight >= grid.startY and y <= grid.startY + grid.visibleHeight then
+                if isMouseInPosition(x, y, grid.itemWidth, grid.itemHeight) then
+                    craftingGUI.selectedItem = i
+                    break
+                end
             end
         end
     end
