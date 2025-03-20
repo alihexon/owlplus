@@ -101,7 +101,12 @@ function renderCraftingMenu()
 
     -- Draw craft and close buttons
     local buttonWidth = (craftingGUI.width - 30) / 2
-    if dxDrawButton(craftingGUI.x + 10, craftingGUI.y + craftingGUI.height - 50, buttonWidth - 5, 40, "Craft Selected Item") then
+    local buttonSpacing = 10 -- Space between buttons
+    local buttonX = craftingGUI.x + 10
+    local buttonY = craftingGUI.y + craftingGUI.height - 50
+
+    -- Craft button
+    if dxDrawButton(buttonX, buttonY, buttonWidth - buttonSpacing / 2, 40, "Craft Selected Item") then
         if craftingGUI.selectedItem then
             local itemID = craftingGUI.items[craftingGUI.selectedItem].id
             triggerServerEvent("requestCrafting", localPlayer, itemID)
@@ -111,7 +116,8 @@ function renderCraftingMenu()
         end
     end
 
-    if dxDrawButton(craftingGUI.x + buttonWidth + 5, craftingGUI.y + craftingGUI.height - 50, buttonWidth - 5, 40, "Close") then
+    -- Close button
+    if dxDrawButton(buttonX + buttonWidth + buttonSpacing / 2, buttonY, buttonWidth - buttonSpacing / 2, 40, "Close") then
         closeCraftingMenu()
     end
 end
