@@ -3,7 +3,7 @@
 -------------------------
 -- Define craftable items (server-side only) with specific crafting times
 local craftableItems = {
-    { id = 1, name = "pcp", displayName = "PCP", itemID = 43, materials = { { id = 33, quantity = 2 }, { id = 34, quantity = 1 }, { id = 35, quantity = 1 }, { id = 36, quantity = 1 }, { id = 37, quantity = 1 } }, time = 3 },       
+    { id = 1, name = "pcp", displayName = "PCP", itemID = 43, materials = { { id = 33, quantity = 2 }, { id = 34, quantity = 1 }, { id = 35, quantity = 1 }, { id = 36, quantity = 1 }, { id = 37, quantity = 1 }, { id = 33, quantity = 2 }, { id = 33, quantity = 2 }, { id = 33, quantity = 2 }, }, time = 3 },       
     { id = 2, name = "redbandana", displayName = "Red Bandana", itemID = 123, materials = { { id = 160, quantity = 1 } }, time = 3 }, 
     { id = 3, name = "cocaine", displayName = "Cocaine", itemID = 50, materials = { { id = 42, quantity = 3 } }, time = 7 },
     { id = 4, name = "cocainee", displayName = "Cocaine Brick", itemID = 51, materials = { { id = 43, quantity = 2 } }, time = 10 },
