@@ -1,5 +1,5 @@
 -------------------------
--- CLIENT SIDE SCRIPT
+-- CLIENT SIDE SCRIPT (FIXED PROGRESS BAR)
 -------------------------
 local screenW, screenH = guiGetScreenSize()
 
@@ -153,6 +153,7 @@ function renderCraftingProgress()
         progressValue = currentTime - progressStart
         local progressPercentage = math.min(progressValue / progressMax, 1)
 
+        -- Update end time to prevent early disappearance
         if currentTime >= progressEnd then
             craftingProgress = false
         end
@@ -213,13 +214,13 @@ function handleCraftingMenuClick(button, state)
 end
 addEventHandler("onClientClick", root, handleCraftingMenuClick)
 
--- Event to start crafting progress
+-- Event to start crafting progress (FIXED HERE)
 addEvent("startCraftingProgress", true)
 addEventHandler("startCraftingProgress", root, function(itemName, time)
     craftingProgress = true
     progressItemName = itemName
     progressStart = getTickCount()
-    progressMax = time * 1000
+    progressMax = time -- Server already sends time in milliseconds
     progressEnd = progressStart + progressMax
 end)
 
@@ -230,43 +231,30 @@ addEventHandler("stopCraftingProgress", root, function()
 end)
 
 --------------------------------------------------------------------------------
--- DRAGGABLE SLIDER CODE (Integrated into the crafting GUI)
+-- DRAGGABLE SLIDER CODE
 --------------------------------------------------------------------------------
-
--- Render the slider and its draggable thumb (no text display)
 function renderSlider()
-    -- Draw slider background
     dxDrawRectangle(slider.x, slider.y, slider.width, slider.height, tocolor(30, 30, 30, 200))
     local thumbHeight = 20
     local thumbY = slider.y + (slider.currentValue / slider.maxValue) * (slider.height - thumbHeight)
     dxDrawRectangle(slider.x, thumbY, slider.width, thumbHeight, tocolor(0, 150, 255, 200))
 end
 
--- Check if the mouse is in a given rectangle area
-function isMouseInArea(x, y, width, height)
-    local mx, my = getCursorPosition()
-    if not mx or not my then return false end
-    mx, my = mx * screenW, my * screenH
-    return mx >= x and mx <= x + width and my >= y and my <= y + height
-end
-
--- Handle mouse click events for slider dragging
 function handleSliderDrag(button, state)
     if button == "left" then
         local thumbHeight = 20
         local thumbY = slider.y + (slider.currentValue / slider.maxValue) * (slider.height - thumbHeight)
         if state == "down" then
-            if isMouseInArea(slider.x, thumbY, slider.width, thumbHeight) then
+            if isMouseInPosition(slider.x, thumbY, slider.width, thumbHeight) then
                 slider.dragging = true
             end
-        elseif state == "up" then
+        else
             slider.dragging = false
         end
     end
 end
 addEventHandler("onClientClick", root, handleSliderDrag)
 
--- Update the slider value while dragging
 function updateSliderValue()
     if slider.dragging then
         local mx, my = getCursorPosition()
