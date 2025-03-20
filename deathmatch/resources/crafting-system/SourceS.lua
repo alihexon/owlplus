@@ -96,7 +96,12 @@ function onPlayerEnterMarker(hitPlayer)
         outputChatBox("Type /craft to open the menu.", hitPlayer, 0, 255, 0)
     end
 end
-addEventHandler("onMarkerHit", craftingMarker, onPlayerEnterMarker)
+addEventHandler("onMarkerHit", craftingMarker, function(hitPlayer)
+    if getElementType(hitPlayer) == "player" then
+        playersInMarker[hitPlayer] = true
+        triggerClientEvent(hitPlayer, "updatePlayersInMarker", hitPlayer, playersInMarker)
+    end
+end)
 
 function onPlayerLeaveMarker(hitPlayer)
     if getElementType(hitPlayer) == "player" then
@@ -108,7 +113,12 @@ function onPlayerLeaveMarker(hitPlayer)
         end
     end
 end
-addEventHandler("onMarkerLeave", craftingMarker, onPlayerLeaveMarker)
+addEventHandler("onMarkerLeave", craftingMarker, function(hitPlayer)
+    if getElementType(hitPlayer) == "player" then
+        playersInMarker[hitPlayer] = nil
+        triggerClientEvent(hitPlayer, "updatePlayersInMarker", hitPlayer, playersInMarker)
+    end
+end)
 
 -- Handle crafting request
 addEvent("requestCrafting", true)

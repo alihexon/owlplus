@@ -47,8 +47,24 @@ local slider = {
     dragging = false,
 }
 
--- Open the crafting menu when using /craft command
+-- Table to track if the player is inside the crafting marker
+local playersInMarker = {}
+
+-- Event to update playersInMarker from the server
+addEvent("updatePlayersInMarker", true)
+addEventHandler("updatePlayersInMarker", root, function(updatedPlayersInMarker)
+    playersInMarker = updatedPlayersInMarker
+end)
+
+-- Open the crafting menu when using /craft command (FIXED: Only works inside marker)
 function openCraftingMenu()
+    -- Check if the player is inside the crafting marker
+    if not playersInMarker[localPlayer] then
+        outputChatBox("You must be inside the crafting marker to use this command.", 255, 0, 0)
+        return
+    end
+
+    -- Open the crafting menu
     craftingGUI.visible = true
     craftingGUI.selectedItem = nil
     triggerServerEvent("requestCraftableItems", localPlayer)
