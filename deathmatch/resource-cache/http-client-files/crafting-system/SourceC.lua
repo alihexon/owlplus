@@ -24,7 +24,7 @@ local progressStart, progressEnd
 local grid = {
     startX = craftingGUI.x + 10,
     startY = craftingGUI.y + 40,
-    itemWidth = (craftingGUI.width - 50) / 2, -- leave extra room on right for slider
+    itemWidth = (craftingGUI.width - 50) / 2, -- Adjusted to leave room for the slider and gap
     itemHeight = 150,
     padding = 10,
     visibleRows = 2, -- only 2 rows visible
@@ -37,7 +37,7 @@ local gridRT = dxCreateRenderTarget(grid.totalWidth, grid.visibleHeight)
 
 -- Slider settings (draggable slider next to the grid)
 local slider = {
-    x = craftingGUI.x + craftingGUI.width - 15, -- moved further right
+    x = grid.startX + grid.totalWidth + 5, -- 5-pixel gap between grid and slider
     y = grid.startY, -- align with grid
     width = 15,
     height = grid.visibleHeight, -- only as tall as the grid area
@@ -137,13 +137,15 @@ function renderCraftingMenu()
     -- Draw the grid render target onto the screen at the grid position
     dxDrawImage(grid.startX, grid.startY, grid.totalWidth, grid.visibleHeight, gridRT)
 
-    -- Draw buttons at the bottom of the GUI (outside grid area)
-    local buttonAreaY = craftingGUI.y + craftingGUI.height - 60
-    local buttonWidth = (craftingGUI.width - 30) / 2
-    local buttonSpacing = 10
-    local buttonX = craftingGUI.x + 10
+    -- Draw buttons at the bottom of the GUI (aligned with grid columns)
+    local buttonAreaY = grid.startY + grid.visibleHeight + 10 -- Aligned with the grid's bottom
+    local buttonWidth = grid.itemWidth -- Buttons match the width of the grid columns
+    local buttonSpacing = grid.padding -- Use the same padding as the grid
+    local buttonXLeft = grid.startX -- Align with the left grid column
+    local buttonXRight = grid.startX + grid.itemWidth + grid.padding -- Align with the right grid column
 
-    if dxDrawButton(buttonX, buttonAreaY, buttonWidth - buttonSpacing / 2, 40, "Craft Selected Item") then
+    -- "Craft Selected Item" button (left column)
+    if dxDrawButton(buttonXLeft, buttonAreaY, buttonWidth, 40, "Craft Selected Item") then
         if craftingGUI.selectedItem then
             local itemID = craftingGUI.items[craftingGUI.selectedItem].id
             triggerServerEvent("requestCrafting", localPlayer, itemID)
@@ -153,7 +155,8 @@ function renderCraftingMenu()
         end
     end
 
-    if dxDrawButton(buttonX + buttonWidth + buttonSpacing / 2, buttonAreaY, buttonWidth - buttonSpacing / 2, 40, "Close") then
+    -- "Close" button (right column)
+    if dxDrawButton(buttonXRight, buttonAreaY, buttonWidth, 40, "Close") then
         closeCraftingMenu()
     end
 
