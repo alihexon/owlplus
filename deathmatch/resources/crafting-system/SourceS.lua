@@ -6,7 +6,11 @@ local craftableItems = {
     { id = 4, name = "cocainee", displayName = "Cocaine Brick", itemID = 51, materials = { { id = 43, quantity = 2 } }, time = 10 },
     { id = 5, name = "meth", displayName = "Meth", itemID = 52, materials = { { id = 44, quantity = 2 }, { id = 42, quantity = 1 } }, time = 6 },
     { id = 6, name = "heroin", displayName = "Heroin", itemID = 53, materials = { { id = 45, quantity = 3 } }, time = 8 },
-    { id = 7, name = "heroinn", displayName = "Heroin Brick", itemID = 54, materials = { { id = 46, quantity = 2 }, { id = 44, quantity = 1 } }, time = 12 }
+    { id = 7, name = "heroinn", displayName = "Heroin Brick", itemID = 54, materials = { { id = 46, quantity = 2 }, { id = 44, quantity = 1 } }, time = 12 },
+    -- Extra items for testing scroll
+    { id = 8, name = "item8", displayName = "Item 8", itemID = 60, materials = { { id = 50, quantity = 1 } }, time = 5 },
+    { id = 9, name = "item9", displayName = "Item 9", itemID = 61, materials = { { id = 50, quantity = 1 } }, time = 5 },
+    { id = 10, name = "item10", displayName = "Item 10", itemID = 62, materials = { { id = 50, quantity = 1 } }, time = 5 }
 }
 
 local playersInMarker = {}
