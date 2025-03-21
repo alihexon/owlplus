@@ -24,69 +24,60 @@ local progressStart, progressEnd
 local grid = {
     startX = craftingGUI.x + 10,
     startY = craftingGUI.y + 40,
-    itemWidth = (craftingGUI.width - 50) / 2, -- Adjusted to leave room for the slider and gap
+    itemWidth = (craftingGUI.width - 50) / 2,
     itemHeight = 150,
     padding = 10,
-    visibleRows = 2, -- only 2 rows visible
+    visibleRows = 2,
 }
 grid.visibleHeight = grid.visibleRows * (grid.itemHeight + grid.padding) - grid.padding
-grid.totalWidth = (grid.itemWidth * 2) + grid.padding  -- for 2 columns
+grid.totalWidth = (grid.itemWidth * 2) + grid.padding
+grid.rowHeight = grid.itemHeight + grid.padding  -- Fixed row height calculation
 
--- Create a render target for the grid (to clip items)
-local gridRT = dxCreateRenderTarget(grid.totalWidth, grid.visibleHeight)
+-- Transparent render target
+local gridRT = dxCreateRenderTarget(grid.totalWidth, grid.visibleHeight, true)
 
--- Slider settings (draggable slider next to the grid)
+-- Slider settings
 local slider = {
-    x = grid.startX + grid.totalWidth + 5, -- 5-pixel gap between grid and slider
-    y = grid.startY, -- align with grid
+    x = grid.startX + grid.totalWidth + 5,
+    y = grid.startY,
     width = 15,
-    height = grid.visibleHeight, -- only as tall as the grid area
+    height = grid.visibleHeight,
     minValue = 0,
-    maxValue = 100,
-    currentValue = 0, -- 0 means grid scrolled to top
+    maxValue = 1,  -- Will be updated dynamically
+    currentValue = 0,
     dragging = false,
 }
 
--- Table to track material scroll offsets for each item
+-- Material scroll tracking
 local materialScrollOffsets = {}
-
--- Table to track material slider dragging state for each item
 local materialSliderDragging = {}
 
--- Table to track if the player is inside the crafting marker
+-- Marker tracking
 local playersInMarker = {}
 
--- Event to update playersInMarker from the server
 addEvent("updatePlayersInMarker", true)
 addEventHandler("updatePlayersInMarker", root, function(updatedPlayersInMarker)
     playersInMarker = updatedPlayersInMarker
 end)
 
--- Open the crafting menu when using /craft command (FIXED: Only works inside marker)
 function openCraftingMenu()
-    -- Check if the player is inside the crafting marker
     if not playersInMarker[localPlayer] then
         outputChatBox("You must be inside the crafting marker to use this command.", 255, 0, 0)
         return
     end
-
-    -- Open the crafting menu
     craftingGUI.visible = true
     craftingGUI.selectedItem = nil
     triggerServerEvent("requestCraftableItems", localPlayer)
 end
 addCommandHandler("craft", openCraftingMenu)
 
--- Close the crafting menu
 function closeCraftingMenu()
     craftingGUI.visible = false
 end
 
--- Receive craftable items from server
 addEvent("receiveCraftableItems", true)
 addEventHandler("receiveCraftableItems", root, function(items)
     craftingGUI.items = items
-    -- Initialize material scroll offsets and dragging states
     materialScrollOffsets = {}
     materialSliderDragging = {}
     for i = 1, #items do
@@ -95,49 +86,52 @@ addEventHandler("receiveCraftableItems", root, function(items)
     end
 end)
 
--- Render the crafting menu, grid (via render target) and slider
 function renderCraftingMenu()
     if not craftingGUI.visible then return end
 
-    -- Draw the background window
+    -- Main window
     dxDrawRectangle(craftingGUI.x, craftingGUI.y, craftingGUI.width, craftingGUI.height, tocolor(50, 50, 50, 200))
     dxDrawText("Crafting Menu", craftingGUI.x + 10, craftingGUI.y + 10, craftingGUI.x + craftingGUI.width, craftingGUI.y + 30, 
         tocolor(255, 255, 255, 255), 1.2, "default-bold", "left", "top")
 
-    -- Calculate scrolling parameters for the grid
+    -- Grid calculations
     local totalItems = #craftingGUI.items
     local totalRows = math.ceil(totalItems / 2)
     local maxScrollRows = math.max(totalRows - grid.visibleRows, 0)
-    local scrollOffsetRows = (slider.currentValue / slider.maxValue) * maxScrollRows
-    local scrollOffsetPixels = scrollOffsetRows * (grid.itemHeight + grid.padding)
+    
+    -- Fixed scrolling calculations
+    slider.maxValue = maxScrollRows * grid.rowHeight
+    if slider.maxValue <= 0 then slider.maxValue = 1 end
+    local scrollOffsetPixels = math.floor(slider.currentValue / grid.rowHeight) * grid.rowHeight
 
-    -- Draw items to the render target so they are clipped to the grid area
-    dxSetRenderTarget(gridRT, true)  -- enable clear mode; this clears automatically
+    -- Draw items to render target
+    dxSetRenderTarget(gridRT, false)
+    dxDrawRectangle(0, 0, grid.totalWidth, grid.visibleHeight, tocolor(0, 0, 0, 0))
+    
     for i, item in ipairs(craftingGUI.items) do
         local row = math.floor((i - 1) / 2)
         local col = (i - 1) % 2
         local x = col * (grid.itemWidth + grid.padding)
-        local y = row * (grid.itemHeight + grid.padding) - scrollOffsetPixels
+        local y = (row * grid.rowHeight) - scrollOffsetPixels  -- Fixed position
 
-        -- Only draw if the item falls within the render target (clipping)
         if y + grid.itemHeight >= 0 and y <= grid.visibleHeight then
-            -- Draw item box
-            dxDrawRectangle(x, y, grid.itemWidth, grid.itemHeight, tocolor(50, 50, 50, 200))
+            -- Item container
+            dxDrawRectangle(x, y, grid.itemWidth, grid.itemHeight, tocolor(50, 50, 50, 220))
+            
             if craftingGUI.selectedItem == i then
                 dxDrawRectangle(x, y, grid.itemWidth, grid.itemHeight, tocolor(0, 150, 255, 100))
             end
 
-            -- Draw item name
+            -- Item name
             dxDrawText(item.displayName, x + 10, y + 10, x + grid.itemWidth - 10, y + 30, 
                 tocolor(255, 255, 255, 255), 1, "default-bold", "left", "top")
             
-            -- Draw materials (each material on a new line)
+            -- Materials list
             local materialsStartY = y + 40
-            local maxMaterialsVisible = 4 -- Maximum number of materials visible at once
-            local materialHeight = 20 -- Height of each material line
+            local maxMaterialsVisible = 4
+            local materialHeight = 20
             local materialScrollOffset = materialScrollOffsets[i] or 0
 
-            -- Calculate the range of materials to display
             local startMaterial = math.max(1, materialScrollOffset + 1)
             local endMaterial = math.min(#item.materials, startMaterial + maxMaterialsVisible - 1)
 
@@ -147,11 +141,11 @@ function renderCraftingMenu()
                     local materialText = exports["item-system"]:getItemName(mat.id) .. " (" .. mat.quantity .. ")"
                     dxDrawText(materialText, x + 10, materialsStartY, x + grid.itemWidth - 10, materialsStartY + materialHeight, 
                         tocolor(255, 255, 255, 255), 1, "default", "left", "top", true, true)
-                    materialsStartY = materialsStartY + materialHeight -- Move to the next line
+                    materialsStartY = materialsStartY + materialHeight
                 end
             end
 
-            -- Draw a scrollbar for materials if there are more than maxMaterialsVisible
+            -- Material scrollbar
             if #item.materials > maxMaterialsVisible then
                 local scrollbarWidth = 5
                 local scrollbarHeight = (maxMaterialsVisible * materialHeight) * (maxMaterialsVisible / #item.materials)
@@ -160,52 +154,45 @@ function renderCraftingMenu()
                 dxDrawRectangle(scrollbarX, scrollbarY, scrollbarWidth, scrollbarHeight, tocolor(200, 200, 200, 150))
             end
 
-            -- Draw crafting time (below the materials)
+            -- Crafting time
             dxDrawText("Time: " .. tostring(item.time) .. " sec", x + 10, y + grid.itemHeight - 30, 
                 x + grid.itemWidth - 10, y + grid.itemHeight - 10, tocolor(255, 255, 255, 255), 1, "default", "left", "bottom")
         end
     end
     dxSetRenderTarget(nil)
 
-    -- Draw the grid render target onto the screen at the grid position
-    dxDrawImage(grid.startX, grid.startY, grid.totalWidth, grid.visibleHeight, gridRT)
+    -- Draw grid and UI elements
+    dxDrawImage(grid.startX, grid.startY, grid.totalWidth, grid.visibleHeight, gridRT, 0, 0, 0, tocolor(255,255,255,255), true)
 
-    -- Draw buttons at the bottom of the GUI (aligned with grid columns)
-    local buttonAreaY = grid.startY + grid.visibleHeight + 10 -- Aligned with the grid's bottom
-    local buttonWidth = grid.itemWidth -- Buttons match the width of the grid columns
-    local buttonSpacing = grid.padding -- Use the same padding as the grid
-    local buttonXLeft = grid.startX -- Align with the left grid column
-    local buttonXRight = grid.startX + grid.itemWidth + grid.padding -- Align with the right grid column
+    -- Buttons
+    local buttonAreaY = grid.startY + grid.visibleHeight + 10
+    local buttonWidth = grid.itemWidth
+    local buttonXLeft = grid.startX
+    local buttonXRight = grid.startX + grid.itemWidth + grid.padding
 
-    -- "Craft Selected Item" button (left column)
     if dxDrawButton(buttonXLeft, buttonAreaY, buttonWidth, 40, "Craft Selected Item") then
         if craftingGUI.selectedItem then
-            local itemID = craftingGUI.items[craftingGUI.selectedItem].id
-            triggerServerEvent("requestCrafting", localPlayer, itemID)
+            triggerServerEvent("requestCrafting", localPlayer, craftingGUI.items[craftingGUI.selectedItem].id)
             closeCraftingMenu()
         else
             outputChatBox("Select an item to craft.", 255, 0, 0)
         end
     end
 
-    -- "Close" button (right column)
     if dxDrawButton(buttonXRight, buttonAreaY, buttonWidth, 40, "Close") then
         closeCraftingMenu()
     end
 
-    -- Render the draggable slider next to the grid
     renderSlider()
 end
 addEventHandler("onClientRender", root, renderCraftingMenu)
 
--- Render the crafting progress bar
 function renderCraftingProgress()
     if craftingProgress then
         local currentTime = getTickCount()
         progressValue = currentTime - progressStart
         local progressPercentage = math.min(progressValue / progressMax, 1)
 
-        -- Update end time to prevent early disappearance
         if currentTime >= progressEnd then
             craftingProgress = false
         end
@@ -223,7 +210,6 @@ function renderCraftingProgress()
 end
 addEventHandler("onClientRender", root, renderCraftingProgress)
 
--- Utility function to draw a button
 function dxDrawButton(x, y, width, height, text)
     local isHovered = isMouseInPosition(x, y, width, height)
     dxDrawRectangle(x, y, width, height, tocolor(0, 150, 255, isHovered and 200 or 100))
@@ -231,7 +217,6 @@ function dxDrawButton(x, y, width, height, text)
     return isHovered and getKeyState("mouse1")
 end
 
--- Utility function to check if mouse is in a given area
 function isMouseInPosition(x, y, width, height)
     local mx, my = getCursorPosition()
     if not mx or not my then return false end
@@ -239,27 +224,22 @@ function isMouseInPosition(x, y, width, height)
     return mx >= x and mx <= x + width and my >= y and my <= y + height
 end
 
--- Handle mouse clicks for crafting menu item selection and materials slider dragging
 function handleCraftingMenuClick(button, state)
     if button == "left" and state == "down" and craftingGUI.visible then
         for i, item in ipairs(craftingGUI.items) do
             local row = math.floor((i - 1) / 2)
             local col = (i - 1) % 2
             local x = grid.startX + col * (grid.itemWidth + grid.padding)
-            local y = grid.startY + row * (grid.itemHeight + grid.padding)
+            local y = grid.startY + row * grid.rowHeight
             
-            local totalRows = math.ceil(#craftingGUI.items / 2)
-            local maxScrollRows = math.max(totalRows - grid.visibleRows, 0)
-            local scrollOffsetRows = (slider.currentValue / slider.maxValue) * maxScrollRows
-            local scrollOffsetPixels = scrollOffsetRows * (grid.itemHeight + grid.padding)
+            local scrollOffsetPixels = math.floor(slider.currentValue / grid.rowHeight) * grid.rowHeight
             y = y - scrollOffsetPixels
             
-            -- Check if the mouse is over the materials slider
             if #item.materials > 4 then
                 local scrollbarWidth = 5
                 local scrollbarX = x + grid.itemWidth - scrollbarWidth - 5
                 local scrollbarY = y + 40
-                local scrollbarHeight = 80 -- Height of the materials scrollbar area
+                local scrollbarHeight = 80
 
                 if isMouseInPosition(scrollbarX, scrollbarY, scrollbarWidth, scrollbarHeight) then
                     materialSliderDragging[i] = true
@@ -267,7 +247,6 @@ function handleCraftingMenuClick(button, state)
                 end
             end
 
-            -- Only allow selection if the item is within the visible grid area
             if y + grid.itemHeight >= grid.startY and y <= grid.startY + grid.visibleHeight then
                 if isMouseInPosition(x, y, grid.itemWidth, grid.itemHeight) then
                     craftingGUI.selectedItem = i
@@ -276,7 +255,6 @@ function handleCraftingMenuClick(button, state)
             end
         end
     elseif button == "left" and state == "up" then
-        -- Stop dragging all materials sliders
         for i = 1, #craftingGUI.items do
             materialSliderDragging[i] = false
         end
@@ -284,7 +262,6 @@ function handleCraftingMenuClick(button, state)
 end
 addEventHandler("onClientClick", root, handleCraftingMenuClick)
 
--- Update materials slider positions
 function updateMaterialsSliders()
     if not craftingGUI.visible then return end
 
@@ -296,9 +273,9 @@ function updateMaterialsSliders()
                 local row = math.floor((i - 1) / 2)
                 local col = (i - 1) % 2
                 local x = grid.startX + col * (grid.itemWidth + grid.padding)
-                local y = grid.startY + row * (grid.itemHeight + grid.padding)
+                local y = grid.startY + row * grid.rowHeight
 
-                local scrollbarHeight = 80 -- Height of the materials scrollbar area
+                local scrollbarHeight = 80
                 local relativeY = math.max(0, math.min(scrollbarHeight, my - (y + 40)))
                 local newOffset = math.floor((relativeY / scrollbarHeight) * (#item.materials - 4) + 0.5)
                 materialScrollOffsets[i] = newOffset
@@ -308,38 +285,34 @@ function updateMaterialsSliders()
 end
 addEventHandler("onClientRender", root, updateMaterialsSliders)
 
--- Event to start crafting progress (FIXED HERE)
 addEvent("startCraftingProgress", true)
 addEventHandler("startCraftingProgress", root, function(itemName, time)
     craftingProgress = true
     progressItemName = itemName
     progressStart = getTickCount()
-    progressMax = time -- Server already sends time in milliseconds
+    progressMax = time
     progressEnd = progressStart + progressMax
 end)
 
--- Event to stop crafting progress (if player leaves marker)
 addEvent("stopCraftingProgress", true)
 addEventHandler("stopCraftingProgress", root, function()
     craftingProgress = false
 end)
 
---------------------------------------------------------------------------------
--- DRAGGABLE SLIDER CODE
---------------------------------------------------------------------------------
 function renderSlider()
     dxDrawRectangle(slider.x, slider.y, slider.width, slider.height, tocolor(30, 30, 30, 200))
-    local thumbHeight = 20
-    local thumbY = slider.y + (slider.currentValue / slider.maxValue) * (slider.height - thumbHeight)
-    dxDrawRectangle(slider.x, thumbY, slider.width, thumbHeight, tocolor(0, 150, 255, 200))
+    if slider.maxValue > 0 then
+        local thumbHeight = grid.visibleHeight * (grid.visibleHeight / (grid.visibleHeight + slider.maxValue))
+        thumbHeight = math.max(20, thumbHeight)
+        local thumbY = slider.y + (slider.currentValue / slider.maxValue) * (slider.height - thumbHeight)
+        dxDrawRectangle(slider.x, thumbY, slider.width, thumbHeight, tocolor(0, 150, 255, 200))
+    end
 end
 
 function handleSliderDrag(button, state)
     if button == "left" then
-        local thumbHeight = 20
-        local thumbY = slider.y + (slider.currentValue / slider.maxValue) * (slider.height - thumbHeight)
         if state == "down" then
-            if isMouseInPosition(slider.x, thumbY, slider.width, thumbHeight) then
+            if isMouseInPosition(slider.x, slider.y, slider.width, slider.height) then
                 slider.dragging = true
             end
         else
@@ -356,51 +329,22 @@ function updateSliderValue()
             my = my * screenH
             local relativeY = math.max(0, math.min(slider.height, my - slider.y))
             local newValue = (relativeY / slider.height) * slider.maxValue
-            slider.currentValue = math.floor(newValue + 0.5)
+            slider.currentValue = math.floor(newValue / grid.rowHeight + 0.5) * grid.rowHeight
         end
     end
 end
 addEventHandler("onClientRender", root, updateSliderValue)
 
---------------------------------------------------------------------------------
--- MOUSE WHEEL SCROLLING FOR GRID AND MATERIALS
---------------------------------------------------------------------------------
 function handleMouseWheel(key, state)
     if not craftingGUI.visible then return end
 
-    -- Check if the mouse is over the grid area
     if isMouseInPosition(grid.startX, grid.startY, grid.totalWidth, grid.visibleHeight) then
-        -- Check if the mouse is over a specific item's materials area
-        for i, item in ipairs(craftingGUI.items) do
-            local row = math.floor((i - 1) / 2)
-            local col = (i - 1) % 2
-            local x = grid.startX + col * (grid.itemWidth + grid.padding)
-            local y = grid.startY + row * (grid.itemHeight + grid.padding)
-
-            if isMouseInPosition(x, y + 40, grid.itemWidth, grid.itemHeight - 70) then
-                if key == "mouse_wheel_up" then
-                    materialScrollOffsets[i] = math.max(0, materialScrollOffsets[i] - 1)
-                elseif key == "mouse_wheel_down" then
-                    materialScrollOffsets[i] = math.min(#item.materials - 4, materialScrollOffsets[i] + 1)
-                end
-                return
-            end
-        end
-
-        -- If not over materials, scroll the grid
-        local totalItems = #craftingGUI.items
-        local totalRows = math.ceil(totalItems / 2)
-        local maxScrollRows = math.max(totalRows - grid.visibleRows, 0)
-
-        -- Scroll up (negative key value)
         if key == "mouse_wheel_up" then
-            slider.currentValue = math.max(slider.minValue, slider.currentValue - 10) -- Scroll up by 10 units
+            slider.currentValue = math.max(0, slider.currentValue - grid.rowHeight)
+        elseif key == "mouse_wheel_down" then
+            slider.currentValue = math.min(slider.maxValue, slider.currentValue + grid.rowHeight)
         end
-
-        -- Scroll down (positive key value)
-        if key == "mouse_wheel_down" then
-            slider.currentValue = math.min(slider.maxValue, slider.currentValue + 10) -- Scroll down by 10 units
-        end
+        return true
     end
 end
 addEventHandler("onClientKey", root, handleMouseWheel)
