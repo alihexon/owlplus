@@ -65,6 +65,21 @@ function dxDrawRoundedRectangle(x, y, width, height, color, radius)
     dxDrawCircle(x + width - radius, y + height - radius, radius, 0, 90, color)
 end
 
+function dxDrawLeftRoundedRectangle(x, y, w, h, radius, color, postGUI)
+    if radius > 0 then
+        radius = math.min(radius, math.floor(h/2))
+        -- Left rounded corners
+        dxDrawCircle(x + radius, y + radius, radius, 180, 270, color, color, 16, 1, postGUI)
+        dxDrawCircle(x + radius, y + h - radius, radius, 90, 180, color, color, 16, 1, postGUI)
+        -- Main body
+        dxDrawRectangle(x + radius, y, w - radius, h, color, postGUI)
+        -- Left edge
+        dxDrawRectangle(x, y + radius, radius, h - radius*2, color, postGUI)
+    else
+        dxDrawRectangle(x, y, w, h, color, postGUI)
+    end
+end
+
 addEvent("updatePlayersInMarker", true)
 addEventHandler("updatePlayersInMarker", root, function(updatedPlayersInMarker)
     playersInMarker = updatedPlayersInMarker
@@ -207,18 +222,40 @@ function renderCraftingProgress()
             craftingProgress = false
         end
 
+        -- Progress bar settings
         local barWidth = 300
         local barHeight = 30
         local barX = (screenW - barWidth) / 2
-        local barY = screenH - 220
+        local barY = screenH - 100
+        local radius = 8
+        local bgColor = tocolor(50, 50, 50, 200)
+        local fillColor = tocolor(100, 200, 255, 200)  -- Light blue
 
-        dxDrawRectangle(barX, barY, barWidth, barHeight, tocolor(0, 0, 0, 200))
-        dxDrawRectangle(barX, barY, barWidth * progressPercentage, barHeight, tocolor(0, 200, 0, 255))
-        dxDrawText(progressItemName .. " (" .. math.floor(progressPercentage * 100) .. "%)", barX, barY, 
-            barX + barWidth, barY + barHeight, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center")
+        -- Draw background
+        dxDrawRoundedRectangle(barX, barY, barWidth, barHeight, bgColor, radius)
+
+        -- Draw progress fill
+        if progressPercentage > 0 then
+            local fillWidth = barWidth * progressPercentage
+            
+            if progressPercentage < 1 then
+                -- Left-rounded rectangle for partial progress
+                dxDrawLeftRoundedRectangle(barX, barY, fillWidth, barHeight, radius, fillColor)
+            else
+                -- Fully rounded rectangle when complete
+                dxDrawRoundedRectangle(barX, barY, fillWidth, barHeight, fillColor, radius)
+            end
+        end
+
+        -- Progress text
+        dxDrawText("Crafting: " .. progressItemName .. " (" .. math.floor(progressPercentage * 100) .. "%)", 
+            barX, barY, barX + barWidth, barY + barHeight, 
+            tocolor(255, 255, 255, 255), 1.2, "default-bold", "center", "center")
     end
 end
+
 addEventHandler("onClientRender", root, renderCraftingProgress)
+
 
 function dxDrawButton(x, y, width, height, text)
     local isHovered = isMouseInPosition(x, y, width, height)
