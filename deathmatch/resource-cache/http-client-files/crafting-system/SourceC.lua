@@ -55,6 +55,16 @@ local materialSliderDragging = {}
 -- Marker tracking
 local playersInMarker = {}
 
+function dxDrawRoundedRectangle(x, y, width, height, color, radius)
+    dxDrawRectangle(x + radius, y, width - (radius * 2), height, color)
+    dxDrawRectangle(x, y + radius, radius, height - (radius * 2), color)
+    dxDrawRectangle(x + width - radius, y + radius, radius, height - (radius * 2), color)
+    dxDrawCircle(x + radius, y + radius, radius, 180, 270, color)
+    dxDrawCircle(x + width - radius, y + radius, radius, 270, 360, color)
+    dxDrawCircle(x + radius, y + height - radius, radius, 90, 180, color)
+    dxDrawCircle(x + width - radius, y + height - radius, radius, 0, 90, color)
+end
+
 addEvent("updatePlayersInMarker", true)
 addEventHandler("updatePlayersInMarker", root, function(updatedPlayersInMarker)
     playersInMarker = updatedPlayersInMarker
@@ -90,7 +100,7 @@ function renderCraftingMenu()
     if not craftingGUI.visible then return end
 
     -- Main window
-    dxDrawRectangle(craftingGUI.x, craftingGUI.y, craftingGUI.width, craftingGUI.height, tocolor(50, 50, 50, 200))
+    dxDrawRoundedRectangle(craftingGUI.x, craftingGUI.y, craftingGUI.width, craftingGUI.height, tocolor(50, 50, 50, 200), 10)
     dxDrawText("Crafting Menu", craftingGUI.x + 10, craftingGUI.y + 10, craftingGUI.x + craftingGUI.width, craftingGUI.y + 30, 
         tocolor(255, 255, 255, 255), 1.2, "default-bold", "left", "top")
 
@@ -116,10 +126,10 @@ function renderCraftingMenu()
 
         if y + grid.itemHeight >= 0 and y <= grid.visibleHeight then
             -- Item container
-            dxDrawRectangle(x, y, grid.itemWidth, grid.itemHeight, tocolor(50, 50, 50, 220))
+            dxDrawRoundedRectangle(x, y, grid.itemWidth, grid.itemHeight, tocolor(50, 50, 50, 220), 5)
             
             if craftingGUI.selectedItem == i then
-                dxDrawRectangle(x, y, grid.itemWidth, grid.itemHeight, tocolor(0, 150, 255, 100))
+                dxDrawRoundedRectangle(x, y, grid.itemWidth, grid.itemHeight, tocolor(0, 150, 255, 100), 5)  -- Added rounded
             end
 
             -- Item name
@@ -147,11 +157,11 @@ function renderCraftingMenu()
 
             -- Material scrollbar
             if #item.materials > maxMaterialsVisible then
-                local scrollbarWidth = 5
+                local scrollbarWidth = 8  -- Slightly wider for visibility
                 local scrollbarHeight = (maxMaterialsVisible * materialHeight) * (maxMaterialsVisible / #item.materials)
                 local scrollbarX = x + grid.itemWidth - scrollbarWidth - 5
                 local scrollbarY = y + 40 + (materialScrollOffset / #item.materials) * (maxMaterialsVisible * materialHeight)
-                dxDrawRectangle(scrollbarX, scrollbarY, scrollbarWidth, scrollbarHeight, tocolor(200, 200, 200, 150))
+                dxDrawRoundedRectangle(scrollbarX, scrollbarY, scrollbarWidth, scrollbarHeight, tocolor(200, 200, 200, 150), 4)
             end
 
             -- Crafting time
@@ -212,7 +222,7 @@ addEventHandler("onClientRender", root, renderCraftingProgress)
 
 function dxDrawButton(x, y, width, height, text)
     local isHovered = isMouseInPosition(x, y, width, height)
-    dxDrawRectangle(x, y, width, height, tocolor(0, 150, 255, isHovered and 200 or 100))
+    dxDrawRoundedRectangle(x, y, width, height, tocolor(0, 150, 255, isHovered and 200 or 100), 5)
     dxDrawText(text, x, y, x + width, y + height, tocolor(255, 255, 255, 255), 1, "default-bold", "center", "center")
     return isHovered and getKeyState("mouse1")
 end
@@ -300,12 +310,13 @@ addEventHandler("stopCraftingProgress", root, function()
 end)
 
 function renderSlider()
-    dxDrawRectangle(slider.x, slider.y, slider.width, slider.height, tocolor(30, 30, 30, 200))
+    -- Change the slider background to rounded
+    dxDrawRoundedRectangle(slider.x, slider.y, slider.width, slider.height, tocolor(30, 30, 30, 200), 7)  -- Added radius
     if slider.maxValue > 0 then
         local thumbHeight = grid.visibleHeight * (grid.visibleHeight / (grid.visibleHeight + slider.maxValue))
         thumbHeight = math.max(20, thumbHeight)
         local thumbY = slider.y + (slider.currentValue / slider.maxValue) * (slider.height - thumbHeight)
-        dxDrawRectangle(slider.x, thumbY, slider.width, thumbHeight, tocolor(0, 150, 255, 200))
+        dxDrawRoundedRectangle(slider.x, thumbY, slider.width, thumbHeight, tocolor(0, 150, 255, 200), 7)
     end
 end
 
@@ -338,6 +349,11 @@ addEventHandler("onClientRender", root, updateSliderValue)
 function handleMouseWheel(key, state)
     if not craftingGUI.visible then return end
 
+    local mx, my = getCursorPosition()
+    if not mx or not my then return end
+    mx, my = mx * screenW, my * screenH
+
+    -- Main grid scroll
     if isMouseInPosition(grid.startX, grid.startY, grid.totalWidth, grid.visibleHeight) then
         if key == "mouse_wheel_up" then
             slider.currentValue = math.max(0, slider.currentValue - grid.rowHeight)
@@ -345,6 +361,30 @@ function handleMouseWheel(key, state)
             slider.currentValue = math.min(slider.maxValue, slider.currentValue + grid.rowHeight)
         end
         return true
+    end
+
+    -- Material list scroll
+    for i, item in ipairs(craftingGUI.items) do
+        local row = math.floor((i - 1) / 2)
+        local col = (i - 1) % 2
+        local x = grid.startX + col * (grid.itemWidth + grid.padding)
+        local y = grid.startY + row * grid.rowHeight - (math.floor(slider.currentValue / grid.rowHeight) * grid.rowHeight)
+        
+        if y + grid.itemHeight >= grid.startY and y <= grid.startY + grid.visibleHeight then
+            local matAreaX1, matAreaY1 = x + 10, y + 40
+            local matAreaX2, matAreaY2 = x + grid.itemWidth - 10, y + grid.itemHeight - 30
+            
+            if mx >= matAreaX1 and mx <= matAreaX2 and my >= matAreaY1 and my <= matAreaY2 then
+                if #item.materials > 4 then
+                    if key == "mouse_wheel_up" then
+                        materialScrollOffsets[i] = math.max(0, materialScrollOffsets[i] - 1)
+                    elseif key == "mouse_wheel_down" then
+                        materialScrollOffsets[i] = math.min(#item.materials - 4, materialScrollOffsets[i] + 1)
+                    end
+                    return true
+                end
+            end
+        end
     end
 end
 addEventHandler("onClientKey", root, handleMouseWheel)
