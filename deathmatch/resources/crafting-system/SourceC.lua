@@ -349,11 +349,37 @@ addEventHandler("onClientRender", root, updateSliderValue)
 function handleMouseWheel(key, state)
     if not craftingGUI.visible then return end
 
+    -- First check for material list scrolling
     local mx, my = getCursorPosition()
-    if not mx or not my then return end
-    mx, my = mx * screenW, my * screenH
+    if mx and my then
+        mx = mx * screenW
+        my = my * screenH
+        
+        -- Check if mouse is over any item's material list
+        for i, item in ipairs(craftingGUI.items) do
+            if #item.materials > 4 then
+                local row = math.floor((i - 1) / 2)
+                local col = (i - 1) % 2
+                local x = grid.startX + col * (grid.itemWidth + grid.padding)
+                local y = grid.startY + row * grid.rowHeight - math.floor(slider.currentValue / grid.rowHeight) * grid.rowHeight
+                
+                -- Check if mouse is within this item's bounds
+                if mx >= x and mx <= x + grid.itemWidth and my >= y and my <= y + grid.itemHeight then
+                    -- Check if mouse is in materials area (below item title)
+                    if my >= y + 40 and my <= y + grid.itemHeight - 30 then
+                        if key == "mouse_wheel_up" then
+                            materialScrollOffsets[i] = math.max(0, (materialScrollOffsets[i] or 0) - 1)
+                        elseif key == "mouse_wheel_down" then
+                            materialScrollOffsets[i] = math.min(#item.materials - 4, (materialScrollOffsets[i] or 0) + 1)
+                        end
+                        return true
+                    end
+                end
+            end
+        end
+    end
 
-    -- Main grid scroll
+    -- Then check for main grid scrolling
     if isMouseInPosition(grid.startX, grid.startY, grid.totalWidth, grid.visibleHeight) then
         if key == "mouse_wheel_up" then
             slider.currentValue = math.max(0, slider.currentValue - grid.rowHeight)
@@ -361,30 +387,6 @@ function handleMouseWheel(key, state)
             slider.currentValue = math.min(slider.maxValue, slider.currentValue + grid.rowHeight)
         end
         return true
-    end
-
-    -- Material list scroll
-    for i, item in ipairs(craftingGUI.items) do
-        local row = math.floor((i - 1) / 2)
-        local col = (i - 1) % 2
-        local x = grid.startX + col * (grid.itemWidth + grid.padding)
-        local y = grid.startY + row * grid.rowHeight - (math.floor(slider.currentValue / grid.rowHeight) * grid.rowHeight)
-        
-        if y + grid.itemHeight >= grid.startY and y <= grid.startY + grid.visibleHeight then
-            local matAreaX1, matAreaY1 = x + 10, y + 40
-            local matAreaX2, matAreaY2 = x + grid.itemWidth - 10, y + grid.itemHeight - 30
-            
-            if mx >= matAreaX1 and mx <= matAreaX2 and my >= matAreaY1 and my <= matAreaY2 then
-                if #item.materials > 4 then
-                    if key == "mouse_wheel_up" then
-                        materialScrollOffsets[i] = math.max(0, materialScrollOffsets[i] - 1)
-                    elseif key == "mouse_wheel_down" then
-                        materialScrollOffsets[i] = math.min(#item.materials - 4, materialScrollOffsets[i] + 1)
-                    end
-                    return true
-                end
-            end
-        end
     end
 end
 addEventHandler("onClientKey", root, handleMouseWheel)
